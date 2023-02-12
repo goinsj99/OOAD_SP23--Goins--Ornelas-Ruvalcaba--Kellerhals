@@ -1,10 +1,11 @@
 //package OOAD_SP23--Goins--Ornelas-Ruvalcaba;
+import Vehicle_States;
 
 // super class for Vehicles
 public class Vehicle {
 
     int unique_ID;
-    String Name;
+    String[] Name;
     float Cost;
     String Condition;
     float Sales_Price;
@@ -15,24 +16,25 @@ public class Vehicle {
     }
 
     // setters method implementation
-    void setID(){
-        
+    void setID(int vim){
+        unique_ID = vim;
     }
     
-    void setName(){
-
+    void setName(String make, String model){
+        Name[0] = make;
+        Name[1] = model;
     }
 
-    void setCost(){
-
+    void setCost(float cost){
+        Cost = cost;
     }
 
-    void setCondition(){
-
+    void setCondition(String condition){
+        Condition = condition;
     }
 
-    void setSalesPrice(){
-
+    void setSalesPrice(float price){
+        Sales_Price = price;
     }
 
     void setBonus(){
@@ -104,6 +106,7 @@ class Car extends Vehicle {
 class Pickup_car extends Vehicle {
     float my_Cost = Cost * 2;
 
+    Vehicle_States vehicleStates = new Vehicle_States();
     // display method of subclass
     public void display() {
        System.out.println("This is the display method of subclass");
