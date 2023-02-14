@@ -2,46 +2,55 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
+
 public class FNCD {
     public Double opBudget;
-    public List<String> staffList = Arrays.asList(staffID, firstName, Position);
-    public List<String> vehicleList = Arrays.asList(String vim, String make, String model, int year, float cost);
+    public List<StaffTest.Staff> staffList;
+    public List<VehicleClass.Vehicle> vehicleList;
     public List<String> report = Arrays.asList();
 
 //    report parameters need to be filled
     public Integer staffCount;
 
-    public FNCD(Double opBudget, List<String> staffList, List<String> vehicleList, Integer staffCount, List<String> report){
+    public FNCD(Double opBudget){
         this.opBudget = opBudget;
-        this.vehicleList = vehicleList;
-        this.staffList = staffList;
+        this.vehicleList = new ArrayList();
+        this.staffList = new ArrayList();
         this.staffCount = staffCount;
         this.report = report;
     }
-
-
+    // Setters 
+    // set new budget
     public void setOpBudget(Double opBudget){
         this.opBudget = opBudget;
     }
-    public void setVehicleList(List<String> vehicleList){
+    // add all vehicle in list
+    public void setVehicleList(List<VehicleClass.Vehicle> vehicleList){
         this.vehicleList = vehicleList;
     }
-    public void setStaffList(List<String> staffList){
+    // add all staff in list
+    public void setStaffList(List<StaffTest.Staff> staffList){
         this.staffList = staffList;
     }
+    // set new staff count
     public void setStaffCount(Integer staffCount){
         this.staffCount = staffCount;
     }
+    // set a report
     public void setReport(List<String> report){
         this.report = report;
     }
+    // Getters
+    // return budget
     public Double getOpBudget(){
         return opBudget;
     }
-    public List<String> getVehicleList(){
+    // return vehicle list
+    public List<VehicleClass.Vehicle> getVehicleList(){
         return vehicleList;
     }
-    public List<String> getStaffList(){
+    // return staff list
+    public List<StaffTest.Staff>  getStaffList(){
         return staffList;
     }
     public Integer getStaffCount(){

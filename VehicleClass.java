@@ -4,8 +4,9 @@ import java.util.*;
 import java.util.List;
 
 
-public class VehicleP2 {
-    class VehiclePP{
+public class VehicleClass{
+
+    class Vehicle{
         private String vim;
         private String make;
         private String model;
@@ -18,8 +19,8 @@ public class VehicleP2 {
         private List<String> conditionList = Arrays.asList("New", "Used", "Broken");
         private List<String> cleanlinessList = Arrays.asList("Sparkling", "Clean", "Dirty");
 
-    
-        public VehiclePP(String vim, String make, String model, int year, float cost){
+        // constructor 
+        public Vehicle(String vim, String make, String model, int year, float cost){
             this.vim = vim;
             this.make =  make;
             this.model = model;
@@ -42,7 +43,7 @@ public class VehicleP2 {
             
             // given a random state of cleanliness 
             double randomNumber = random.nextDouble();
-            if(randomNumber > 0 && randomNumber <= 0.5){
+            if(randomNumber > 0 && randomNumber <= 0.05){
                 this.cleanliness = cleanlinessList.get(0);
             }else if(randomNumber > 0.5 && randomNumber <= 0.35){
                 this.cleanliness = cleanlinessList.get(1);
@@ -116,25 +117,17 @@ public class VehicleP2 {
     }
     // car sub class
     // cost $10,000 - $20,0000
-    class Car extends VehiclePP{
-        //private float sales_price;
-        private String cleanliness;
-    
+    class Car extends Vehicle{
+        //private float sales_price;    
         public Car(String vim, String make, String model, int year, float cost, float sales_price){
             super(vim, make, model, year, cost);
-            // super.condition = "hello";
-            
-            
-            
+            // super.condition = "hello";   
         }
-
-        @
-    
     
     }
     // performance car sub class
     // cost $20,000 - $40,000
-    class Performance_Car extends VehiclePP{
+    class Performance_Car extends Vehicle{
         //private float sales_price;
     
         public Performance_Car(String vim, String make, String model, int year, float cost, float sales_price){
@@ -146,7 +139,7 @@ public class VehicleP2 {
     }
     // puck up sub class
     // cost $10,000 - $40,000
-    class Pickup_Car extends VehiclePP{
+    class Pickup_Car extends Vehicle{
         //private float sales_price;
     
         public Pickup_Car(String vim, String make, String model, int year, float cost, float sales_price){
