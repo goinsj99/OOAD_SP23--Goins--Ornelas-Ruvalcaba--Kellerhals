@@ -118,21 +118,35 @@ public class VehicleClass{
     // car sub class
     // cost $10,000 - $20,0000
     class Car extends Vehicle{
-        //private float sales_price;    
+        private String type;
+        //private float sales_price;  
+
         public Car(String vim, String make, String model, int year, float cost, float sales_price){
             super(vim, make, model, year, cost);
             // super.condition = "hello";   
+            this.type = "Car";
         }
+
+        public String getType(){
+            return type;
+        }
+
     
     }
     // performance car sub class
     // cost $20,000 - $40,000
     class Performance_Car extends Vehicle{
+        private String type;
         //private float sales_price;
     
         public Performance_Car(String vim, String make, String model, int year, float cost, float sales_price){
             super(vim, make, model, year, cost);
             //this.sales_price = sales_price;
+            this.type = "Performance Car";
+        }
+
+        public String getType(){
+            return type;
         }
     
         
@@ -140,11 +154,17 @@ public class VehicleClass{
     // puck up sub class
     // cost $10,000 - $40,000
     class Pickup_Car extends Vehicle{
+        private String type;
         //private float sales_price;
     
         public Pickup_Car(String vim, String make, String model, int year, float cost, float sales_price){
             super(vim, make, model, year, cost);
             //this.sales_price = sales_price;
+            this.type = "Pickup Car";
+        }
+
+        public String getType(){
+            return type;
         }
     
      }
