@@ -11,16 +11,18 @@ public class StaffTest {
         private Double hours;
         private String position;
         private String firstName;
+        private Double bonus;
 
         private Float Rate;
 
-        public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position) {
+        public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
             this.firstName = firstName;
             this.salaryRate = salaryRate;
             this.staffID = staffID;
             this.hours = hours;
             this.position = position;
             this.salary = salary;
+            this.bonus = bonus;
         }
 
 
@@ -47,7 +49,7 @@ public class StaffTest {
         public void setSalary(Double Salary) {
             this.salary = salary;
         }
-
+        public void setBonus(Double bonus){this.bonus = bonus;}
         public String getName() {
             return firstName;
         }
@@ -71,6 +73,7 @@ public class StaffTest {
         public Double getSalary() {
             return salary;
         }
+        public Double getBonus(){return bonus;}
 
 
     }
@@ -79,8 +82,8 @@ public class StaffTest {
     class SalesPerson extends Staff{
         Double myRate = 1.25;
 
-        public SalesPerson(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position) {
-            super(firstName, salaryRate, staffID, salary, hours, position);
+        public SalesPerson(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+            super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         }
 
         public void myRate() {
@@ -91,8 +94,8 @@ public class StaffTest {
 
     class Intern extends Staff {
         Double myRate = 1.5;
-        public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position) {
-            super(firstName, salaryRate, staffID, salary, hours, position);
+        public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+            super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         }
         public void myRate() {
 
@@ -102,8 +105,8 @@ public class StaffTest {
 
     class Mechanic extends Staff {
         Double myRate = 1.75;
-        public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position) {
-            super(firstName, salaryRate, staffID, salary, hours, position);
+        public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+            super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         }
         public void myRate() {
 
