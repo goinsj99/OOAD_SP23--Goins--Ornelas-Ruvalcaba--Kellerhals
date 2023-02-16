@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
 
-    class Staff {
+    public class Staff {
         private Double salaryRate;
         private Integer staffID;
         private Double salary;

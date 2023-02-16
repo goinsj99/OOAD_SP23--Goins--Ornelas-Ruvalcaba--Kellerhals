@@ -5,8 +5,8 @@ import java.util.List;
 
 public class FNCD {
     public Double opBudget;
-    public List<StaffTest.Staff> staffList;
-    public List<VehicleClass.Vehicle> vehicleList;
+    public List<Staff> staffList;
+    public List<Vehicle> vehicleList;
     public List<String> report = Arrays.asList();
 
 //    report parameters need to be filled
@@ -25,11 +25,11 @@ public class FNCD {
         this.opBudget = opBudget;
     }
     // add all vehicle in list
-    public void setVehicleList(List<VehicleClass.Vehicle> vehicleList){
+    public void setVehicleList(List<Vehicle> vehicleList){
         this.vehicleList = vehicleList;
     }
     // add all staff in list
-    public void setStaffList(List<StaffTest.Staff> staffList){
+    public void setStaffList(List<Staff> staffList){
         this.staffList = staffList;
     }
     // set new staff count
@@ -46,11 +46,11 @@ public class FNCD {
         return opBudget;
     }
     // return vehicle list
-    public List<VehicleClass.Vehicle> getVehicleList(){
+    public List<Vehicle> getVehicleList(){
         return vehicleList;
     }
     // return staff list
-    public List<StaffTest.Staff>  getStaffList(){
+    public List<Staff>  getStaffList(){
         return staffList;
     }
     public Integer getStaffCount(){

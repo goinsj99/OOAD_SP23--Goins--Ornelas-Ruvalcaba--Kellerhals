@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
 
+class dayRun{
+    
+}
+
 
 public class main {
     public static void main(String[] args) {
