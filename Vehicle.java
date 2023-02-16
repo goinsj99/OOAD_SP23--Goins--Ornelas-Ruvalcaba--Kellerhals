@@ -139,7 +139,7 @@ class Car extends Vehicle{
         super(vim, make, model, year, cost, type, vehicleBonus);
         // super.condition = "hello";
         this.type = "Car";
-        this.vehicleBonus = 0.05;
+        this.vehicleBonus = 1.05;
     }
     @Override
     public String getType(){
@@ -162,7 +162,7 @@ class Performance_Car extends Vehicle{
         super(vim, make, model, year, cost, type, vehicleBonus);
         //this.sales_price = sales_price;
         this.type = "Performance Car";
-        this.vehicleBonus = 0.15;
+        this.vehicleBonus = 1.15;
     }
     @Override
     public String getType(){
@@ -185,7 +185,7 @@ class Pickup_Car extends Vehicle{
         super(vim, make, model, year, cost, type, vehicleBonus);
         //this.sales_price = sales_price;
         this.type = "Pickup Car";
-        this.vehicleBonus = 0.1;
+        this.vehicleBonus = 1.1;
     }
     @Override
     public String getType(){
