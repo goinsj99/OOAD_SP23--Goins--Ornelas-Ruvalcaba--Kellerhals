@@ -2,6 +2,8 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
+import java.util.UUID;
+
 
     public class Staff {
         private Double salaryRate;
@@ -11,7 +13,6 @@ import java.util.List;
         private String position;
         private String firstName;
         private Double bonus;
-
         private Float Rate;
 
         public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
@@ -23,7 +24,6 @@ import java.util.List;
             this.salary = salary;
             this.bonus = bonus;
         }
-
 
         public void setName(String firstName) {
             this.firstName = firstName;
@@ -46,7 +46,7 @@ import java.util.List;
         }
 
         public void setSalary(Double Salary) {
-            this.salary = salary;
+            this.salary = Salary;
         }
         public void setBonus(Double bonus){this.bonus = bonus;}
         public String getName() {

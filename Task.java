@@ -8,7 +8,26 @@ import java.util.List;
 
 // opening
 class Opening{
+    private int internCount;
+    private List<Staff> staffList;
 
+    Opening(FNCD fncd){
+        this.internCount = 0;
+        this.staffList = fncd.getStaffList();
+        // check current intern count
+        for(Staff staff: this.staffList){
+            if(staff instanceof Intern){
+                internCount+=1;
+            }
+        }
+        // add back 3 interns before continuing
+        if(internCount < 3){
+            while(internCount != 3){
+                fncd.addStaff(fncd.createInternStaff());
+            }
+        }
+        
+    }
 }
 
 class Selling {
@@ -24,15 +43,8 @@ class Selling {
     public List<String> salesStaff;
     public List<String> vehiclesSold;
     private Double saleTemp;
- 
- 
- 
- 
     private Boolean car4Sale;
- 
- 
     private Double commissionBonus;
- 
  
     Selling(String weekDay,Double buyType,String vehicleChance,String vehicleType, Double initialSale, Boolean car4Sale ) {
         this.weekDay = weekDay;
@@ -43,13 +55,8 @@ class Selling {
         this.tempVehicleList = new ArrayList();
         this.saleChance = 0.0;
         this.vehiclesSold = new ArrayList();
- 
- 
         this.car4Sale = car4Sale;
         this.saleTemp = 0.0;
- 
- 
- 
  
     }
     //Correct percents for buy? ******
