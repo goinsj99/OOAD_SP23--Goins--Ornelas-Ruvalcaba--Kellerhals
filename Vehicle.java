@@ -148,6 +148,14 @@ class Car extends Vehicle{
     public Double getVehicleBonus(){
         return vehicleBonus;
     }
+    @Override
+    public String setCost(){
+        // used https://stackoverflow.com/questions/3680637/generate-a-random-double-in-a-range 
+        double min = 10000;
+        double max = 20000;
+        Random random = new Random();
+        double randomValue = min + (max - min) * random.nextDouble();
+    }
 
 
 }
