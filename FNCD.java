@@ -12,7 +12,9 @@ public class FNCD {
     public List<Staff> staffList;
     public List<Vehicle> vehicleList;
     public List<String> staffnames;
-    public List<String> vehicleNames;
+    public List<String> CarNames;
+    public List<String> PerformanceCarNames;
+    public List<String> PickupCarNames;
     public List<String> report = Arrays.asList();
 
 //    report parameters need to be filled
@@ -34,9 +36,9 @@ public class FNCD {
                 String line1 = scanner1.nextLine();
                 String line2 = scanner2.nextLine();
                 String line3 = scanner3.nextLine();
-                this.vehicleNames.add(line1);
-                this.vehicleNames.add(line2);
-                this.vehicleNames.add(line3);
+                this.CarNames.add(line1);
+                this.PickupCarNames.add(line2);
+                this.PerformanceCarNames.add(line3);
             }
 
             scanner1.close(); 
@@ -147,25 +149,32 @@ public class FNCD {
     // create a Car
     public Vehicle createCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.vehicleNames.size());
+        int index = random.nextInt(this.CarNames.size());
         // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
-        for(String str: vehicleNames){
-            String[] splitstr = str.split("\\s+"); // make, model, vim
-            
-        }
-        String name = this.staffnames.get(index);
-        this.staffnames.remove(index);
-
-        Staff newStaff = new Staff(name, 140.0, generateID(), 1700.88, 9.5, "Intern", 300.5);
-        return newStaff;
+        String[] splitstr = CarNames.get(index).split("\\s+"); // make, model, vim
+        Car newCar = new Car(splitstr[2], splitstr[0], splitstr[1]);
+        CarNames.remove(index);
+        return newCar;
     }
     // create a Performance Car
     public Vehicle createPerformanceCar(){
-        
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(this.CarNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
+        String[] splitstr = CarNames.get(index).split("\\s+"); // make, model, vim
+        Performance_Car newCar = new Performance_Car(splitstr[2], splitstr[0], splitstr[1]);
+        CarNames.remove(index);
+        return newCar;
     }
     // create Pickup car
     public Vehicle createPickupCar(){
-        
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(this.CarNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
+        String[] splitstr = CarNames.get(index).split("\\s+"); // make, model, vim
+        Pickup_Car newCar = new Pickup_Car(splitstr[2], splitstr[0], splitstr[1]);
+        CarNames.remove(index);
+        return newCar;
     }
 }
  
