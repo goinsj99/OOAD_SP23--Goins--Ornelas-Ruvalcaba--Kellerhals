@@ -87,44 +87,44 @@ public class Staff {
 class SalesPerson extends Staff{
     Double myRate = 1.25;
     private String position;
+    private Double salary;
     public SalesPerson(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Sales";
+        this.salary = (salary*myRate);
     }
     @Override
     public String getPosition(){return position; }
-    public void myRate() {
-
-    }
+    public Double getSalary(){return salary;}
 
 }
 
 class Intern extends Staff {
     Double myRate = 1.5;
     private String position;
+    private Double salary;
     public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Intern";
+        this.salary = (salary*myRate);
     }
     @Override
     public String getPosition(){return position; }
-    public void myRate() {
-
-    }
+    public Double getSalary(){return salary;}
 
 }
 
 class Mechanic extends Staff {
     Double myRate = 1.75;
     private String position;
+    private Double salary;
     public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Mechanic";
+        this.salary = (salary*myRate);
     }
     @Override
     public String getPosition(){return position; }
-    public void myRate() {
-
-    }
+    public Double getSalary(){return salary;}
 
 }
