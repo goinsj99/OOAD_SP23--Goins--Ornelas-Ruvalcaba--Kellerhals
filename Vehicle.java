@@ -4,14 +4,12 @@ import java.util.*;
 import java.util.List;
 
 
-public class VehicleClass{
-
-    class Vehicle{
+    public class Vehicle{
         private String vim;
         private String make;
         private String model;
         private int year;
-        private float cost;
+        private double cost;
         private String condition;
         private double sales_price;
         private String cleanliness;
@@ -21,7 +19,7 @@ public class VehicleClass{
         private List<String> cleanlinessList = Arrays.asList("Sparkling", "Clean", "Dirty");
 
         // constructor 
-        public Vehicle(String vim, String make, String model, int year, float cost, String type){
+        public Vehicle(String vim, String make, String model, int year, double cost, String type){
             this.vim = vim;
             this.make =  make;
             this.model = model;
@@ -102,7 +100,7 @@ public class VehicleClass{
             return year;
         }
 
-        public float getCost(){
+        public double getCost(){
             return cost;
         }
 
@@ -129,7 +127,7 @@ public class VehicleClass{
         private String type;
         //private float sales_price;
 
-        public Car(String vim, String make, String model, int year, float cost, float sales_price, String type){
+        public Car(String vim, String make, String model, int year, double cost, double sales_price, String type){
             super(vim, make, model, year, cost, type);
             // super.condition = "hello";
             this.type = "Car";
@@ -165,7 +163,7 @@ public class VehicleClass{
         private String type;
         //private float sales_price;
 
-        public Pickup_Car(String vim, String make, String model, int year, float cost, float sales_price, String type){
+        public Pickup_Car(String vim, String make, String model, int year, double cost, double sales_price, String type){
             super(vim, make, model, year, cost, type);
             //this.sales_price = sales_price;
             this.type = "Pickup Car";
@@ -176,6 +174,3 @@ public class VehicleClass{
         }
 
     }
-
-
-}
