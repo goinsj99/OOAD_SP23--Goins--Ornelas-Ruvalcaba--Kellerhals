@@ -102,16 +102,60 @@ class Washing{
     private int randomChoice1;
     private int randomChoice2;
     private String weekDay;
+    private List<StaffTest.Intern> staffList;
 
 
     Washing(String WeekDay){
         this.randomChoice1 = 0;
         this.randomChoice2 = 0;
         this.weekDay = WeekDay;
+        this.staffList = null;
     }
 
-    public void washVehicle(VehicleClass.Vehicle vehicle) {
-        // code to wash the vehicle
+    // code to wash the vehicle
+    public void washVehicle(List<VehicleClass.Vehicle> VehicleList, StaffTest.Intern intern) {
+        // get two random staff
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int internCount1 = 0;
+
+        // only can wash 2 cars per day
+        while(internCount1 < 2){
+            // start cleaning dirty cars
+            for(VehicleClass.Vehicle car: VehicleList){
+                if(car.getCleanliness() == "Dirty"){
+                    // %80 chance on becoming clean %10 chance of becoming sparkling
+                    double randomNumber = random.nextDouble();
+                    if(randomNumber < 0.1){
+                        car.setCondition("Sparkling");
+                        internCount1 += 1;
+                    }else if(randomNumber < 0.8){
+                        car.setCondition("Clean");
+                        internCount1 += 1;
+                    }else{
+                        System.out.printf("Washing did not have an affect on the vehicle\n");  
+                        internCount1 += 1;
+                    }
+                }
+            }
+            // move on to clean cars
+            for(VehicleClass.Vehicle car: VehicleList){
+                if(car.getCleanliness() == "Clean"){
+                    // %5 chance of becoming dirty, %30 chance on becmoming sparkling
+                    double randomNumber = random.nextDouble();
+                    if(randomNumber < 0.05){
+                        car.setCondition("Dirty");
+                        internCount1 += 1;
+                    }else if(randomNumber < 0.3){
+                        car.setCondition("Sparkling");
+                        internCount1 += 1;
+                    }else{
+                        System.out.printf("Washing did not have an affect on the vehicle\n");  
+                        internCount1 += 1;
+                    }
+                }
+            }
+        }
+
     }
 }
 
