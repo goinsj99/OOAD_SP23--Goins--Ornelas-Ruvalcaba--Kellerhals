@@ -16,9 +16,9 @@ class Opening{
         Car car;
         this.currBudget = fncd.getOpBudget();
         this.internCount = threeInterns(fncd.getStaffList());
-        this.carCount = fourCars(, fncd.getVehicleList());
-        this.performanceCarCount = 0;
-        this.pickupCarCount = 0;
+        this.carCount = fourCars(true, false, fncd.getVehicleList());
+        this.performanceCarCount = fourCars(false, true, fncd.getVehicleList());
+        this.pickupCarCount = fourCars(false, false, fncd.getVehicleList());
     }
     // check intern
     public int threeInterns(List<Staff> curentStaff){
@@ -45,31 +45,42 @@ class Opening{
         return curentStaff;
     }
     // check Car
-    public int fourCars(List<Vehicle> currVehicleList, FNCD fncd){
+    public int fourCars(boolean car, boolean pc, List<Vehicle> currVehicleList){
         int count = 0;
+        int count2 = 0;
+        int count3= 0;
         for(Vehicle cars: currVehicleList){
             if(cars instanceof Car){
                 count++;
+            }else if(cars instanceof Performance_Car){
+                count2++;
+            }else if(cars instanceof Pickup_Car){
+                count3++;
             }
         }
-        return count;
+        if(car == true){
+            return count;
+        }else if(pc == true){
+            return count2;
+        }else{
+            return count3;
+        }
     }
-    public int returnCarCount(Vehicle car){
-        if(car instanceof Car){
+    public int returnCarCount(boolean carito, boolean pc, Vehicle car){
+        if(car instanceof Car && carito == true){
             return this.carCount;
-        }else if(car instanceof Performance_Car){
+        }else if(car instanceof Performance_Car && pc == true){
             return this.performanceCarCount;
         }else{
             return this.pickupCarCount;
         }
     }
-    public List<Vehicle> CarCount(FNCD fncd){
+    public List<Vehicle> AddVehicle(FNCD fncd){
         // now what every dosnt have 4 go until their is four each or buget reached
-        Vehicle tempCar;
         boolean flag = false;
-        while((this.carCount < 4 && this.performanceCarCount < 4 && this.pickupCarCount < 4) || flag == true){
+        while((this.carCount < 4 || this.performanceCarCount < 4 || this.pickupCarCount < 4) || flag == true){
             if(this.carCount < 4){
-                tempCar = fncd.createCar();
+                Vehicle tempCar = fncd.createCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -78,7 +89,7 @@ class Opening{
                 }
             }
             if(this.performanceCarCount < 4){
-                tempCar = fncd.createPerformanceCar();
+                Vehicle tempCar = fncd.createPerformanceCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -87,7 +98,7 @@ class Opening{
                 }
             }
             if(this.pickupCarCount < 4){
-                tempCar = fncd.createPickupCar();
+                Vehicle tempCar = fncd.createPickupCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -455,9 +466,16 @@ public class main {
                 System.out.printf("%s, %d, %s\n", stp.getName(), stp.getStaffID(), stp.getPosition());
             }
             System.out.println("****************************");
-            
             Opening open = new Opening(fncd);
             System.out.println(open.returnInternCount());
+            System.out.println(fncd.getOpBudget());
+            fncd.setStaffList(open.internHire(fncd.getStaffList(), fncd));
+            System.out.println("****************************");
+            Opening open2 = new Opening(fncd);
+            System.out.println(open2.returnInternCount());
+            System.out.println(fncd.getOpBudget());
+            
+            
 
             
 
