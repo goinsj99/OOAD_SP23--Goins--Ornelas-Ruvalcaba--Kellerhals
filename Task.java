@@ -130,38 +130,38 @@ class Selling {
                 }
                 car4Sale = true;
             }
+            else{
+                System.out.println("No cars for sale");
+            }
         }
+        return tempCar;
+    }
+    public Vehicle sellThisCar(FNCD fncd){
         Staff tempStaff;
-        if(tempCar.getCondition() == "New"){
+        List<Vehicle> VehicleList = fncd.getVehicleList();
+        Vehicle sVehicle;
+        sVehicle = mostExpensive(fncd);
+        if(sVehicle.getCondition() == "New"){
             saleChance += 0.1;
             if(car4Sale == true){
                 saleChance -= 0.2;
                 Random random2 = new Random();
                 Double temp3 = random2.nextDouble();
                 if(temp3 < saleChance){
-                    vehiclesSold.add(tempCar);
-                    VehicleList.remove(tempCar);
+                    vehiclesSold.add(sVehicle);
+                    VehicleList.remove(sVehicle);
                     tempStaff = whoSold(fncd);
+                    tempStaff.getSalary();
                 }
             }
         }
-        else if(tempCar.getCleanliness() == "Sparkling"){
+        else if(sVehicle.getCleanliness() == "Sparkling"){
             saleChance += 0.1;
             if(car4Sale == true){
                 saleChance -= 0.2;
             }
         }
-        return tempCar;
     }
-//    public void canSell(FNCD fncd){
-//        Random random2 = new Random();
-//        Double temp = random2.nextDouble();
-//
-//        if(temp <= saleChance){
-//            vehiclesSold.add(tempCar);
-//
-//        }
-//    }
 }
 
 // washing
