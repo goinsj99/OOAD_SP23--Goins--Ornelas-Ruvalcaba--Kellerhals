@@ -133,7 +133,6 @@ public class FNCD {
         Staff newStaff = new Staff(name, 160.0, generateID(), 1900.88, 9.1, "Mechanic", 500.5);
         return newStaff;
     }
-
     // create a Car
     public Car createCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/

@@ -12,28 +12,110 @@ import java.util.List;
 
 // opening
 class Opening{
-    private int internCount;
-    private List<Staff> staffList;
+    private int internCount = 0;
+    private int carCount;
+    private int performanceCarCount;
+    private double currBudget = 0;
+    private int pickupCarCount;
+    private List<Staff> addStaffList = new ArrayList();
+    private List<Vehicle> addCarList = new ArrayList();
+    
 
     Opening(FNCD fncd){
-        this.internCount = 0;
-        this.staffList = fncd.getStaffList();
-        // check current intern count
-        for(Staff staff: this.staffList){
-            if(staff instanceof Intern){
-                internCount+=1;
+        //this.staffList = fncd.getStaffList();
+        this.internCount = fourInterns(fncd.getStaffList());
+        this.currBudget = fncd.getOpBudget();
+        // now check vehicles
+        this.carCount = 0;
+        this.performanceCarCount = 0;
+        this.pickupCarCount = 0;
+        for(Vehicle car: fncd.getVehicleList()){
+            if(car instanceof Car){
+                carCount++;
+            }else if(car instanceof Performance_Car){
+                performanceCarCount++;
+            }else if(car instanceof Pickup_Car){
+                pickupCarCount++;
             }
         }
-        // add back 3 interns before continuing
+        // now what every dosnt have 4 go until their is four each or buget reached
+        Vehicle tempCar;
+        boolean flag = false;
+        while((carCount < 4 && performanceCarCount < 4 && pickupCarCount < 4) || flag == true){
+            if(carCount < 4){
+                tempCar = fncd.createCar();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.addVehicle(tempCar);
+                    addCarList.add(tempCar);
+                }
+            }
+            if(performanceCarCount < 4){
+                tempCar = fncd.createPerformanceCar();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.addVehicle(tempCar);
+                    addCarList.add(tempCar);
+                }
+            }
+            if(pickupCarCount < 4){
+                tempCar = fncd.createPickupCar();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.addVehicle(tempCar);
+                    addCarList.add(tempCar);
+                }
+            }
+        }
+        if(flag == false){
+            System.out.println("***************** There is four cars each************");
+        }else{
+            System.out.println("***************** we bought some cars************");
+        }
+    }
+    // check intern
+    public int fourInterns(List<Staff> curentStaff){
+        int count = 0;
+        for(Staff staff: curentStaff){
+            if(staff instanceof Intern){
+                count++;
+            }
+        }
+        return count;
+    }
+    // add intern 
+    public List<Staff> internHire(List<Staff> curentStaff){
+        
+        Staff tempstaffie;
         if(internCount < 3){
             while(internCount != 3){
-                fncd.addStaff(fncd.createInternStaff());
+                tempstaffie = fncd.createInternStaff();
+                fncd.addStaff(tempstaffie);
+                //this.staffList.add(fncd.createInternStaff());
+                this.addStaffList.add(tempstaffie);
                 internCount+=1;
             }
         }
-
     }
-}
+    // see what staff was added
+    public void AddedStaff(){
+        for(Staff inter: this.addStaffList){
+            System.out.println(inter);
+        }
+    }
+    // see what new cars where bought
+    public void AddedCars(){
+        for(Vehicle car: this.addCarList){
+            System.out.println(car);
+        }
+    }
+}   
 
 class Selling {
     private String weekDay;
