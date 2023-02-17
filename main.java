@@ -10,15 +10,14 @@ class Opening{
     private int performanceCarCount;
     private int pickupCarCount;
 
-
     Opening(FNCD fncd){
         //this.staffList = fncd.getStaffList();
         Car car;
         this.currBudget = fncd.getOpBudget();
         this.internCount = threeInterns(fncd.getStaffList());
-        this.carCount = fourCars(true, false, fncd.getVehicleList());
-        this.performanceCarCount = fourCars(false, true, fncd.getVehicleList());
-        this.pickupCarCount = fourCars(false, false, fncd.getVehicleList());
+        this.carCount = fourCars(true, false, fncd);
+        this.performanceCarCount = fourCars(false, true, fncd);
+        this.pickupCarCount = fourCars(false, false, fncd);
     }
     // check intern
     public int threeInterns(List<Staff> curentStaff){
@@ -43,13 +42,13 @@ class Opening{
             }
         }
         return curentStaff;
-    }
+    }  
     // check Car
-    public int fourCars(boolean car, boolean pc, List<Vehicle> currVehicleList){
+    public int fourCars(boolean car, boolean pc, FNCD fncd){
         int count = 0;
         int count2 = 0;
         int count3= 0;
-        for(Vehicle cars: currVehicleList){
+        for(Vehicle cars: fncd.getVehicleList()){
             if(cars instanceof Car){
                 count++;
             }else if(cars instanceof Performance_Car){
@@ -66,15 +65,6 @@ class Opening{
             return count3;
         }
     }
-    public int returnCarCount(boolean carito, boolean pc, Vehicle car){
-        if(car instanceof Car && carito == true){
-            return this.carCount;
-        }else if(car instanceof Performance_Car && pc == true){
-            return this.performanceCarCount;
-        }else{
-            return this.pickupCarCount;
-        }
-    }
     public List<Vehicle> AddVehicle(FNCD fncd){
         // now what every dosnt have 4 go until their is four each or buget reached
         boolean flag = false;
@@ -85,7 +75,10 @@ class Opening{
                     flag = true;
                     break;
                 }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
+                    this.carCount+=1;
+
                 }
             }
             if(this.performanceCarCount < 4){
@@ -94,7 +87,9 @@ class Opening{
                     flag = true;
                     break;
                 }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
+                    this.performanceCarCount+=1;
                 }
             }
             if(this.pickupCarCount < 4){
@@ -103,7 +98,9 @@ class Opening{
                     flag = true;
                     break;
                 }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
+                    this.pickupCarCount+=1;
                 }
             }
         }
@@ -475,9 +472,32 @@ public class main {
             System.out.println(open2.returnInternCount());
             System.out.println(fncd.getOpBudget());
             
-            
+            System.out.println("****************************");
+            // now check open cars
+            for(Vehicle staff: fncd.vehicleList){
+                System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
+            }
+            List<Vehicle> copyList2 = new ArrayList<Vehicle>(fncd.getVehicleList());
+            for(Vehicle stap: copyList2){
+                if(stap instanceof Car){
+                    fncd.vehicleList.remove(stap);
+                }
+            }
+            System.out.println("****************************");
+            for(Vehicle staff: fncd.vehicleList){
+                System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
+            }
+            Opening open3 = new Opening(fncd);
+            System.out.printf("%d, %d, %d\n", open2.fourCars(true, false, fncd), open3.fourCars(false, false, fncd), open3.fourCars(false, false, fncd));
+            System.out.println(fncd.getOpBudget());
 
-            
+            System.out.println("****************************");
+            open3.AddVehicle(fncd);
+            for(Vehicle staff: fncd.vehicleList){
+                System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
+            }
+            System.out.printf("%d, %d, %d\n", open2.fourCars(true, false, fncd), open3.fourCars(false, false, fncd), open3.fourCars(false, false, fncd));
+            System.out.println(fncd.getOpBudget());
 
 
 
