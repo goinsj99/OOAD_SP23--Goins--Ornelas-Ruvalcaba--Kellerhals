@@ -12,7 +12,7 @@ import java.util.List;
 
 // opening
 
-class Selling {
+class Selling2 {
     private String weekDay;
     private Double buyType;
     private String vehicleChance;
@@ -144,7 +144,7 @@ class Selling {
 }
 
 // washing
-class Washing{
+class Washing2{
     private int randomChoice1;
     private int randomChoice2;
     private String weekDay;
@@ -206,7 +206,7 @@ class Washing{
 }
 
 // repair
-class Repair{
+class Repair2{
     private double repairChance;
     private String day;
     private double bonus;
@@ -248,7 +248,7 @@ class Repair{
 }
 
 // ending
-class Ending{
+class Ending2{
     private Double tempPay;
 
     Ending(Double tempPay){
