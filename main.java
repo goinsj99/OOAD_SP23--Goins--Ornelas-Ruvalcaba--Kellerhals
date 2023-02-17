@@ -22,6 +22,8 @@ public class main {
         curr.remove(2); curr.remove(5);
         fncd.setStaffList(curr);
         Opening open = new Opening(fncd);
+        System.out.println(open.fourInterns(fncd.getStaffList()));
+        
         open.AddedCars();
         open.AddedStaff();
 
