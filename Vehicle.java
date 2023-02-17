@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
 
-
 public class Vehicle{
     private String vim;
     private String make;
@@ -37,28 +36,22 @@ public class Vehicle{
     public void setVim(String vim){
         this.vim = vim;
     }
-
     public void setName(String make, String model){
         this.make = make;
         this.model = model;
     }
-
     public void setYear(int year){
         this.year = year;
     }
-
     public void setCost(float cost){
         this.cost = cost;
     }
-
     public void setCondition(String condition){
         this.condition = condition;
     }
-
     public void setSalesPrice(double sales_price){
         this.sales_price = sales_price;
     }
-
     public void setCleanliness(String cleanliness){
         this.cleanliness = cleanliness;
     }
@@ -73,27 +66,21 @@ public class Vehicle{
     public String getVim(){
         return this.vim;
     }
-
     public String getName(){
         return this.make + " " + this.model;
     }
-
     public Integer getYear(){
         return this.year;
     }
-
     public Double getCost(){
         return this.cost;
     }
-
     public String getCondition(){
         return this.condition;
     }
-
     public Double getSalesPrice(){
         return this.sales_price;
     }
-
     public String getCleanliness(){
         return this.cleanliness;
     }
