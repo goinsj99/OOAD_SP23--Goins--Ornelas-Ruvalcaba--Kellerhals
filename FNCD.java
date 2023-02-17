@@ -74,26 +74,30 @@ public class FNCD {
     }
     // add a staff to list
     public void addStaff(Staff newStaff){
-        staffList.add(newStaff);
+        this.staffList.add(newStaff);
+    }
+    // add a vehicle to list
+    public void addVehicle(Vehicle newCar){
+        this.vehicleList.add(newCar);
     }
     // Getters
     // return budget
     public Double getOpBudget(){
-        return opBudget;
+        return this.opBudget;
     }
     // return vehicle list
     public List<Vehicle> getVehicleList(){
-        return vehicleList;
+        return this.vehicleList;
     }
     // return staff list
     public List<Staff>  getStaffList(){
-        return staffList;
+        return this.staffList;
     }
     public Integer getStaffCount(){
-        return staffCount;
+        return this.staffCount;
     }
     public List<String> setReport(){
-        return report;
+        return this.report;
     }
     // creates a random 5 digit id for each employee 
     public int generateID(){
@@ -163,5 +167,9 @@ public class FNCD {
         //CarNames.remove(index);
         return newCar;
     }
+    // create Starting Staff
+    
+    // create Starting Vehicles 
+
 }
  

@@ -28,6 +28,7 @@ class Opening{
         if(internCount < 3){
             while(internCount != 3){
                 fncd.addStaff(fncd.createInternStaff());
+                internCount+=1;
             }
         }
 
@@ -114,7 +115,7 @@ class Selling {
     //highest selling vehicle
     public Vehicle mostExpensive(FNCD fncd){
         List<Vehicle> VehicleList = fncd.getVehicleList();
-        Vehicle tempCar;
+        Vehicle tempCar = new Vehicle("temp", "temp", "temp");
         for(Vehicle car: VehicleList){
             if(car.getCondition() != "Broken" && car.getType() == vehicleType){
                 if(saleTemp <= car.getSalesPrice()){
@@ -132,6 +133,7 @@ class Selling {
             }
             else{
                 System.out.println("No cars for sale");
+                tempCar = null;
             }
         }
         return tempCar;
