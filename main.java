@@ -9,6 +9,14 @@ public class main {
         double buget = 500000;
         FNCD fncd = new FNCD(buget);
 
+        System.out.printf("FNCD Test: %f\n", fncd.opBudget);
+        for(String str: fncd.CarNames){
+            System.out.println(str);
+        }
+        for(String staff: fncd.staffnames){
+            System.out.println(staff);
+        }
+
         Vehicle vehicleTest = new Vehicle("Adrian", "Hes", "Cool");
         Car carTest1 = new Car("Apple", "Its", "Good");
 
@@ -16,9 +24,11 @@ public class main {
         System.out.printf("Here's Vehicle name: %s\n", name);
 
         String name2 = carTest1.getName();
+        // String price3 = carTest1.getCondition();
         System.out.printf("Here's Car name: %s\n", name2);
+        System.out.printf("Here's Car name: %s\n", carTest1.getCondition());
+        System.out.printf("Here's Car name: %s\n", carTest1.getCondition());
+        
 
-        
-        
     }
 }

@@ -11,10 +11,10 @@ public class FNCD {
     public Double opBudget;
     public List<Staff> staffList;
     public List<Vehicle> vehicleList;
-    public List<String> staffnames;
-    public List<String> CarNames;
-    public List<String> PerformanceCarNames;
-    public List<String> PickupCarNames;
+    public List<String> staffnames= new ArrayList();;
+    public List<String> CarNames = new ArrayList();
+    public List<String> PerformanceCarNames = new ArrayList();;
+    public List<String> PickupCarNames = new ArrayList();;
     public List<String> report = Arrays.asList();
 
 //    report parameters need to be filled
@@ -24,48 +24,34 @@ public class FNCD {
         this.opBudget = opBudget;
         // lead list of vehicles
         this.vehicleList = new ArrayList();
-        try {
-            File file1 = new File("RegularCars.txt");
-            File file2 = new File("PickupCars.txt");
-            File file3 = new File("PerformanceCars.txt");
-            Scanner scanner1 = new Scanner(file1);
-            Scanner scanner2 = new Scanner(file2);
-            Scanner scanner3 = new Scanner(file3);
-
-            while (scanner1.hasNextLine()) {
-                String line1 = scanner1.nextLine();
-                String line2 = scanner2.nextLine();
-                String line3 = scanner3.nextLine();
-                this.CarNames.add(line1);
-                this.PickupCarNames.add(line2);
-                this.PerformanceCarNames.add(line3);
-            }
-
-            scanner1.close(); 
-            scanner2.close(); 
-            scanner3.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
         // load list of staff
         this.staffList = new ArrayList();
-        try {
-            File file = new File("filename.txt");
-            Scanner scanner = new Scanner(file);
-
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                this.staffnames.add(line); 
-            }
-
-            scanner.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        this.CarNames = setCarNmaes(CarNames, "RegularCars.txt");
+        this.PerformanceCarNames = setCarNmaes(CarNames, "PerformanceCar.txt");
+        this.PickupCarNames = setCarNmaes(CarNames, "PickupCars.txt");
+        this.staffnames =  setCarNmaes(CarNames, "workerNames.csv");
         this.staffCount = 0;
         this.report = null;
     }
     // Setters 
+    // load car names
+    public List<String> setCarNmaes(List<String> currList, String filesname){
+        try {
+            File file = new File(filesname);
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                String line1 = scanner.nextLine();
+                currList.add(line1);
+            }
+
+            scanner.close(); 
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return currList;
+    }
     // set new budget
     public void setOpBudget(Double opBudget){
         this.opBudget = opBudget;

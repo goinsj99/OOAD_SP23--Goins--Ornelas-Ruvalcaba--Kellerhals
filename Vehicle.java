@@ -24,18 +24,15 @@ public class Vehicle{
         this.vim = vim;
         this.make =  make;
         this.model = model;
-        this.year = 0;
+        this.year = decideCarYear();
         this.cost = 0.0;
         this.type = "null";
         this.vehicleBonus = 0.0;
         this.condition = "null";
         this.sales_price = 0.0;
-        this.cleanliness = "null";
+        this.cleanliness = decideCleanliness();
     }
 
-    public void oneSentence(){
-        System.out.printf("\n",this.vim, this.make, this.model, this.year, this.cost, this.type, this.vehicleBonus, this.condition, this.sales_price, this.cleanliness);
-    }
     // setters method implementation
     public void setVim(String vim){
         this.vim = vim;
@@ -58,7 +55,7 @@ public class Vehicle{
         this.condition = condition;
     }
 
-    public void setSalesPrice(String condition){
+    public void setSalesPrice(double sales_price){
         this.sales_price = sales_price;
     }
 
@@ -74,37 +71,37 @@ public class Vehicle{
 
     // getters method implementation
     public String getVim(){
-        return vim;
+        return this.vim;
     }
 
     public String getName(){
-        return make + model;
+        return this.make + " " + this.model;
     }
 
     public Integer getYear(){
-        return year;
+        return this.year;
     }
 
     public Double getCost(){
-        return cost;
+        return this.cost;
     }
 
     public String getCondition(){
-        return condition;
+        return this.condition;
     }
 
     public Double getSalesPrice(){
-        return sales_price;
+        return this.sales_price;
     }
 
     public String getCleanliness(){
-        return cleanliness;
+        return this.cleanliness;
     }
     public String getType(){
-        return type;
+        return this.type;
     }
     public Double getVehicleBonus(){
-        return vehicleBonus;
+        return this.vehicleBonus;
     }
     // decide how much the car is to buy
     public Double decideCost(double min, double max){
@@ -154,22 +151,19 @@ public class Vehicle{
             return cleanlinessList.get(2);
         }
     }
+
 }
 // car sub class
 // cost $10,000 - $20,0000
 class Car extends Vehicle{
-    private int year;
     private Double cost;
     private Double sales_price;
     private Double vehicleBonus;
-    private String type;
     private String condition;
-    //private float sales_price;
+    private String type;
 
     public Car(String vim, String make, String model){
         super(vim, make, model);
-        // super.condition = "hello";
-        this.year = decideCarYear();
         this.cost = decideCost(10000.00, 20000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
@@ -178,28 +172,36 @@ class Car extends Vehicle{
     }
     @Override
     public String getType(){
-        return type;
+        return this.type;
     }
+    @Override
     public Double getVehicleBonus(){
-        return vehicleBonus;
+        return this.vehicleBonus;
     }
-
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
 }
 // performance car sub class
 // cost $20,000 - $40,000
 class Performance_Car extends Vehicle{
-    private int year;
     private Double cost;
     private Double sales_price;
     private Double vehicleBonus;
-    private String type;
     private String condition;
-    //private float sales_price;
+    private String type;
 
     public Performance_Car(String vim, String make, String model){
         super(vim, make, model);
-        // super.condition = "hello";
-        this.year = decideCarYear();
         this.cost = decideCost(20000.00, 40000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
@@ -208,28 +210,36 @@ class Performance_Car extends Vehicle{
     }
     @Override
     public String getType(){
-        return type;
+        return this.type;
     }
+    @Override
     public Double getVehicleBonus(){
-        return vehicleBonus;
+        return this.vehicleBonus;
     }
-
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
 }
 // puck up sub class
 // cost $10,000 - $40,000
 class Pickup_Car extends Vehicle{
-    private int year;
     private Double cost;
     private Double sales_price;
     private Double vehicleBonus;
-    private String type;
     private String condition;
-    //private float sales_price;
+    private String type;
 
     public Pickup_Car(String vim, String make, String model){
         super(vim, make, model);
-        // super.condition = "hello";
-        this.year = decideCarYear();
         this.cost = decideCost(10000.00, 40000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
@@ -238,10 +248,22 @@ class Pickup_Car extends Vehicle{
     }
     @Override
     public String getType(){
-        return type;
+        return this.type;
     }
+    @Override
     public Double getVehicleBonus(){
-        return vehicleBonus;
+        return this.vehicleBonus;
     }
-
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
 }
