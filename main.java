@@ -10,11 +10,11 @@ public class main {
         FNCD fncd = new FNCD(buget);
 
         System.out.printf("FNCD Test: %f\n", fncd.opBudget);
-        for(String str: fncd.CarNames){
-            System.out.println(str);
+        for(Staff str: fncd.staffList){
+            System.out.printf("%s, %d, %s\n", str.getName(), str.getStaffID(), str.getPosition());
         }
-        for(String staff: fncd.staffnames){
-            System.out.println(staff);
+        for(Vehicle staff: fncd.vehicleList){
+            System.out.printf("%s, %f, %s\n", staff.getName(), staff.getCost(), staff.getType());
         }
 
         Vehicle vehicleTest = new Vehicle("Adrian", "Hes", "Cool");
@@ -34,6 +34,8 @@ public class main {
         System.out.printf("Here's Car name: %s\n", testpickup.getType());
         System.out.printf("Here's Car name: %s\n", testpickup.getCondition());
         System.out.printf("Here's Car name: %s\n", testpickup.getCondition());
+
+
 
     }
 }
