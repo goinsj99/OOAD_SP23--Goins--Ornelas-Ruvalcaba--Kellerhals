@@ -107,6 +107,7 @@ class Opening{
         return fncd.getVehicleList();
     }
 }
+
 class Washing{
     private int randomChoice1;
     private int randomChoice2;
@@ -120,7 +121,6 @@ class Washing{
         this.weekDay = WeekDay;
         this.staffList = null;
     }
-
     // code to wash the vehicle
     public void washVehicle(List<Vehicle> VehicleList, Intern intern) {
         // get two random staff
@@ -341,102 +341,105 @@ class Repair{
 
 //     }
 // }
-// class Ending{
-//     private Double tempPay;
-//     private List<Staff> tempReport;
-//     Ending(Double tempPay){
-//         this.tempPay = tempPay;
-//     }
-//     public void payStaff(FNCD fncd){
-//         List<Staff> staffList = fncd.getStaffList();
-//         List<Staff> quitList = new ArrayList<>();
-//         Double quitChance = 0.1;
-//         Random random2 = new Random();
-//         Integer zero = 0;
-//         Double mechChance = random2.nextDouble();
-//         Double salesChance = random2.nextDouble();
-//         Double internChance = random2.nextDouble();
-//         List<Staff> StaffList = fncd.getStaffList();
-// //        Staff tempIntern1;
-//         Staff tempIntern2;
-// //      should I make a payStaff option in
-//         for(Staff staff: StaffList){
-//             if(fncd.opBudget >= staff.getSalary()){
-//                 fncd.opBudget -= staff.getSalary();
-//                 staff.getSalary();
-//             }
-//         }
-// //        if the random intern chance is within 10% fire/quit intern
-// //        **** while
-//         if(internChance < quitChance){
-//             for (Staff staff : StaffList) {
-//                 if (staff.getPosition() == "Intern") {
-//                     quitList.add(staff);
-//                     staffList.remove(staff);
-//                     zero = 1;
-//                     break;
-//                 }
-//             }
+class Ending{
+    private Double tempPay;
+    private List<Staff> tempReport;
+    List<Staff> quittList = new ArrayList<>();
+    Ending(Double tempPay){
+        this.tempPay = tempPay;
+    }
+    public void payStaff(FNCD fncd){
+        List<Staff> staffList = fncd.getStaffList();
+        List<Staff> quitList = new ArrayList<>();
+        Double quitChance = 0.1;
+        Random random2 = new Random();
+        Integer zero = 0;
+        Double mechChance = random2.nextDouble();
+        Double salesChance = random2.nextDouble();
+        Double internChance = random2.nextDouble();
+        List<Staff> StaffList = fncd.getStaffList();
+//        Staff tempIntern1;
+        Staff tempIntern2;
+//      should I make a payStaff option in
+        for(Staff staff: StaffList){
+            if(fncd.opBudget >= staff.getSalary()){
+                fncd.opBudget -= staff.getSalary();
+                staff.getSalary();
+            }
+        }
+//        if the random intern chance is within 10% fire/quit intern
+//        **** while
+        if(internChance < quitChance){
+            for (Staff staff : StaffList) {
+                if (staff.getPosition() == "Intern") {
+                    quitList.add(staff);
+                    staffList.remove(staff);
+                    zero = 1;
+                    break;
+                }
+            }
 
-//         }
-//         else{
-//             if(mechChance < quitChance){
-//                 Staff tempIntern1 = new Staff("",0.0,0,0.0,0.0,"",0.0);
+        }
+        else{
+            if(mechChance < quitChance){
+                Staff tempIntern1 = new Staff("",0.0,0,0.0,0.0,"",0.0);
 
-//                 for (Staff staff : StaffList) {
-//                     if (staff.getPosition() == "Mechanic") {
-//                         quitList.add(staff);
-//                         staffList.remove(staff);
-//                     }
-//                 }
-// //                grabbing an intern to replace a mechanic
-//                 for (Staff staff : StaffList) {
-//                     if (staff.getPosition() == "Intern") {
-//                         tempIntern1 = fncd.createSalesPersonStaff();
-//                         tempIntern1.setName(staff.getName());
-//                         staffList.remove(staff);
-//                     }
-//                     break;
-//                 }
-//             }
-//             if(salesChance < quitChance){
-//                 for (Staff staff : StaffList) {
-//                     if (staff.getPosition() == "Sales") {
-//                         quitList.add(staff);
-//                         staffList.remove(staff);
-//                     }
-//                 }//                grabbing an intern to replace a salesperson
+                for (Staff staff : StaffList) {
+                    if (staff.getPosition() == "Mechanic") {
+                        quitList.add(staff);
+                        staffList.remove(staff);
+                    }
+                }
+//                grabbing an intern to replace a mechanic
+                for (Staff staff : StaffList) {
+                    if (staff.getPosition() == "Intern") {
+                        tempIntern1 = fncd.createSalesPersonStaff();
+                        tempIntern1.setName(staff.getName());
+                        staffList.remove(staff);
+                    }
+                    break;
+                }
+            }
+            if(salesChance < quitChance){
+                for (Staff staff : StaffList) {
+                    if (staff.getPosition() == "Sales") {
+                        quitList.add(staff);
+                        staffList.remove(staff);
+                    }
+                }//                grabbing an intern to replace a salesperson
 
-//                 for (Staff staff : StaffList) {
-//                     if (staff.getPosition() == "Intern") {
-//                         tempIntern2 = fncd.createSalesPersonStaff();
-//                         tempIntern2.setName(staff.getName());
-//                         staffList.remove(staff);
-//                     }
-//                     break;
+                for (Staff staff : StaffList) {
+                    if (staff.getPosition() == "Intern") {
+                        tempIntern2 = fncd.createSalesPersonStaff();
+                        tempIntern2.setName(staff.getName());
+                        staffList.remove(staff);
+                    }
+                    break;
 
-//                 }
-//             }
-//         }
-//         tempReport = quitList;
-//     }
-//     public List<String> pReport(FNCD fncd){
-//         List<Staff> staffList = fncd.getStaffList();
-//         List<Staff> tempQuit = new ArrayList<>();
-//         //tempQuit =
-//         for (Staff staff : staffList){
-//             staff.setHours(8.0);
-//             tempQuit.add(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working" );
-//         }
-//         for (Staff staff : staffList){
-//             staff.setHours(8.0);
-//             tempReport.add(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working" );
-//         }
-//         return tempReport;
-//     }
+                }
+            }
+        }
+        this.quittList = quitList;
+        tempReport = quitList;
+    }
+    public void pReport(FNCD fncd){
+        List<Staff> staffList = fncd.getStaffList();
+        List<Staff> tempQuit = new ArrayList<>();
+        tempQuit = this.quittList;
+        System.out.printf("Staff that that\n");
+        for (Staff staff : tempQuit){
+            staff.setHours(8.0);
+            System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Quits\n" );
+        }
+        System.out.printf("Staff still working that\n");
+        for (Staff staff : staffList){
+            staff.setHours(8.0);
+            System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working" );
+        }
+    }
 
 
-// }
+}
 public class main {
     public static void main(String[] args) {
         double buget = 500000;
