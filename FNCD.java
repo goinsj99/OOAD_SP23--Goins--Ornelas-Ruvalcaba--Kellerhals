@@ -17,7 +17,7 @@ public class FNCD {
     public List<String> PerformanceCarNames = new ArrayList();;
     public List<String> PickupCarNames = new ArrayList();;
     public List<String> report = Arrays.asList();
-    private List<Vehicle> vehiclesSold = new ArrayList<>();
+    private List<Vehicle> vehiclesSold;
 
     //    report parameters need to be filled
     public Integer staffCount;
@@ -33,7 +33,7 @@ public class FNCD {
         this.staffList = dayOneStaff();
         this.staffCount = 0;
         this.report = null;
-        this.vehiclesSold = null;
+        this.vehiclesSold = new ArrayList<>();
     }
     // Setters
     // load car names
@@ -55,8 +55,8 @@ public class FNCD {
         return currList;
     }
     // set new budget
-    public void setOpBudget(Double opBudget){
-        this.opBudget = opBudget;
+    public void setOpBudget(Double opBudgett){
+        this.opBudget = opBudgett;
     }
     public void addVehiclesSold(Vehicle car){
         this.vehiclesSold.add(car);
@@ -118,7 +118,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        SalesPerson newStaff = new SalesPerson(name, 0.0, generateID(), 100.88, 0.0, "Sales Person", 200.5);
+        SalesPerson newStaff = new SalesPerson(name, 100.0, generateID(), 100.88, 0.0, "Sales Person", 200.5);
         return newStaff;
     }
     // create a intern
@@ -128,7 +128,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        Intern newStaff = new Intern(name, 0.0, generateID(), 100.88, 0.0, "Intern", 300.5);
+        Intern newStaff = new Intern(name, 100.0, generateID(), 100.88, 0.0, "Intern", 300.5);
         return newStaff;
     }
     // create a Machanic
@@ -138,7 +138,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        Mechanic newStaff = new Mechanic(name, 0.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
+        Mechanic newStaff = new Mechanic(name, 100.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
         return newStaff;
     }
     // create a Car

@@ -52,7 +52,7 @@ public class Staff {
     }
 
     public void setSalary(Double Salary) {
-        this.salary = salary;
+        this.salary = Salary;
     }
     public void setBonus(Double bonus){this.bonus = bonus;}
     public void setBonusTemp(Double bonusTemp){this.bonusTemp = bonusTemp;
