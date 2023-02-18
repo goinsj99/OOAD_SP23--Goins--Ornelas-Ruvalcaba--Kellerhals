@@ -147,6 +147,7 @@ class Washing{
                     double randomNumber = random.nextDouble();
                     if(randomNumber < 0.1){
                         car.setCondition("Sparkling");
+                        intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1 += 1;
                         // increase bonus intern.bonus = 
                     }else if(randomNumber < 0.8){
@@ -168,6 +169,7 @@ class Washing{
                         internCount1 += 1;
                     }else if(randomNumber < 0.3){
                         car.setCondition("Sparkling");
+                        intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1 += 1;
                     }else{
                         System.out.printf("Washing did not have an affect on the vehicle\n");
@@ -189,31 +191,39 @@ class Repair{
 
     }
 
-    public void repairVehicle(Vehicle vehicle) {
+    public void repairVehicle(List<Vehicle> VehicleList, Staff mech) {
         // repair the vehicle
         Random random = new Random();
         double randomNumber = random.nextDouble();
-        // mechanic can repair
-        if(randomNumber > 0 && randomNumber <= 0.80){
-            // upgrade condtition
-            if(vehicle.getCondition() != "New"){
-                if(vehicle.getCondition() == "Used"){
-                    vehicle.setCondition("Like New");
-                }else if(vehicle.getCondition() == "Broken"){
-                    vehicle.setCondition("Used");
-                }
-                // downgrade cleanliness
-                if(vehicle.getCleanliness() != "Dirty"){
-                    if(vehicle.getCleanliness() == "Sparkling"){
-                        vehicle.setCleanliness("Clean");
-                    }else if(vehicle.getCleanliness() == "Clean"){
-                        vehicle.setCleanliness("Dirty");
+        int mecCount = 0;
+        while(mecCount < 2){
+            for(Vehicle vehicle: VehicleList){
+                // upgrade condtition
+                if(vehicle.getCondition() != "New"){
+                // mechanic can repair
+                    if(randomNumber <= 0.80){
+                        if(vehicle.getCondition() == "Used"){
+                            vehicle.setCondition("Like New");
+                            vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.5);
+                        }else if(vehicle.getCondition() == "Broken"){
+                            vehicle.setCondition("Used");
+                            vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.25);
+                        }
+                        mech.setBonusTemp(mech.getBonusTemp()+vehicle.getVehicleBonus());
+                        mecCount++;
+                    }else{
+                        System.out.printf("The Mechanic cant repair");
+                    }
+                    // downgrade cleanliness
+                    if(vehicle.getCleanliness() != "Dirty"){
+                        if(vehicle.getCleanliness() == "Sparkling"){
+                            vehicle.setCleanliness("Clean");
+                        }else if(vehicle.getCleanliness() == "Clean"){
+                            vehicle.setCleanliness("Dirty");
+                        }
                     }
                 }
             }
-            // mechanic cant repair
-        }else{
-            System.out.printf("The Mechanic cant repair");
         }
     }
 }
@@ -380,7 +390,7 @@ class Ending{
         for(Staff staff: StaffList){
             if(fncd.opBudget >= staff.getSalary()){
                 fncd.opBudget -= staff.getSalary();
-                staff.getSalary();
+                staff.setSalaryRate(staff.getSalary() + staff.getSalaryRate());
             }
         }
 //        if the random intern chance is within 10% fire/quit intern
@@ -450,8 +460,11 @@ class Ending{
         System.out.printf("Staff still working that\n");
         for (Staff staff : staffList){
             staff.setHours(8.0);
-            System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working" );
+            System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working\n" );
+            
         }
+
+
     }
 
 
@@ -475,16 +488,20 @@ public class main {
 
             // run repair
             Repair repair = new Repair();
-            
+            for(Staff mec: fncd.getStaffList()){
+                if(mec instanceof Mechanic){
+                    repair.repairVehicle(fncd.getVehicleList(), mec);
+                }
+            }
 
             // selling
             Selling sell = new Selling();
-
+            
 
             // ending
             Ending end = new Ending();
             end.pReport(fncd);
         }
-
+            
     }
 }

@@ -28,6 +28,7 @@ public class Staff {
         this.position = position;
         this.salary = salary;
         this.bonus = bonus;
+        this.bonusTemp = 0.0;
     }
 
     public void setName(String firstName) {
@@ -61,9 +62,6 @@ public class Staff {
     }
 
     public Double getSalaryRate() {
-        Double temp= 0.0;
-        temp += getSalary();
-        this.salaryRate = temp;
         return this.salaryRate;
     }
 
@@ -82,13 +80,8 @@ public class Staff {
     public Double getSalary() {
         return this.salary;
     }
-    public Double getBonus(){return this.bonus;}
-    public Double getBonusTemp(){
-        Double temp = 0.0;
-        temp += getBonus();
-        this.bonusTemp =temp;
-        return this.bonusTemp;
-    }
+    public Double getBonusTemp(){return this.bonusTemp;} // bonus earned that day
+    public Double getBonus(){ return this.bonus;} // total earned bonus
 
 
 }

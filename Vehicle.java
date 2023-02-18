@@ -154,7 +154,7 @@ class Car extends Vehicle{
         this.cost = decideCost(10000.00, 20000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
-        this.vehicleBonus = 1.05;
+        this.vehicleBonus = 50.00;
         this.type = "Car";
     }
     @Override
@@ -192,7 +192,7 @@ class Performance_Car extends Vehicle{
         this.cost = decideCost(20000.00, 40000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
-        this.vehicleBonus = 1.15;
+        this.vehicleBonus = 70.00;
         this.type = "Performance Car";
     }
     @Override
@@ -230,7 +230,7 @@ class Pickup_Car extends Vehicle{
         this.cost = decideCost(10000.00, 40000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
-        this.vehicleBonus = 1.1;
+        this.vehicleBonus = 100.00;
         this.type = "Pickup Car";
     }
     @Override
