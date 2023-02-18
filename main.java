@@ -210,10 +210,11 @@ class Repair{
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.25);
                         }
                         mech.setBonusTemp(mech.getBonusTemp()+vehicle.getVehicleBonus());
-                        mecCount++;
-                    }else{
-                        System.out.printf("The Mechanic cant repair");
+                        mecCount+=1;
                     }
+                    //else{
+                    //     System.out.printf("The Mechanic cant repair");
+                    // }
                     // downgrade cleanliness
                     if(vehicle.getCleanliness() != "Dirty"){
                         if(vehicle.getCleanliness() == "Sparkling"){
@@ -494,13 +495,13 @@ public class main {
                 }
             }
 
-            // selling
-            Selling sell = new Selling();
-            
+            // // selling
+            // Selling sell = new Selling();
 
-            // ending
-            Ending end = new Ending();
-            end.pReport(fncd);
+
+            // // ending
+            // Ending end = new Ending();
+            // end.pReport(fncd);
         }
             
     }
