@@ -56,29 +56,31 @@ public class Staff {
     }
     public void setBonus(Double bonus){this.bonus = bonus;}
     public String getName() {
-        return firstName;
+        return this.firstName;
     }
 
     public Double getSalaryRate() {
-        return salaryRate;
+        return this.salaryRate;
     }
 
     public Integer getStaffID() {
-        return staffID;
+        return this.staffID;
     }
 
     public Double getHours() {
-        return hours;
+        return this.hours;
     }
 
     public String getPosition() {
-        return position;
+        return this.position;
     }
 
     public Double getSalary() {
-        return salary;
+        return this.salary;
     }
-    public Double getBonus(){return bonus;}
+    public Double getBonus(){
+        return this.bonus;
+    }
 
 
 }

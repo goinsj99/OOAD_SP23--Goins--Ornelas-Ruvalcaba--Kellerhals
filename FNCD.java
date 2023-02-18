@@ -110,7 +110,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        SalesPerson newStaff = new SalesPerson(name, 120.0, generateID(), 1400.88, 9.5, "Sales Person", 200.5);
+        SalesPerson newStaff = new SalesPerson(name, 0.0, generateID(), 100.88, 0.0, "Sales Person", 200.5);
         return newStaff;
     }
     // create a intern
@@ -120,7 +120,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        Intern newStaff = new Intern(name, 140.0, generateID(), 1700.88, 9.5, "Intern", 300.5);
+        Intern newStaff = new Intern(name, 0.0, generateID(), 100.88, 0.0, "Intern", 300.5);
         return newStaff;
     }
     // create a Machanic
@@ -130,7 +130,7 @@ public class FNCD {
         String name = this.staffnames.get(index);
         this.staffnames.remove(index);
 
-        Mechanic newStaff = new Mechanic(name, 160.0, generateID(), 1900.88, 9.1, "Mechanic", 500.5);
+        Mechanic newStaff = new Mechanic(name, 0.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
         return newStaff;
     }
     // create a Car
