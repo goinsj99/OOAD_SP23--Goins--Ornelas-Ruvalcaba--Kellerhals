@@ -239,7 +239,7 @@ class Selling {
     public List<String> vehicleChances = Arrays.asList("Just looking", "Wants one", "Needs one");
     public List<String> vehicleTypes = Arrays.asList("Performance", "Cars", "Pickups");
     public List<Staff> salesStaff;
-    public List<Vehicle> vehiclesSold;
+
     private Double saleTemp;
     private Boolean car4Sale;
     private Double commissionBonus;
@@ -247,10 +247,10 @@ class Selling {
     Selling() {
         this.tempVehicleList = new ArrayList();
         this.saleChance = chanceLooking();
-        this.vehiclesSold = new ArrayList();
+
         this.saleTemp = 0.0;
         this.salesStaff = new ArrayList();
-        
+
     }
 
     public void sellVehicle(Staff Staff) {
@@ -323,7 +323,7 @@ class Selling {
                     tempCar = car;
                 }
                 car4Sale = true;
-            } 
+            }
             // else {
             //     System.out.println("No cars for sale");
             //     break;
@@ -333,9 +333,10 @@ class Selling {
         return tempCar;
     }
 
-    public void sellThisCar(FNCD fncd) {
+    public List<Vehicle> sellThisCar(FNCD fncd) {
         Staff tempStaff;
         List<Vehicle> VehicleList = fncd.getVehicleList();
+        List<Staff> staffList = fncd.getStaffList();
         Vehicle sVehicle;
         sVehicle = mostExpensive(fncd);
         if (sVehicle.getCondition() == "New") {
@@ -353,27 +354,32 @@ class Selling {
         Random random2 = new Random();
         Double temp3 = random2.nextDouble();
         Double bnus;
-        //System.out.printf("This is the sales Chance: %f | %f", this.saleChance, temp3);
+        System.out.printf("This is the sales Chance: %f | %f", this.saleChance, temp3);
         if (temp3 < this.saleChance) {
-            vehiclesSold.add(sVehicle);
+            fncd.addVehiclesSold(sVehicle);
             VehicleList.remove(sVehicle);
             tempStaff = whoSold(fncd);
             bnus = sVehicle.getVehicleBonus();
-            tempStaff.setBonus(bnus);
+            for(Staff staff : staffList) {
+                if(staff.getName() == tempStaff.getName()) {
+                    staff.setBonus(staff.getBonus() + staff.getBonus());
+                }
+            }
             System.out.println("A car was sold");
         }else{
             System.out.println("A car was not sold");
         }
+        return fncd.getSoldVehicle();
     }
 }
+
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
-    List<Staff> quittList;
-    Ending(){
-        this.tempReport = new ArrayList();
-        this.quittList = new ArrayList<>();
-        this.tempPay = 0.0;
+    List<Staff> quittList = new ArrayList<>();
+    List<Vehicle>
+    Ending(Double tempPay){
+        this.tempPay = tempPay;
     }
     public void payStaff(FNCD fncd){
         List<Staff> staffList = fncd.getStaffList();
@@ -391,7 +397,7 @@ class Ending{
         for(Staff staff: StaffList){
             if(fncd.opBudget >= staff.getSalary()){
                 fncd.opBudget -= staff.getSalary();
-                staff.setSalaryRate(staff.getSalary() + staff.getSalaryRate());
+                staff.getSalary();
             }
         }
 //        if the random intern chance is within 10% fire/quit intern
@@ -434,7 +440,6 @@ class Ending{
                         staffList.remove(staff);
                     }
                 }//                grabbing an intern to replace a salesperson
-
                 for (Staff staff : StaffList) {
                     if (staff.getPosition() == "Intern") {
                         tempIntern2 = fncd.createSalesPersonStaff();
@@ -442,33 +447,39 @@ class Ending{
                         staffList.remove(staff);
                     }
                     break;
-
                 }
             }
         }
+
         this.quittList = quitList;
         tempReport = quitList;
     }
     public void pReport(FNCD fncd){
         List<Staff> staffList = fncd.getStaffList();
         List<Staff> tempQuit = new ArrayList<>();
+        List<Vehicle> vehicleList = fncd.getVehicleList();
         tempQuit = this.quittList;
+
         System.out.printf("Staff that that\n");
         for (Staff staff : tempQuit){
-            staff.setHours(8.0);
+//            staff.setHours(staff.getHours() + 8.0);
             System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Quits\n" );
         }
         System.out.printf("Staff still working that\n");
         for (Staff staff : staffList){
-            staff.setHours(8.0);
+//            staff.setHours(8.0);
             System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getBonus() + ", Working\n" );
-            
+        }
+        for (Vehicle car : fncd.getSoldVehicle() ){
+//            staff.setHours(8.0);
+            System.out.printf(car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", Sold\n" );
         }
 
-
+        for (Vehicle car : vehicleList){
+//            staff.setHours(8.0);
+            System.out.printf(car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", In Stock\n" );
+        }
     }
-
-
 }
 public class main {
     public static void main(String[] args) {
