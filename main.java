@@ -133,7 +133,7 @@ class Washing{
         this.staffList = null;
     }
     // code to wash the vehicle
-    public void washVehicle(List<Vehicle> VehicleList, Intern intern) {
+    public void washVehicle(List<Vehicle> VehicleList, Staff intern) {
         // get two random staff
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
         int internCount1 = 0;
@@ -183,9 +183,8 @@ class Repair{
     private String day;
     private double bonus;
 
-    Repair(String curr_day){
+    Repair(){
         this.repairChance = 0.8;
-        this.day = curr_day;
         this.bonus = 0.0;
 
     }
@@ -359,9 +358,11 @@ class Selling {
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
-    List<Staff> quittList = new ArrayList<>();
-    Ending(Double tempPay){
-        this.tempPay = tempPay;
+    List<Staff> quittList;
+    Ending(){
+        this.tempReport = new ArrayList();
+        this.quittList = new ArrayList<>();
+        this.tempPay = 0.0;
     }
     public void payStaff(FNCD fncd){
         List<Staff> staffList = fncd.getStaffList();
@@ -458,6 +459,7 @@ class Ending{
 public class main {
     public static void main(String[] args) {
         double buget = 500000;
+        List<String> workDays;
         FNCD fncd = new FNCD(buget); 
 
 
@@ -471,93 +473,18 @@ public class main {
                 wash.washVehicle(fncd.getVehicleList(), intern);
             }
 
-        }
-
-//         System.out.printf("FNCD Test: %f\n", fncd.opBudget);
-//         for(Staff str: fncd.staffList){
-//             System.out.printf("%s, %d, %s\n", str.getName(), str.getStaffID(), str.getPosition());
-//         }
-//         System.out.println("****************************");
-        
-//         // for(Vehicle staff: fncd.vehicleList){
-//             //     System.out.println(staff.getClass());
-//             //     System.out.printf("%s, %f, %s\n", staff.getName(), staff.getCost(), staff.getType());
-//             // }
-//             // System.out.println("****************************");
-//             List<Staff> copyList = new ArrayList<Staff>(fncd.getStaffList());
-//             for(Staff stap: copyList){
-//                 if(stap instanceof Intern){
-//                     fncd.staffList.remove(stap);
-//                 }
-//             }
-//             for(Staff stp: fncd.getStaffList()){
-//                 System.out.printf("%s, %d, %s\n", stp.getName(), stp.getStaffID(), stp.getPosition());
-//             }
-//             System.out.println("****************************");
-//             Opening open = new Opening(fncd);
-//             System.out.println(open.returnInternCount());
-//             System.out.println(fncd.getOpBudget());
-//             fncd.setStaffList(open.internHire(fncd.getStaffList(), fncd));
-//             System.out.println("****************************");
-//             Opening open2 = new Opening(fncd);
-//             System.out.println(open2.returnInternCount());
-//             System.out.println(fncd.getOpBudget());
+            // run repair
+            Repair repair = new Repair();
             
-//             System.out.println("****************************");
-//             // now check open cars
-//             for(Vehicle staff: fncd.vehicleList){
-//                 System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
-//             }
-//             List<Vehicle> copyList2 = new ArrayList<Vehicle>(fncd.getVehicleList());
-//             for(Vehicle stap: copyList2){
-//                 if(stap instanceof Car){
-//                     fncd.vehicleList.remove(stap);
-//                 }
-//             }
-//             System.out.println("****************************");
-//             for(Vehicle staff: fncd.vehicleList){
-//                 System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
-//             }
-//             Opening open3 = new Opening(fncd);
-//             System.out.printf("%d, %d, %d\n", open2.fourCars(true, false, fncd), open3.fourCars(false, false, fncd), open3.fourCars(false, false, fncd));
-//             System.out.println(fncd.getOpBudget());
 
-//             System.out.println("****************************");
-//             open3.AddVehicle(fncd);
-//             for(Vehicle staff: fncd.vehicleList){
-//                 System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getType(), staff.getClass());
-//             }
-//             System.out.printf("%d, %d, %d\n", open2.fourCars(true, false, fncd), open3.fourCars(false, false, fncd), open3.fourCars(false, false, fncd));
-//             System.out.println(fncd.getOpBudget());
-
-// //Selling(String weekDay, Double buyType, String vehicleChance, String vehicleType, Double initialSale, Boolean car4Sale) {
-
-            // Selling sell = new Selling();
-            // for(Vehicle staff: fncd.vehicleList){
-            //     System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getClass(), staff.getCondition());
-            // }
-            // sell.sellThisCar(fncd);
+            // selling
+            Selling sell = new Selling();
 
 
-        // Vehicle vehicleTest = new Vehicle("Adrian", "Hes", "Cool");
-        // Performance_Car carTest1 = new Performance_Car("Apple", "Its", "Good");
-
-
-        // String name = vehicleTest.getName();
-        // System.out.printf("Here's Vehicle name: %s\n", name);
-
-        // String name2 = carTest1.getName();
-        // // String price3 = carTest1.getCondition();
-        // System.out.printf("Here's Car name: %s\n", name2);
-        // System.out.printf("Here's Car name: %s\n", carTest1.getCondition());
-        // System.out.printf("Here's Car name: %s\n", carTest1.getCondition());
-
-        // Pickup_Car testpickup = fncd.createPickupCar();
-        // System.out.printf("Here's Car name: %s\n", testpickup.getType());
-        // System.out.printf("Here's Car name: %s\n", testpickup.getCondition());
-        // System.out.printf("Here's Car name: %s\n", testpickup.getCondition());
-
-
+            // ending
+            Ending end = new Ending();
+            end.pReport(fncd);
+        }
 
     }
 }
