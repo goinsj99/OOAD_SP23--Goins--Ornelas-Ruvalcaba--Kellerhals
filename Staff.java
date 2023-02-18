@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.List;
 import java.util.UUID;
 
- 
+
 public class Staff {
     private Double salaryRate;
     private Integer staffID;
@@ -17,7 +17,7 @@ public class Staff {
     private String position;
     private String firstName;
     private Double bonus;
-
+    private Double bonusTemp;
     private Float Rate;
 
     public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
@@ -29,7 +29,6 @@ public class Staff {
         this.salary = salary;
         this.bonus = bonus;
     }
-
 
     public void setName(String firstName) {
         this.firstName = firstName;
@@ -55,11 +54,16 @@ public class Staff {
         this.salary = salary;
     }
     public void setBonus(Double bonus){this.bonus = bonus;}
+    public void setBonusTemp(Double bonusTemp){this.bonusTemp = bonusTemp;
+    }
     public String getName() {
         return this.firstName;
     }
 
     public Double getSalaryRate() {
+        Double temp= 0.0;
+        temp += getSalary();
+        this.salaryRate = temp;
         return this.salaryRate;
     }
 
@@ -78,8 +82,12 @@ public class Staff {
     public Double getSalary() {
         return this.salary;
     }
-    public Double getBonus(){
-        return this.bonus;
+    public Double getBonus(){return this.bonus;}
+    public Double getBonusTemp(){
+        Double temp = 0.0;
+        temp += getBonus();
+        this.bonusTemp =temp;
+        return this.bonusTemp;
     }
 
 
@@ -96,8 +104,8 @@ class SalesPerson extends Staff{
         this.salary = (salary*myRate);
     }
     @Override
-    public String getPosition(){return position; }
-    public Double getSalary(){return salary;}
+    public String getPosition(){return this.position; }
+    public Double getSalary(){return this.salary;}
 
 }
 
@@ -111,8 +119,8 @@ class Intern extends Staff {
         this.salary = (salary*myRate);
     }
     @Override
-    public String getPosition(){return position; }
-    public Double getSalary(){return salary;}
+    public String getPosition(){return this.position; }
+    public Double getSalary(){return this.salary;}
 
 }
 
@@ -126,7 +134,7 @@ class Mechanic extends Staff {
         this.salary = (salary*myRate);
     }
     @Override
-    public String getPosition(){return position; }
-    public Double getSalary(){return salary;}
+    public String getPosition(){return this.position; }
+    public Double getSalary(){return this.salary;}
 
 }
