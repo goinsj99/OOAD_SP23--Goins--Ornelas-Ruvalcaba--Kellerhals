@@ -154,7 +154,7 @@ class Washing{
                         car.setCondition("Clean");
                         internCount1 += 1;
                     }else{
-                        System.out.printf("Washing did not have an affect on the vehicle\n");
+                        //System.out.printf("Washing did not have an affect on the vehicle 1\n");
                         internCount1 += 1;
                     }
                 }
@@ -172,7 +172,7 @@ class Washing{
                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1 += 1;
                     }else{
-                        System.out.printf("Washing did not have an affect on the vehicle\n");
+                        //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
                         internCount1 += 1;
                     }
                 }
@@ -196,33 +196,33 @@ class Repair{
         Random random = new Random();
         double randomNumber = random.nextDouble();
         int mecCount = 0;
+
         while(mecCount < 2){
             for(Vehicle vehicle: VehicleList){
                 // upgrade condtition
                 if(vehicle.getCondition() != "New"){
                 // mechanic can repair
-                    if(randomNumber <= 0.80){
+                    if(randomNumber < 0.80){
                         if(vehicle.getCondition() == "Used"){
                             vehicle.setCondition("Like New");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.5);
                         }else if(vehicle.getCondition() == "Broken"){
+                            //System.out.printf("Broken");
                             vehicle.setCondition("Used");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.25);
                         }
                         mech.setBonusTemp(mech.getBonusTemp()+vehicle.getVehicleBonus());
-                        mecCount+=1;
                     }
-                    //else{
-                    //     System.out.printf("The Mechanic cant repair");
-                    // }
-                    // downgrade cleanliness
                     if(vehicle.getCleanliness() != "Dirty"){
                         if(vehicle.getCleanliness() == "Sparkling"){
+                            //System.out.printf("Sparkles");
                             vehicle.setCleanliness("Clean");
                         }else if(vehicle.getCleanliness() == "Clean"){
+                            //System.out.printf("Clean");
                             vehicle.setCleanliness("Dirty");
                         }
                     }
+                    mecCount+=1;
                 }
             }
         }
@@ -239,7 +239,7 @@ class Selling {
     public List<String> vehicleChances = Arrays.asList("Just looking", "Wants one", "Needs one");
     public List<String> vehicleTypes = Arrays.asList("Performance", "Cars", "Pickups");
     public List<Staff> salesStaff;
-
+    public int numOfBuys;
     private Double saleTemp;
     private Boolean car4Sale;
     private Double commissionBonus;
@@ -247,17 +247,9 @@ class Selling {
     Selling() {
         this.tempVehicleList = new ArrayList();
         this.saleChance = chanceLooking();
-
         this.saleTemp = 0.0;
         this.salesStaff = new ArrayList();
 
-    }
-
-    public void sellVehicle(Staff Staff) {
-        Random randomBuy = new Random();
-        double randomNumber = randomBuy.nextDouble();
-        Random randomCarType = new Random();
-        double randomCar = randomCarType.nextDouble();
     }
 
     public Staff whoSold(FNCD fncd) {
@@ -306,6 +298,8 @@ class Selling {
 
     //highest selling vehicle
     public Vehicle mostExpensive(FNCD fncd) {
+        System.out.printf("most f");
+
         List<Vehicle> VehicleList = fncd.getVehicleList();
         String tempt = chooseRandomCar();
         Vehicle tempCar = new Vehicle("", "", "");
@@ -333,11 +327,14 @@ class Selling {
         return tempCar;
     }
 
-    public List<Vehicle> sellThisCar(FNCD fncd) {
+    public void sellThisCar(FNCD fncd) {
+        System.out.printf("f");
+
         Staff tempStaff;
         List<Vehicle> VehicleList = fncd.getVehicleList();
         List<Staff> staffList = fncd.getStaffList();
         Vehicle sVehicle;
+
         sVehicle = mostExpensive(fncd);
         if (sVehicle.getCondition() == "New") {
             this.saleChance += 0.1;
@@ -369,7 +366,7 @@ class Selling {
         }else{
             System.out.println("A car was not sold");
         }
-        return fncd.getSoldVehicle();
+        fncd.getSoldVehicle();
     }
 }
 
@@ -377,8 +374,8 @@ class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
     List<Staff> quittList = new ArrayList<>();
-    List<Vehicle>
-    Ending(Double tempPay){
+
+    Ending(){
         this.tempPay = tempPay;
     }
     public void payStaff(FNCD fncd){
@@ -484,36 +481,53 @@ class Ending{
 public class main {
     public static void main(String[] args) {
         double buget = 500000;
-        List<String> workDays;
+        //List<String> workDays = new ArrayList();
+        int day = 0;
+        int randomValue = 0;
+        Random ran = new Random();
         FNCD fncd = new FNCD(buget); 
-
-
-        for(int i = 0; i < 30; i++){
-            // run every senerio with openeing
-            Opening open = new Opening(fncd);
-
-            // run washing
-            Washing wash = new Washing();
-            for(Staff intern: open.returnList()){
-                wash.washVehicle(fncd.getVehicleList(), intern);
-            }
-
-            // run repair
-            Repair repair = new Repair();
-            for(Staff mec: fncd.getStaffList()){
-                if(mec instanceof Mechanic){
-                    repair.repairVehicle(fncd.getVehicleList(), mec);
-                }
-            }
-
-            // // selling
-            // Selling sell = new Selling();
-
-
-            // // ending
-            // Ending end = new Ending();
-            // end.pReport(fncd);
+        if(day >= 0 || day <= 6){
+            randomValue = 0 + (5 - 0) * ran.nextInt();
+        }else{
+            randomValue = 2 + (8 - 2) * ran.nextInt();
         }
-            
+
+        for(int i = 0; i < 1; i++){
+            if(day %7 == 0 ){
+                day = 0;
+                continue;
+            }else{
+                // run every senerio with openeing
+                Opening open = new Opening(fncd);
+    
+                // run washing
+                Washing wash = new Washing();
+                for(Staff intern: open.returnList()){
+                    wash.washVehicle(fncd.getVehicleList(), intern);
+                }
+    
+                //run repair
+                Repair repair = new Repair();
+                for(Staff mec: fncd.getStaffList()){
+                    if(mec instanceof Mechanic){
+                        repair.repairVehicle(fncd.getVehicleList(), mec);
+                    }
+                }
+                
+                // // selling
+                Selling mop = new Selling();
+                // for(int j = 0; j < randomValue; j++){
+                mop.sellThisCar(fncd);
+                //}
+                // List<Vehicle> templ = fncd.getSoldVehicle();
+                // for(Vehicle v: templ){
+                //     System.out.println(v);
+                // }
+    
+                // // ending
+                // Ending end = new Ending();
+                // end.pReport(fncd);
+            }    
+        }
     }
 }

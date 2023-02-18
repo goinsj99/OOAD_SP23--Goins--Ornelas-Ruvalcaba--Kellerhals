@@ -167,7 +167,7 @@ public class FNCD {
         int index = random.nextInt(this.PickupCarNames.size());
         // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
         String[] splitstr = this.PickupCarNames.get(index).split("\\s+"); // make, model, vim
-        System.out.printf(splitstr[0], splitstr[1], splitstr[2]);
+        //System.out.printf(splitstr[0], splitstr[1], splitstr[2]);
         Pickup_Car newCar = new Pickup_Car(splitstr[2], splitstr[0], splitstr[1]);
         //CarNames.remove(index);
         return newCar;
