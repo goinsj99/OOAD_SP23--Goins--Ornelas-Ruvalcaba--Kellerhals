@@ -17,8 +17,9 @@ public class FNCD {
     public List<String> PerformanceCarNames = new ArrayList();;
     public List<String> PickupCarNames = new ArrayList();;
     public List<String> report = Arrays.asList();
+    private List<Vehicle> vehiclesSold = new ArrayList<>();
 
-//    report parameters need to be filled
+    //    report parameters need to be filled
     public Integer staffCount;
 
     public FNCD(Double opBudget){
@@ -32,8 +33,9 @@ public class FNCD {
         this.staffList = dayOneStaff();
         this.staffCount = 0;
         this.report = null;
+        this.vehiclesSold = null;
     }
-    // Setters 
+    // Setters
     // load car names
     public List<String> setCarNmaes(List<String> currList, String filesname){
         try {
@@ -45,7 +47,7 @@ public class FNCD {
                 currList.add(line1);
             }
 
-            scanner.close(); 
+            scanner.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -55,6 +57,9 @@ public class FNCD {
     // set new budget
     public void setOpBudget(Double opBudget){
         this.opBudget = opBudget;
+    }
+    public void addVehiclesSold(Vehicle car){
+        this.vehiclesSold.add(car);
     }
     // add all vehicle in list
     public void setVehicleList(List<Vehicle> vehicleList){
@@ -85,6 +90,9 @@ public class FNCD {
     public Double getOpBudget(){
         return this.opBudget;
     }
+    public List<Vehicle> getSoldVehicle(){
+        return this.vehiclesSold;
+    }
     // return vehicle list
     public List<Vehicle> getVehicleList(){
         return this.vehicleList;
@@ -99,7 +107,7 @@ public class FNCD {
     public List<String> setReport(){
         return this.report;
     }
-    // creates a random 5 digit id for each employee 
+    // creates a random 5 digit id for each employee
     public int generateID(){
         return this.currIDCount++;
     }
@@ -137,7 +145,7 @@ public class FNCD {
     public Car createCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
         int index = random.nextInt(CarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
         String[] splitstr = this.CarNames.get(index).split("\\s+"); // make, model, vim
         Car newCar = new Car(splitstr[2], splitstr[0], splitstr[1]);
         //CarNames.remove(index);
@@ -147,7 +155,7 @@ public class FNCD {
     public Performance_Car createPerformanceCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
         int index = random.nextInt(this.PerformanceCarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
         String[] splitstr = this.PerformanceCarNames.get(index).split("\\s+"); // make, model, vim
         Performance_Car newCar = new Performance_Car(splitstr[2], splitstr[0], splitstr[1]);
         //CarNames.remove(index);
@@ -157,7 +165,7 @@ public class FNCD {
     public Pickup_Car createPickupCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
         int index = random.nextInt(this.PickupCarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space 
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
         String[] splitstr = this.PickupCarNames.get(index).split("\\s+"); // make, model, vim
         System.out.printf(splitstr[0], splitstr[1], splitstr[2]);
         Pickup_Car newCar = new Pickup_Car(splitstr[2], splitstr[0], splitstr[1]);
@@ -174,7 +182,7 @@ public class FNCD {
         }
         return listTemp;
     }
-    // create Starting Vehicles 
+    // create Starting Vehicles
     public List<Vehicle> dayOneVehicle(){
         List<Vehicle> listtemp = new ArrayList();
         for(int i = 0; i < 4; i++){
@@ -185,4 +193,3 @@ public class FNCD {
         return listtemp;
     }
 }
- 
