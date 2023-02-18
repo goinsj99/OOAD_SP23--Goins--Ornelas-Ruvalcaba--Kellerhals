@@ -9,10 +9,11 @@ class Opening{
     private int carCount = 0;
     private int performanceCarCount;
     private int pickupCarCount;
+    private List<Staff> interList = new ArrayList<>();
 
     Opening(FNCD fncd){
         //this.staffList = fncd.getStaffList();
-        Car car;
+        this.interList = retrunListInterns(fncd.getStaffList());
         this.currBudget = fncd.getOpBudget();
         this.internCount = threeInterns(fncd.getStaffList());
         this.carCount = fourCars(true, false, fncd);
@@ -29,8 +30,20 @@ class Opening{
         }
         return count;
     }
+    public List<Staff> retrunListInterns(List<Staff> curentStaff){
+        List<Staff> temp = new ArrayList<>();
+        for(Staff staff: curentStaff){
+            if(staff instanceof Intern){
+                temp.add(staff);
+            }
+        }
+        return temp;
+    }
     public int returnInternCount(){
         return this.internCount;
+    }
+    public List<Staff> returnList(){
+        return this.interList;
     }
     public List<Staff> internHire(List<Staff> curentStaff, FNCD fncd){
         Staff tempstaffie;
@@ -107,7 +120,6 @@ class Opening{
         return fncd.getVehicleList();
     }
 }
-
 class Washing{
     private int randomChoice1;
     private int randomChoice2;
@@ -115,10 +127,9 @@ class Washing{
     private List<Intern> staffList;
 
 
-    Washing(String WeekDay){
+    Washing(){
         this.randomChoice1 = 0;
         this.randomChoice2 = 0;
-        this.weekDay = WeekDay;
         this.staffList = null;
     }
     // code to wash the vehicle
@@ -332,7 +343,7 @@ class Selling {
         Random random2 = new Random();
         Double temp3 = random2.nextDouble();
         Double bnus;
-        System.out.printf("This is the sales Chance: %f | %f", this.saleChance, temp3);
+        //System.out.printf("This is the sales Chance: %f | %f", this.saleChance, temp3);
         if (temp3 < this.saleChance) {
             vehiclesSold.add(sVehicle);
             VehicleList.remove(sVehicle);
@@ -345,7 +356,6 @@ class Selling {
         }
     }
 }
-
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
@@ -448,7 +458,20 @@ class Ending{
 public class main {
     public static void main(String[] args) {
         double buget = 500000;
-        FNCD fncd = new FNCD(buget);
+        FNCD fncd = new FNCD(buget); 
+
+
+        for(int i = 0; i < 30; i++){
+            // run every senerio with openeing
+            Opening open = new Opening(fncd);
+
+            // run washing
+            Washing wash = new Washing();
+            for(Staff intern: open.returnList()){
+                wash.washVehicle(fncd.getVehicleList(), intern);
+            }
+
+        }
 
 //         System.out.printf("FNCD Test: %f\n", fncd.opBudget);
 //         for(Staff str: fncd.staffList){
@@ -509,11 +532,11 @@ public class main {
 
 // //Selling(String weekDay, Double buyType, String vehicleChance, String vehicleType, Double initialSale, Boolean car4Sale) {
 
-            Selling sell = new Selling();
-            for(Vehicle staff: fncd.vehicleList){
-                System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getClass(), staff.getCondition());
-            }
-            sell.sellThisCar(fncd);
+            // Selling sell = new Selling();
+            // for(Vehicle staff: fncd.vehicleList){
+            //     System.out.printf("%s, %f, %s, %s\n", staff.getName(), staff.getCost(), staff.getClass(), staff.getCondition());
+            // }
+            // sell.sellThisCar(fncd);
 
 
         // Vehicle vehicleTest = new Vehicle("Adrian", "Hes", "Cool");
