@@ -14,6 +14,7 @@ public class Vehicle{
     private String cleanliness;
     private String type;
     private Double vehicleBonus;
+    private int winCount;
     // temp list
     private List<String> conditionList = Arrays.asList("New", "Used", "Broken");
     private List<String> cleanlinessList = Arrays.asList("Sparkling", "Clean", "Dirty");
@@ -30,6 +31,7 @@ public class Vehicle{
         this.condition = "null";
         this.sales_price = 0.0;
         this.cleanliness = decideCleanliness();
+        this.winCount = 0;
     }
 
     // setters method implementation
@@ -61,6 +63,9 @@ public class Vehicle{
     public void setVehicleBonus(Double vehicleBonus){
         this.vehicleBonus = vehicleBonus;
     }
+    public void addWinCount(){
+        this.winCount += 1;
+    }
 
     // getters method implementation
     public String getVim(){
@@ -89,6 +94,9 @@ public class Vehicle{
     }
     public Double getVehicleBonus(){
         return this.vehicleBonus;
+    }
+    public int getWinCount(){
+        return this.winCount;
     }
     // decide how much the car is to buy
     public Double decideCost(double min, double max){
@@ -148,6 +156,7 @@ class Car extends Vehicle{
     private Double vehicleBonus;
     private String condition;
     private String type;
+    private int winCount;
 
     public Car(String vim, String make, String model){
         super(vim, make, model);
@@ -155,6 +164,7 @@ class Car extends Vehicle{
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 50.00;
+        this.winCount = 0;
         this.type = "Car";
     }
     @Override
@@ -177,6 +187,14 @@ class Car extends Vehicle{
     public Double getSalesPrice(){
         return this.sales_price;
     }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
 }
 // performance car sub class
 // cost $20,000 - $40,000
@@ -186,6 +204,7 @@ class Performance_Car extends Vehicle{
     private Double vehicleBonus;
     private String condition;
     private String type;
+    private int winCount;
 
     public Performance_Car(String vim, String make, String model){
         super(vim, make, model);
@@ -193,6 +212,7 @@ class Performance_Car extends Vehicle{
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 70.00;
+        this.winCount = 0;
         this.type = "Performance Car";
     }
     @Override
@@ -215,6 +235,14 @@ class Performance_Car extends Vehicle{
     public Double getSalesPrice(){
         return this.sales_price;
     }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
 }
 // puck up sub class
 // cost $10,000 - $40,000
@@ -224,6 +252,7 @@ class Pickup_Car extends Vehicle{
     private Double vehicleBonus;
     private String condition;
     private String type;
+    private int winCount;
 
     public Pickup_Car(String vim, String make, String model){
         super(vim, make, model);
@@ -231,6 +260,7 @@ class Pickup_Car extends Vehicle{
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
+        this.winCount = 0;
         this.type = "Pickup Car";
     }
     @Override
@@ -253,8 +283,15 @@ class Pickup_Car extends Vehicle{
     public Double getSalesPrice(){
         return this.sales_price;
     }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
 }
-
 // electric car sub class
 // cost $20,000 - $40,000
 class Electric_Car extends Vehicle{
@@ -263,6 +300,7 @@ class Electric_Car extends Vehicle{
     private Double vehicleBonus;
     private String condition;
     private String type;
+    private int winCount;
     private Double range;
 
     public Electric_Car(String vim, String make, String model){
@@ -272,6 +310,7 @@ class Electric_Car extends Vehicle{
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
         this.range = createRange();
+        this.winCount = 0;
         this.type = "Electric Car";
     }
     @Override
@@ -294,6 +333,14 @@ class Electric_Car extends Vehicle{
     public Double getSalesPrice(){
         return this.sales_price;
     }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
     // random range 
     public Double createRange(){
         int min = 60;
@@ -307,7 +354,6 @@ class Electric_Car extends Vehicle{
         return this.range;
     }
 }
-
 // motorcycles sub class
 // cost $10,000 - $20,000
 class Motorcycle extends Vehicle{
@@ -316,6 +362,7 @@ class Motorcycle extends Vehicle{
     private Double vehicleBonus;
     private String condition;
     private String type;
+    private int winCount;
     private Double engineSizeCC;
 
     public Motorcycle(String vim, String make, String model){
@@ -325,6 +372,7 @@ class Motorcycle extends Vehicle{
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
         this.engineSizeCC = createEngineSizeCC();
+        this.winCount = 0;
         this.type = "Motorcycle";
     }
     @Override
@@ -346,6 +394,14 @@ class Motorcycle extends Vehicle{
     @Override 
     public Double getSalesPrice(){
         return this.sales_price;
+    }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
     }
     // random range 
     public Double createEngineSizeCC(){
@@ -371,7 +427,7 @@ class Monster_Truck extends Vehicle{
     private String stageName;
     // list of names from www.rookieroad.com/monster-trucks/list-a-z-2027269/
     private List<String> monsterNames = Arrays.asList("Air Force Afterburner", "Avenger", "Bad News Travels Fast", "Batman", "Backwards Bob", "Bear Foot (1979)", "Bear Foot (F-150)", "Bear Foot (2xtreme)", "Bear Foot (Silverado)", "Bear Foot USA", "Bigfoot", "Black Stallion", "Blacksmith", "Blue Thunder", "Bounty Hunter", "Brutus", "Bulldozer", "Captain's Curse", "Cyborg", "El Toro Loco", "Grave Digger", "Grinder", "Gunslinger", "Jurassic Attack", "King Krunch", "Lucas Oil Crusader", "Madusa", "Maximum Destruction (Max-D)", "Mohawk Warrior", "Monster Mutt", "Monster Mutt Dalmatian", "Predator", "Shell Camino", "Raminator", "Snake Bite", "Stone Crusher", "Sudden Impact", "Swamp Thing", "The Destroyer", "The Felon", "USA-1", "War Wizard", "WCW Nitro Machine", "Zombie");
-
+    private int winCount;
     public Monster_Truck(String vim, String make, String model){
         super(vim, make, model);
         this.cost = decideCost(20000.00, 60000.00);
@@ -379,6 +435,7 @@ class Monster_Truck extends Vehicle{
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
         this.stageName = generateName();
+        this.winCount = 0;
         this.type = "Monster Truck";
     }
     @Override
@@ -400,6 +457,14 @@ class Monster_Truck extends Vehicle{
     @Override 
     public Double getSalesPrice(){
         return this.sales_price;
+    }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
     }
     // random range 
     public String generateName(){

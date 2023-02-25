@@ -8,6 +8,10 @@ import java.util.Scanner;
 
 
 public class FNCD {
+    // added days of week
+    private List<String> weekDays = Arrays.asList("Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday", "Sunday");
+    private String currDay;
+    private int dayIndex;
     public Double opBudget;
     public int currIDCount;
     public List<Staff> staffList = new ArrayList();
@@ -23,6 +27,9 @@ public class FNCD {
     public Integer staffCount;
 
     public FNCD(Double opBudget){
+        // start on monday 
+        this.currDay = weekDays.get(0);
+        this.dayIndex = 0;
         this.opBudget = opBudget;
         this.currIDCount = 101017;
         this.CarNames = setCarNmaes(CarNames, "RegularCars.txt");
@@ -36,6 +43,15 @@ public class FNCD {
         this.vehiclesSold = new ArrayList<>();
     }
     // Setters
+    // go to next day
+    public void nextDay(){
+        if(this.dayIndex == 7){
+            this.dayIndex = 0;
+        }else{
+            this.dayIndex += 1;
+            this.currDay = weekDays.get(this.dayIndex);
+        }
+    }
     // load car names
     public List<String> setCarNmaes(List<String> currList, String filesname){
         try {
@@ -86,6 +102,10 @@ public class FNCD {
         this.vehicleList.add(newCar);
     }
     // Getters
+    // return day
+    public String getDay(){
+        return this.currDay;
+    }
     // return budget
     public Double getOpBudget(){
         return this.opBudget;

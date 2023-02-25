@@ -373,7 +373,99 @@ class Selling {
         }
     }
 }
+// should occur only sunday and wednesday 
+class RacingEvent{
+    private List<Vehicle> carList = new ArrayList<>();
+    private List<Staff> staffList = new ArrayList<>();
+    private String day; 
 
+    RacingEvent(FNCD fncd){
+        this.carList = racableCars(fncd);
+        this.staffList = racingStaff(fncd);
+    }
+
+    // can only race on wendsday and sunday
+    public void racingDay(){
+        // check if we are on a day to race
+        if(this.day == "Wensday" || this.day == "Sunday"){
+            // check if there are enough cars 
+            if(this.carList.size() > 2){
+                // pick three cars 
+                Random random1 = new Random();
+                int index1 = random1.nextInt(this.carList.size());
+                int index2 = random1.nextInt(this.carList.size());
+                int index3 = random1.nextInt(this.carList.size());
+    
+                // get a driver 
+                int index = random1.nextInt(this.staffList.size());
+                Staff driver = this.staffList.get(index);
+    
+                // now race and set a random final position 1-20
+                Random random = new Random();
+                int place1 = 1 + (20 - 1) * random.nextInt();
+                int place2 = 1 + (20 - 1) * random.nextInt();
+                int place3 = 1 + (20 - 1) * random.nextInt();
+
+                if(place1 == 1 || place1 == 2 || place1 == 3){
+                    this.carList.get(index1).addWinCount();
+                }else{
+
+                }
+    
+            }else{
+                // decide to race with less then 3 cars
+                Random random = new Random();
+                double randomNumber = random.nextDouble();
+                // 80% chance of racing 
+                if(randomNumber < 0.8){
+                    // race to what ever we have avalible 
+                }else{
+                    System.out.println("You will not be racing today!");
+                }
+            }
+        }else{
+            System.out.println("You may not race today!");
+        }
+    }
+    public void updateCar(Vehicle car, int place){
+        if(place == 1 || place == 2 || place == 3){
+            car.addWinCount();
+            car.setSalesPrice(car.getSalesPrice()*1.10);
+        }else{
+            car.setCondition("Damaged");
+            
+        }
+    }
+    public List<Staff> racingStaff(FNCD fncd){
+        List<Staff> staffList = fncd.getStaffList();
+        List<Staff> sL = new ArrayList();
+        // check vehicles race elagability 
+        for(Staff person: staffList){
+            if(person instanceof Driver){
+                sL.add(person);
+            }
+        }
+        return sL;
+    }
+    public List<Vehicle> racableCars(FNCD fncd){
+        List<Vehicle> vehicleList = fncd.getVehicleList();
+        List<Vehicle> carL = new ArrayList();
+        // check vehicles race elagability 
+        for(Vehicle car: vehicleList){
+            if(car instanceof Car || car instanceof Electric_Car){
+                continue;
+            }else{
+                if(car.getCondition() == "Broken"){
+                    continue;
+                }else{
+                    carL.add(car);
+                }
+            }
+        }
+        this.day = fncd.getDay();
+        return carL;
+    }
+}
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
