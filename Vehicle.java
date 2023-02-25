@@ -256,7 +256,7 @@ class Pickup_Car extends Vehicle{
 }
 
 // electric car sub class
-// cost $10,000 - $40,000
+// cost $20,000 - $40,000
 class Electric_Car extends Vehicle{
     private Double cost;
     private Double sales_price;
@@ -267,7 +267,7 @@ class Electric_Car extends Vehicle{
 
     public Electric_Car(String vim, String make, String model){
         super(vim, make, model);
-        this.cost = decideCost(10000.00, 40000.00);
+        this.cost = decideCost(20000.00, 40000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
@@ -309,7 +309,7 @@ class Electric_Car extends Vehicle{
 }
 
 // motorcycles sub class
-// cost $10,000 - $40,000
+// cost $10,000 - $20,000
 class Motorcycle extends Vehicle{
     private Double cost;
     private Double sales_price;
@@ -320,7 +320,7 @@ class Motorcycle extends Vehicle{
 
     public Motorcycle(String vim, String make, String model){
         super(vim, make, model);
-        this.cost = decideCost(10000.00, 40000.00);
+        this.cost = decideCost(10000.00, 20000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
@@ -361,7 +361,7 @@ class Motorcycle extends Vehicle{
     }
 }
 // motorcycles sub class
-// cost $10,000 - $40,000
+// cost $20,000 - $60,000
 class Monster_Truck extends Vehicle{
     private Double cost;
     private Double sales_price;
@@ -374,7 +374,7 @@ class Monster_Truck extends Vehicle{
 
     public Monster_Truck(String vim, String make, String model){
         super(vim, make, model);
-        this.cost = decideCost(10000.00, 40000.00);
+        this.cost = decideCost(20000.00, 60000.00);
         this.condition = decideCondition();
         this.sales_price = decidePrice(this.condition, this.cost);
         this.vehicleBonus = 100.00;
