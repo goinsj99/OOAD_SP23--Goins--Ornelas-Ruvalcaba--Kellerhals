@@ -254,3 +254,162 @@ class Pickup_Car extends Vehicle{
         return this.sales_price;
     }
 }
+
+// electric car sub class
+// cost $10,000 - $40,000
+class Electric_Car extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private Double range;
+
+    public Electric_Car(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(10000.00, 40000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.range = createRange();
+        this.type = "Electric Car";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    // random range 
+    public Double createRange(){
+        int min = 60;
+        int max = 400;
+        Random random = new Random();
+        double randomValue = random.nextDouble(max - min) + min;
+        return randomValue;
+    }
+    // get range
+    public Double getRange(){
+        return this.range;
+    }
+}
+
+// motorcycles sub class
+// cost $10,000 - $40,000
+class Motorcycle extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private Double engineSizeCC;
+
+    public Motorcycle(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(10000.00, 40000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.engineSizeCC = createEngineSizeCC();
+        this.type = "Motorcycle";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    // random range 
+    public Double createEngineSizeCC(){
+        int min = 60;
+        int max = 400;
+        Random random = new Random();
+        double randomValue = random.nextDouble(max - min) + min;
+        return randomValue;
+    }
+    // get range
+    public Double getRange(){
+        return this.engineSizeCC;
+    }
+}
+// motorcycles sub class
+// cost $10,000 - $40,000
+class Monster_Truck extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private String stageName;
+    // list of names from www.rookieroad.com/monster-trucks/list-a-z-2027269/
+    private List<String> monsterNames = Arrays.asList("Air Force Afterburner", "Avenger", "Bad News Travels Fast", "Batman", "Backwards Bob", "Bear Foot (1979)", "Bear Foot (F-150)", "Bear Foot (2xtreme)", "Bear Foot (Silverado)", "Bear Foot USA", "Bigfoot", "Black Stallion", "Blacksmith", "Blue Thunder", "Bounty Hunter", "Brutus", "Bulldozer", "Captain's Curse", "Cyborg", "El Toro Loco", "Grave Digger", "Grinder", "Gunslinger", "Jurassic Attack", "King Krunch", "Lucas Oil Crusader", "Madusa", "Maximum Destruction (Max-D)", "Mohawk Warrior", "Monster Mutt", "Monster Mutt Dalmatian", "Predator", "Shell Camino", "Raminator", "Snake Bite", "Stone Crusher", "Sudden Impact", "Swamp Thing", "The Destroyer", "The Felon", "USA-1", "War Wizard", "WCW Nitro Machine", "Zombie");
+
+    public Monster_Truck(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(10000.00, 40000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.stageName = generateName();
+        this.type = "Monster Truck";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    // random range 
+    public String generateName(){
+        // https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        Random random = new Random();
+        int index = random.nextInt(monsterNames.size());
+        return monsterNames.get(index);
+    }
+    // get range
+    public String getName(){
+        return this.stageName;
+    }
+}
