@@ -124,6 +124,9 @@ public class FNCD {
     public Integer getStaffCount(){
         return this.staffCount;
     }
+    public int getDayIndex(){
+        return this.dayIndex;
+    }
     public List<String> setReport(){
         return this.report;
     }

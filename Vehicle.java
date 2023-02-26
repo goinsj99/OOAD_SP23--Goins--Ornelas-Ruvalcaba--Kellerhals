@@ -48,8 +48,8 @@ public class Vehicle{
     public void setCost(float cost){
         this.cost = cost;
     }
-    public void setCondition(String condition){
-        this.condition = condition;
+    public void setCondition(String conditionll){
+        this.condition = conditionll;
     }
     public void setSalesPrice(double sales_price){
         this.sales_price = sales_price;
@@ -404,12 +404,11 @@ class Motorcycle extends Vehicle{
         this.winCount += 1;
     }
     // random range 
+    // https://stackoverflow.com/questions/31754209/can-random-nextgaussian-sample-values-from-a-distribution-with-different-mean
     public Double createEngineSizeCC(){
-        int min = 60;
-        int max = 400;
         Random random = new Random();
-        double randomValue = random.nextDouble(max - min) + min;
-        return randomValue;
+        double truncatedValue = random.nextGaussian()*300+700;
+        return truncatedValue;
     }
     // get range
     public Double getRange(){
@@ -478,3 +477,57 @@ class Monster_Truck extends Vehicle{
         return this.stageName;
     }
 }
+
+
+// public void washVehicle(FNCD fncd) {
+//     // get two random staff
+//     Random random = new Random();
+//     int internCount1 = 0;
+
+//     for (Staff intern : this.staffList) {
+//         // only can wash 2 cars per day
+//         while (internCount1 < 2) {
+//             // start cleaning dirty cars
+//             for (Vehicle car : fncd.getVehicleList()) {
+//                 if (car.getCleanliness() == "Dirty") {
+//                     // %80 chance on becoming clean %10 chance of becoming sparkling
+//                     double randomNumber = random.nextDouble();
+//                     if (randomNumber < 0.1) {
+//                         System.out.printf("      * Vehicle was dirty and is now Sparkling %s\n", car.getName());
+//                         car.setCleanliness("Sparkling");
+//                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
+//                         internCount1 += 1;
+//                         // increase bonus intern.bonus = 
+//                     } else if (randomNumber < 0.8) {
+//                         System.out.printf("      * Vehicle was dirty and is now Clean %s\n", car.getName());
+//                         car.setCleanliness("Clean");
+//                         internCount1 += 1;
+//                     } else {
+//                         //System.out.printf("Washing did not have an affect on the vehicle 1\n");
+//                         internCount1 += 1;
+//                     }
+//                 }
+//             }
+//             // move on to clean cars
+//             for (Vehicle car : fncd.getVehicleList()) {
+//                 if (car.getCleanliness() == "Clean") {
+//                     // %5 chance of becoming dirty, %30 chance on becmoming sparkling
+//                     double randomNumber = random.nextDouble();
+//                     if (randomNumber < 0.05) {
+//                         System.out.printf("      * Vehicle was Clean and is now Dirty %s\n", car.getName());
+//                         car.setCleanliness("Dirty");
+//                         internCount1 += 1;
+//                     } else if (randomNumber < 0.3) {
+//                         System.out.printf("      * Vehicle was Clean and is now Sparkling %s\n", car.getName());
+//                         car.setCleanliness("Sparkling");
+//                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
+//                         internCount1 += 1;
+//                     } else {
+//                         //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
+//                         internCount1 += 1;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
