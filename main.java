@@ -683,7 +683,6 @@ public class main {
             // end.payStaff(fncd);
             // end.pReport(fncd);
             System.out.println("\n");
-
             for(Vehicle car: fncd.getVehicleList()){
                 System.out.println(car.getName()+" "+car.getCleanliness()+" "+car.getCondition());
 
