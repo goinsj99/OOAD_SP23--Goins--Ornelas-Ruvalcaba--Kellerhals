@@ -3,1195 +3,1154 @@
 
 Opening... (current budget 500000.0)
       * Current Intern Count 3
-          - "Larry"
-          - "Linda"
-          - "Daniel"
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
        * Performance Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
        * PickUp Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
        * Electric Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
        * Motorcycle 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
        * Monster Truck 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Shell Camino
+          - War Wizard
 
 Washing...
       * Intern Currently Working 
-          - "Larry"
-          - "Linda"
-          - "Daniel"
-      * Vehicle was dirty and is now Clean Cake Kalk&. It was cleaned by "Larry"
-      * Vehicle was dirty and is now Clean Monster Mutt Dalmatian. It was cleaned by "Larry"
-      * Vehicle was dirty and is now Clean Chevrolet Cruze. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Porsche 718-Cayman-GT4. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Sparkling Toyota Hilux. It was cleaned by "Daniel"
-      * Vehicle was dirty and is now Clean Polestar 2. It was cleaned by "Daniel"
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
+      * "Kathleen" Washing Report
+          - Vehicle was dirty and is now Clean Chevrolet Camaro-ZL1
+      * "Donald" Washing Report
+          - Vehicle was dirty and is now Clean Lucid Air
+          - Vehicle was dirty and is now Sparkling Damon Hypersport
+      * "Paul" Washing Report
+          - Vehicle was dirty and is now Clean Grave Digger
+          - Vehicle was dirty and is now Sparkling Nissan Sentra
 
 Repairing... 
-      * Vehicle was Clean and is now Dirty McLaren 720S-Spider. It was fixed by %s
-"Amanda"
-      * Vehicle was Clean and is now Dirty Chevrolet Bolt-EV. It was fixed by %s
-"Amanda"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Christopher"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Christopher"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Donald"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Donald"
+      * "Daniel" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Clean and is now Dirty Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+          - Vehicle was Clean and is now Dirty Grave Digger
+      * "Joseph" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+      * "Cynthia" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+Selling... 
+      * Number of customers came in on a week day are 1
+      * Customer 1
+            * Customer Didnt Want A Car
+|Staff that quit|
+|Staff still working that|
+      * "Jonathan", 8.0, 126.1, 200.5, Working
+      * "Daniel", 8.0, 176.54, 500.5, Working
+      * "Kathleen", 8.0, 151.32, 300.5, Working
+      * "Brian", 8.0, 126.1, 200.5, Working
+      * "Joseph", 8.0, 176.54, 500.5, Working
+      * "Donald", 8.0, 151.32, 300.5, Working
+      * "Kyle", 8.0, 126.1, 200.5, Working
+      * "Cynthia", 8.0, 176.54, 500.5, Working
+      * "Paul", 8.0, 151.32, 300.5, Working
+|Sold Vehicles|
+|Current Vehicle Inventory|
+      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
+      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
+      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
+      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
+      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
+      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
+      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
+      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
+      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Dirty, In Stock
+      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
+      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Dirty, In Stock
+      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Dirty, In Stock
+      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
+      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Dirty, In Stock
+      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
+      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Dirty, In Stock
+      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Dirty, In Stock
+      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
+      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
+      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
+      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
+      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
+      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
+|Our Budget & Total Sale Number?|
+      * 498638.1200000001 0.0
+
+Checking Staff... 
+
+      * "Jonathan" Sales 200.5 0.0
+      * "Daniel" Mechanic 500.5 200.0
+      * "Kathleen" Intern 300.5 0.0
+      * "Brian" Sales 200.5 0.0
+      * "Joseph" Mechanic 500.5 200.0
+      * "Donald" Intern 300.5 100.0
+      * "Kyle" Sales 200.5 0.0
+      * "Cynthia" Mechanic 500.5 200.0
+      * "Paul" Intern 300.5 50.0
+----------------------------------------------
+***** FNCD Day Tuesday 2****
+
+Opening... (current budget 498638.1200000001)
+      * Current Intern Count 3
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Performance Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * PickUp Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Electric Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Motorcycle 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Monster Truck 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+
+Washing...
+      * Intern Currently Working 
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
+      * "Kathleen" Washing Report
+          - Vehicle was dirty and is now Sparkling Grave Digger
+      * "Donald" Washing Report
+          - Vehicle was dirty and is now Clean Lucid Air
+          - Vehicle was dirty and is now Clean Nissan Titan
+      * "Paul" Washing Report
+          - Vehicle was dirty and is now Clean Lightning LS-218
+
+Repairing... 
+      * "Daniel" Repairing Report
+          - Vehicle was Clean and is now Dirty Lucid Air
+          - Vehicle was Sparkling and is now clean Grave Digger
+      * "Joseph" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+          - Vehicle was Clean and is now Dirty Grave Digger
+      * "Cynthia" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+Selling... 
+      * Number of customers came in on a week day are 1
+      * Customer 1
+            * Customer Didnt Want A Car
+|Staff that quit|
+      * "Jonathan", 16.0, 126.1, 0.0, Quits
+
+      * "Brian", 16.0, 126.1, 0.0, Quits
+
+      * "Kyle", 16.0, 126.1, 0.0, Quits
+
+|Staff still working that|
+      * "Daniel", 16.0, 176.54, 500.5, Working
+      * "Kathleen", 16.0, 151.32, 300.5, Working
+      * "Joseph", 16.0, 176.54, 500.5, Working
+      * "Donald", 16.0, 151.32, 300.5, Working
+      * "Cynthia", 16.0, 176.54, 500.5, Working
+      * "Paul", 16.0, 151.32, 300.5, Working
+|Sold Vehicles|
+|Current Vehicle Inventory|
+      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
+      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
+      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
+      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
+      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
+      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
+      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
+      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
+      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
+      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
+      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
+      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Dirty, In Stock
+      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
+      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Dirty, In Stock
+      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
+      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Dirty, In Stock
+      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Dirty, In Stock
+      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
+      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
+      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
+      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
+      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
+      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
+|Our Budget & Total Sale Number?|
+      * 497276.2400000002 0.0
+
+Checking Staff... 
+
+      * "Daniel" Mechanic 500.5 200.0
+      * "Kathleen" Intern 300.5 100.0
+      * "Joseph" Mechanic 500.5 400.0
+      * "Donald" Intern 300.5 100.0
+      * "Cynthia" Mechanic 500.5 400.0
+      * "Paul" Intern 300.5 50.0
+----------------------------------------------
+***** FNCD Day Wensday 3****
+
+Opening... (current budget 497276.2400000002)
+      * Current Intern Count 3
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Performance Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * PickUp Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Electric Cars 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Motorcycle 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+       * Monster Truck 
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Bigfoot
+          - Volvo S60
+          - Acura NSX
+          - GMC Canyon
+          - Tesla Model-S
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
+          - Husqvarna EE-5
+          - War Wizard
+
+Washing...
+      * Intern Currently Working 
+          - "Kathleen"
+          - "Donald"
+          - "Paul"
+      * "Kathleen" Washing Report
+          - Vehicle was dirty and is now Clean Lucid Air
+          - Vehicle was dirty and is now Clean Grave Digger
+      * "Donald" Washing Report
+          - Vehicle was dirty and is now Clean Bigfoot
+          - Vehicle was dirty and is now Clean Acura NSX
+      * "Paul" Washing Report
+          - Vehicle was dirty and is now Clean Tesla Model-S
+          - Vehicle was dirty and is now Clean KTM Freeride-E-XC
+
+Repairing... 
+      * "Daniel" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Clean and is now Dirty Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+          - Vehicle was Clean and is now Dirty Grave Digger
+      * "Joseph" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
+      * "Cynthia" Repairing Report
+          - Vehicle was Used and is now Like New Lucid Air
+          - Vehicle was Broken and is now Used Grave Digger
 Selling... 
       * Number of customers came in on a week day are 3
       * Customer 1
-            * Customer Didnt Want A Car
+
+            * Customer Interested but No current Sales person works here !
       * Customer 2
             * Customer Didnt Want A Car
       * Customer 3
 
-            * Vehicle was Sold Shell Camino. It was fixed by %s
-"Scott"
+            * Customer Interested but No current Sales person works here !
 |Staff that quit|
+      * "Daniel", 24.0, 176.54, 400.0, Quits
+
+      * "Joseph", 24.0, 176.54, 600.0, Quits
+
+      * "Cynthia", 24.0, 176.54, 600.0, Quits
+
 |Staff still working that|
-      * "Andrew", 8.0, 126.1, 200.5, Working
-      * "Amanda", 8.0, 176.54, 500.5, Working
-      * "Larry", 8.0, 151.32, 300.5, Working
-      * "Paul", 8.0, 126.1, 200.5, Working
-      * "Christopher", 8.0, 176.54, 500.5, Working
-      * "Linda", 8.0, 151.32, 300.5, Working
-      * "Scott", 8.0, 126.1, 401.0, Working
-      * "Donald", 8.0, 176.54, 500.5, Working
-      * "Daniel", 8.0, 151.32, 300.5, Working
+      * "Donald", 24.0, 151.32, 300.5, Working
+      * "Paul", 24.0, 151.32, 300.5, Working
 |Sold Vehicles|
-      * Shell Camino, 44817.10624403356, 89634.21248806712,New,Clean, Sold
+      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
+      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
 |Current Vehicle Inventory|
-      * Acura TLX, 14948.105987644563, 29896.211975289127,New,Clean, In Stock
-      * McLaren 720S-Spider, 31698.61330092144, 50717.78128147431,Used,Dirty, In Stock
-      * GMC Canyon, 35201.902680297884, 70403.80536059577,New,Clean, In Stock
-      * Chevrolet Bolt-EV, 24880.154205184193, 24880.154205184193,Broken,Dirty, In Stock
-      * Cake Kalk&, 15870.549974094076, 25392.879958550522,Used,Clean, In Stock
-      * Monster Mutt Dalmatian, 38760.04895694014, 62016.078331104225,Used,Clean, In Stock
-      * Chevrolet Cruze, 19514.89561138455, 19514.89561138455,Broken,Clean, In Stock
-      * Porsche 718-Cayman-GT4, 36722.684696478864, 58756.29551436618,Used,Clean, In Stock
-      * Toyota Hilux, 18987.98049600122, 18987.98049600122,Broken,Sparkling, In Stock
-      * Polestar 2, 24723.079331276927, 49446.158662553855,New,Clean, In Stock
-      * Cake Kalk&, 18154.762071028104, 18154.762071028104,Broken,Clean, In Stock
-      * Air Force Afterburner, 40969.79537527474, 40969.79537527474,Broken,Clean, In Stock
-      * Ford Focus, 14345.520316574351, 22952.832506518964,Used,Dirty, In Stock
-      * Chevrolet Corvette-C8, 22692.075385421078, 22692.075385421078,Broken,Sparkling, In Stock
-      * Ford Super, 25157.561540205585, 40252.09846432894,Used,Dirty, In Stock
-      * Tesla Model-S, 39046.846777272905, 39046.846777272905,Broken,Dirty, In Stock
-      * Harley-Davidson LiveWire, 15822.577196143204, 31645.154392286408,New,Dirty, In Stock
-      * Jurassic Attack, 26772.981626440356, 42836.770602304576,Used,Dirty, In Stock
-      * Hyundai Elantra, 19345.302729150215, 30952.484366640347,Used,Dirty, In Stock
-      * Ford GT, 24053.11897512666, 38484.99036020266,Used,Dirty, In Stock
-      * Chevrolet Avalanche, 34626.58317463477, 34626.58317463477,Broken,Dirty, In Stock
-      * Audi e-tron, 36865.875539847795, 36865.875539847795,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 13305.08459143812, 21288.135346300995,Used,Sparkling, In Stock
+      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
+      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
+      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
+      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
+      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
+      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
+      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
+      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
+      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
+      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
+      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
+      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
+      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
+      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
+      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
+      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
+      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
+      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
+      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
+      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
+      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
 |Our Budget & Total Sale Number?|
-      * 588272.3324880672 89634.21248806712
+      * 496292.66000000027 170315.55929875717
 
 Checking Staff... 
 
-      * "Andrew" Sales 200.5 0.0
-      * "Amanda" Mechanic 500.5 0.0
-      * "Larry" Intern 300.5 0.0
-      * "Paul" Sales 200.5 0.0
-      * "Christopher" Mechanic 500.5 170.0
-      * "Linda" Intern 300.5 0.0
-      * "Scott" Sales 401.0 0.0
-      * "Donald" Mechanic 500.5 170.0
-      * "Daniel" Intern 300.5 100.0
-----------------------------------------------
-***** FNCD Day Tuesday 2****
-
-Opening... (current budget 588272.3324880672)
-      * Current Intern Count 3
-          - "Larry"
-          - "Linda"
-          - "Daniel"
-      * Current Vehicle Owned 
-       * Regular Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-       * Performance Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-       * PickUp Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-       * Electric Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-       * Motorcycle 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-       * Monster Truck 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Porsche 718-Cayman-GT4
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Hyundai Elantra
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-      * Adding PickUp Car Nissan Navara
-      * Adding Monster Truck Grinder
-
-Washing...
-      * Intern Currently Working 
-          - "Larry"
-          - "Linda"
-          - "Daniel"
-      * Vehicle was dirty and is now Clean McLaren 720S-Spider. It was cleaned by "Larry"
-      * Vehicle was dirty and is now Clean Chevrolet Bolt-EV. It was cleaned by "Larry"
-      * Vehicle was dirty and is now Clean Ford Super. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Sparkling Ford Focus. It was cleaned by "Daniel"
-      * Vehicle was dirty and is now Clean Tesla Model-S. It was cleaned by "Daniel"
-
-Repairing... 
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Amanda"
-      * Vehicle was Clean and is now Dirty McLaren 720S-Spider. It was fixed by %s
-"Amanda"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Amanda"
-      * Vehicle was Clean and is now Dirty Chevrolet Bolt-EV. It was fixed by %s
-"Amanda"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Christopher"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Christopher"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Donald"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Donald"
-Selling... 
-      * Number of customers came in on a week day are 2
-      * Customer 1
-
-            * Vehicle was Sold Porsche 718-Cayman-GT4. It was fixed by %s
-"Scott"
-      * Customer 2
-
-            * Vehicle was Sold Hyundai Elantra. It was fixed by %s
-"Scott"
-|Staff that quit|
-      * "Larry", 16.0, 151.32, 0.0, Quits
-
-|Staff still working that|
-      * "Andrew", 16.0, 126.1, 200.5, Working
-      * "Amanda", 16.0, 176.54, 500.5, Working
-      * "Paul", 16.0, 126.1, 200.5, Working
-      * "Christopher", 16.0, 176.54, 500.5, Working
-      * "Linda", 16.0, 151.32, 300.5, Working
-      * "Scott", 16.0, 126.1, 1604.0, Working
-      * "Donald", 16.0, 176.54, 500.5, Working
-      * "Daniel", 16.0, 151.32, 300.5, Working
-|Sold Vehicles|
-      * Shell Camino, 44817.10624403356, 89634.21248806712,New,Clean, Sold
-      * Porsche 718-Cayman-GT4, 36722.684696478864, 58756.29551436618,Used,Clean, Sold
-      * Hyundai Elantra, 19345.302729150215, 30952.484366640347,Used,Dirty, Sold
-|Current Vehicle Inventory|
-      * Acura TLX, 14948.105987644563, 29896.211975289127,New,Clean, In Stock
-      * McLaren 720S-Spider, 31698.61330092144, 50717.78128147431,Used,Dirty, In Stock
-      * GMC Canyon, 35201.902680297884, 70403.80536059577,New,Clean, In Stock
-      * Chevrolet Bolt-EV, 24880.154205184193, 24880.154205184193,Broken,Dirty, In Stock
-      * Cake Kalk&, 15870.549974094076, 25392.879958550522,Used,Clean, In Stock
-      * Monster Mutt Dalmatian, 38760.04895694014, 62016.078331104225,Used,Clean, In Stock
-      * Chevrolet Cruze, 19514.89561138455, 19514.89561138455,Broken,Clean, In Stock
-      * Toyota Hilux, 18987.98049600122, 18987.98049600122,Broken,Sparkling, In Stock
-      * Polestar 2, 24723.079331276927, 49446.158662553855,New,Clean, In Stock
-      * Cake Kalk&, 18154.762071028104, 18154.762071028104,Broken,Clean, In Stock
-      * Air Force Afterburner, 40969.79537527474, 40969.79537527474,Broken,Clean, In Stock
-      * Ford Focus, 14345.520316574351, 22952.832506518964,Used,Sparkling, In Stock
-      * Chevrolet Corvette-C8, 22692.075385421078, 22692.075385421078,Broken,Sparkling, In Stock
-      * Ford Super, 25157.561540205585, 40252.09846432894,Used,Clean, In Stock
-      * Tesla Model-S, 39046.846777272905, 39046.846777272905,Broken,Clean, In Stock
-      * Harley-Davidson LiveWire, 15822.577196143204, 31645.154392286408,New,Dirty, In Stock
-      * Jurassic Attack, 26772.981626440356, 42836.770602304576,Used,Dirty, In Stock
-      * Ford GT, 24053.11897512666, 38484.99036020266,Used,Dirty, In Stock
-      * Chevrolet Avalanche, 34626.58317463477, 34626.58317463477,Broken,Dirty, In Stock
-      * Audi e-tron, 36865.875539847795, 36865.875539847795,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 13305.08459143812, 21288.135346300995,Used,Sparkling, In Stock
-      * Nissan Navara, 11918.700106879849, 23837.400213759698,New,Clean, In Stock
-      * Grinder, 46275.23428005881, 46275.23428005881,Broken,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 618425.2979821352 179342.99236907362
-
-Checking Staff... 
-
-      * "Andrew" Sales 200.5 0.0
-      * "Amanda" Mechanic 500.5 170.0
-      * "Paul" Sales 200.5 0.0
-      * "Christopher" Mechanic 500.5 340.0
-      * "Linda" Intern 300.5 0.0
-      * "Scott" Sales 1604.0 0.0
-      * "Donald" Mechanic 500.5 340.0
-      * "Daniel" Intern 300.5 150.0
-----------------------------------------------
-***** FNCD Day Wensday 3****
-
-Opening... (current budget 618425.2979821352)
-      * Current Intern Count 2
-          - "Linda"
-          - "Daniel"
-      * Current Vehicle Owned 
-       * Regular Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-       * Performance Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-       * PickUp Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-       * Electric Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-       * Motorcycle 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-       * Monster Truck 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Monster Mutt Dalmatian
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
-          - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
-          - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-      * Intern Hired "Nancy"
-      * Bought Regular Car Ford Focus
-      * Bought Performance Car Lamborghini Huracan-Performante
-
-Washing...
-      * Intern Currently Working 
-          - "Linda"
-          - "Daniel"
-          - "Nancy"
-      * Vehicle was dirty and is now Clean McLaren 720S-Spider. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Chevrolet Bolt-EV. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Harley-Davidson LiveWire. It was cleaned by "Nancy"
-      * Vehicle was dirty and is now Clean Jurassic Attack. It was cleaned by "Nancy"
-
-Repairing... 
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Amanda"
-      * Vehicle was Clean and is now Dirty McLaren 720S-Spider. It was fixed by %s
-"Amanda"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Amanda"
-      * Vehicle was Clean and is now Dirty Chevrolet Bolt-EV. It was fixed by %s
-"Amanda"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Christopher"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Christopher"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Donald"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Donald"
-Selling... 
-      * Number of customers came in on a week day are 1
-      * Customer 1
-
-            * Vehicle was Sold Monster Mutt Dalmatian. It was fixed by %s
-"Paul"
-|Staff that quit|
-      * "Andrew", 24.0, 126.1, 0.0, Quits
-
-      * "Paul", 24.0, 126.1, 0.0, Quits
-
-      * "Scott", 24.0, 126.1, 0.0, Quits
-
-|Staff still working that|
-      * "Amanda", 24.0, 176.54, 500.5, Working
-      * "Christopher", 24.0, 176.54, 500.5, Working
-      * "Linda", 24.0, 151.32, 300.5, Working
-      * "Donald", 24.0, 176.54, 500.5, Working
-      * "Daniel", 24.0, 151.32, 300.5, Working
-      * "Nancy", 8.0, 151.32, 300.5, Working
-|Sold Vehicles|
-      * Shell Camino, 44817.10624403356, 89634.21248806712,New,Clean, Sold
-      * Porsche 718-Cayman-GT4, 36722.684696478864, 58756.29551436618,Used,Clean, Sold
-      * Hyundai Elantra, 19345.302729150215, 30952.484366640347,Used,Dirty, Sold
-      * Monster Mutt Dalmatian, 38760.04895694014, 62016.078331104225,Used,Clean, Sold
-|Current Vehicle Inventory|
-      * Acura TLX, 14948.105987644563, 29896.211975289127,New,Clean, In Stock
-      * McLaren 720S-Spider, 31698.61330092144, 50717.78128147431,Used,Dirty, In Stock
-      * GMC Canyon, 35201.902680297884, 70403.80536059577,New,Clean, In Stock
-      * Chevrolet Bolt-EV, 24880.154205184193, 24880.154205184193,Broken,Dirty, In Stock
-      * Cake Kalk&, 15870.549974094076, 25392.879958550522,Used,Clean, In Stock
-      * Chevrolet Cruze, 19514.89561138455, 19514.89561138455,Broken,Clean, In Stock
-      * Toyota Hilux, 18987.98049600122, 18987.98049600122,Broken,Sparkling, In Stock
-      * Polestar 2, 24723.079331276927, 49446.158662553855,New,Clean, In Stock
-      * Cake Kalk&, 18154.762071028104, 18154.762071028104,Broken,Clean, In Stock
-      * Air Force Afterburner, 40969.79537527474, 40969.79537527474,Broken,Clean, In Stock
-      * Ford Focus, 14345.520316574351, 22952.832506518964,Used,Sparkling, In Stock
-      * Chevrolet Corvette-C8, 22692.075385421078, 22692.075385421078,Broken,Sparkling, In Stock
-      * Ford Super, 25157.561540205585, 40252.09846432894,Used,Clean, In Stock
-      * Tesla Model-S, 39046.846777272905, 39046.846777272905,Broken,Clean, In Stock
-      * Harley-Davidson LiveWire, 15822.577196143204, 31645.154392286408,New,Clean, In Stock
-      * Jurassic Attack, 26772.981626440356, 42836.770602304576,Used,Clean, In Stock
-      * Ford GT, 24053.11897512666, 38484.99036020266,Used,Dirty, In Stock
-      * Chevrolet Avalanche, 34626.58317463477, 34626.58317463477,Broken,Dirty, In Stock
-      * Audi e-tron, 36865.875539847795, 36865.875539847795,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 13305.08459143812, 21288.135346300995,Used,Sparkling, In Stock
-      * Nissan Navara, 11918.700106879849, 23837.400213759698,New,Clean, In Stock
-      * Grinder, 46275.23428005881, 46275.23428005881,Broken,Dirty, In Stock
-      * Ford Focus, 10553.389631884076, 10553.389631884076,Broken,Dirty, In Stock
-      * Lamborghini Huracan-Performante, 23175.86902823386, 23175.86902823386,Broken,Sparkling, In Stock
-|Our Budget & Total Sale Number?|
-      * 645350.2376531217 241359.07070017784
-
-Checking Staff... 
-
-      * "Amanda" Mechanic 500.5 340.0
-      * "Christopher" Mechanic 500.5 510.0
-      * "Linda" Intern 300.5 0.0
-      * "Donald" Mechanic 500.5 510.0
-      * "Daniel" Intern 300.5 150.0
-      * "Nancy" Intern 300.5 0.0
+      * "Donald" Intern 300.5 100.0
+      * "Paul" Intern 300.5 50.0
 ----------------------------------------------
 ***** FNCD Day Thursday 4****
 
-Opening... (current budget 645350.2376531217)
-      * Current Intern Count 3
-          - "Linda"
-          - "Daniel"
-          - "Nancy"
+Opening... (current budget 496292.66000000027)
+      * Current Intern Count 2
+          - "Donald"
+          - "Paul"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
+          - War Wizard
        * Performance Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
+          - War Wizard
        * PickUp Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
+          - War Wizard
        * Electric Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
+          - War Wizard
        * Motorcycle 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
+          - War Wizard
        * Monster Truck 
-          - Acura TLX
-          - McLaren 720S-Spider
+          - Buick Verano
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
           - GMC Canyon
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Madusa
+          - Subaru Impreza
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-      * Adding PickUp Car GMC Sierra
-      * Adding Monster Truck Zombie
+          - War Wizard
+      * Intern Hired "Kelly"
+      * Bought Performance Car Aston Martin-Vantage-GTE
+      * Adding PickUp Car Ford Ranger
+      * Adding Monster Truck Avenger
 
 Washing...
       * Intern Currently Working 
-          - "Linda"
-          - "Daniel"
-          - "Nancy"
-      * Vehicle was dirty and is now Clean McLaren 720S-Spider. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Chevrolet Bolt-EV. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Ford GT. It was cleaned by "Daniel"
-      * Vehicle was dirty and is now Clean Chevrolet Avalanche. It was cleaned by "Daniel"
+          - "Donald"
+          - "Paul"
+          - "Kelly"
+      * "Donald" Washing Report
+          - Vehicle was dirty and is now Clean Lucid Air
+          - Vehicle was dirty and is now Clean Grave Digger
+      * "Paul" Washing Report
+          - Vehicle was dirty and is now Clean Subaru Impreza
+      * "Kelly" Washing Report
 
 Repairing... 
-      * Vehicle was Clean and is now Dirty McLaren 720S-Spider. It was fixed by %s
-"Amanda"
-      * Vehicle was Clean and is now Dirty Chevrolet Bolt-EV. It was fixed by %s
-"Amanda"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Christopher"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Christopher"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Donald"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Donald"
 Selling... 
-      * Number of customers came in on a week day are 1
+      * Number of customers came in on a week day are 5
       * Customer 1
+            * Customer Didnt Want A Car
+      * Customer 2
+
+            * Customer Interested but No current Sales person works here !
+      * Customer 3
+            * Customer Didnt Want A Car
+      * Customer 4
+
+            * Customer Interested but No current Sales person works here !
+      * Customer 5
 
             * Customer Interested but No current Sales person works here !
 |Staff that quit|
 |Staff still working that|
-      * "Amanda", 32.0, 176.54, 500.5, Working
-      * "Christopher", 32.0, 176.54, 500.5, Working
-      * "Linda", 32.0, 151.32, 300.5, Working
-      * "Donald", 32.0, 176.54, 500.5, Working
-      * "Daniel", 32.0, 151.32, 300.5, Working
-      * "Nancy", 16.0, 151.32, 300.5, Working
+      * "Paul", 32.0, 151.32, 300.5, Working
+      * "Kelly", 8.0, 151.32, 300.5, Working
 |Sold Vehicles|
-      * Shell Camino, 44817.10624403356, 89634.21248806712,New,Clean, Sold
-      * Porsche 718-Cayman-GT4, 36722.684696478864, 58756.29551436618,Used,Clean, Sold
-      * Hyundai Elantra, 19345.302729150215, 30952.484366640347,Used,Dirty, Sold
-      * Monster Mutt Dalmatian, 38760.04895694014, 62016.078331104225,Used,Clean, Sold
-      * GMC Canyon, 35201.902680297884, 70403.80536059577,New,Clean, Sold
+      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
+      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
+      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Clean, Sold
+      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, Sold
+      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, Sold
 |Current Vehicle Inventory|
-      * Acura TLX, 14948.105987644563, 29896.211975289127,New,Clean, In Stock
-      * McLaren 720S-Spider, 31698.61330092144, 50717.78128147431,Used,Dirty, In Stock
-      * Chevrolet Bolt-EV, 24880.154205184193, 24880.154205184193,Broken,Dirty, In Stock
-      * Cake Kalk&, 15870.549974094076, 25392.879958550522,Used,Clean, In Stock
-      * Chevrolet Cruze, 19514.89561138455, 19514.89561138455,Broken,Clean, In Stock
-      * Toyota Hilux, 18987.98049600122, 18987.98049600122,Broken,Sparkling, In Stock
-      * Polestar 2, 24723.079331276927, 49446.158662553855,New,Clean, In Stock
-      * Cake Kalk&, 18154.762071028104, 18154.762071028104,Broken,Clean, In Stock
-      * Air Force Afterburner, 40969.79537527474, 40969.79537527474,Broken,Clean, In Stock
-      * Ford Focus, 14345.520316574351, 22952.832506518964,Used,Sparkling, In Stock
-      * Chevrolet Corvette-C8, 22692.075385421078, 22692.075385421078,Broken,Sparkling, In Stock
-      * Ford Super, 25157.561540205585, 40252.09846432894,Used,Clean, In Stock
-      * Tesla Model-S, 39046.846777272905, 39046.846777272905,Broken,Clean, In Stock
-      * Harley-Davidson LiveWire, 15822.577196143204, 31645.154392286408,New,Clean, In Stock
-      * Jurassic Attack, 26772.981626440356, 42836.770602304576,Used,Clean, In Stock
-      * Ford GT, 24053.11897512666, 38484.99036020266,Used,Clean, In Stock
-      * Chevrolet Avalanche, 34626.58317463477, 34626.58317463477,Broken,Clean, In Stock
-      * Audi e-tron, 36865.875539847795, 36865.875539847795,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 13305.08459143812, 21288.135346300995,Used,Sparkling, In Stock
-      * Nissan Navara, 11918.700106879849, 23837.400213759698,New,Clean, In Stock
-      * Grinder, 46275.23428005881, 46275.23428005881,Broken,Dirty, In Stock
-      * Ford Focus, 10553.389631884076, 10553.389631884076,Broken,Dirty, In Stock
-      * Lamborghini Huracan-Performante, 23175.86902823386, 23175.86902823386,Broken,Sparkling, In Stock
-      * GMC Sierra, 26541.316350973302, 26541.316350973302,Broken,Dirty, In Stock
-      * Zombie, 38002.13835662384, 38002.13835662384,Broken,Dirty, In Stock
+      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
+      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
+      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Clean, In Stock
+      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
+      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Clean, In Stock
+      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
+      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
+      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
+      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
+      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
+      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
+      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
+      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
+      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
+      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
+      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
+      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
+      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
+      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 38140.64428871582, 76281.28857743164,New,Clean, In Stock
+      * Ford Ranger, 29893.26526699646, 29893.26526699646,Broken,Dirty, In Stock
+      * Avenger, 28760.559281585385, 28760.559281585385,Broken,Dirty, In Stock
 |Our Budget & Total Sale Number?|
-      * 579823.2029455246 311762.8760607736
+      * 399044.2311627026 313081.06276024826
 
 Checking Staff... 
 
-      * "Amanda" Mechanic 500.5 340.0
-      * "Christopher" Mechanic 500.5 680.0
-      * "Linda" Intern 300.5 0.0
-      * "Donald" Mechanic 500.5 680.0
-      * "Daniel" Intern 300.5 150.0
-      * "Nancy" Intern 300.5 0.0
+      * "Paul" Intern 300.5 50.0
+      * "Kelly" Intern 300.5 0.0
 ----------------------------------------------
 ***** FNCD Day Friday 5****
 
-Opening... (current budget 579823.2029455246)
-      * Current Intern Count 3
-          - "Linda"
-          - "Daniel"
-          - "Nancy"
+Opening... (current budget 399044.2311627026)
+      * Current Intern Count 2
+          - "Paul"
+          - "Kelly"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
        * Performance Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
        * PickUp Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
        * Electric Cars 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
        * Motorcycle 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
        * Monster Truck 
-          - Acura TLX
-          - McLaren 720S-Spider
-          - Chevrolet Bolt-EV
-          - Cake Kalk&
-          - Chevrolet Cruze
-          - Toyota Hilux
-          - Polestar 2
-          - Cake Kalk&
-          - Air Force Afterburner
-          - Ford Focus
-          - Chevrolet Corvette-C8
-          - Ford Super
+          - Chevrolet Camaro-ZL1
+          - Ford F-150
+          - Lucid Air
+          - Damon Hypersport
+          - Grave Digger
+          - Nissan Sentra
+          - BMW M2-Competition
+          - Nissan Titan
+          - Fisker Ocean
+          - Lightning LS-218
+          - Volvo S60
+          - GMC Canyon
           - Tesla Model-S
-          - Harley-Davidson LiveWire
-          - Jurassic Attack
-          - Ford GT
-          - Chevrolet Avalanche
-          - Audi e-tron
+          - KTM Freeride-E-XC
+          - Aston Martin-Vantage-GTE
+          - Ram 2500
+          - Porsche Taycan
           - Husqvarna EE-5
-          - Nissan Navara
-          - Grinder
-          - Ford Focus
-          - Lamborghini Huracan-Performante
-          - GMC Sierra
-          - Zombie
+          - War Wizard
+          - Aston Martin-Vantage-GTE
+          - Ford Ranger
+          - Avenger
+      * Intern Hired "Katherine"
+      * Bought Regular Car Hyundai Elantra
+      * Adding PickUp Car Ram 1500
+      * Adding Monster Truck Bear Foot (2xtreme)
+      * Bought Regular Car Mitsubishi Lancer
+      * Adding Monster Truck WCW Nitro Machine
 
 Washing...
       * Intern Currently Working 
-          - "Linda"
-          - "Daniel"
-          - "Nancy"
-      * Vehicle was dirty and is now Clean McLaren 720S-Spider. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Chevrolet Bolt-EV. It was cleaned by "Linda"
-      * Vehicle was dirty and is now Clean Audi e-tron. It was cleaned by "Daniel"
-      * Vehicle was dirty and is now Clean Grinder. It was cleaned by "Daniel"
-      * Vehicle was dirty and is now Clean Ford Focus. It was cleaned by "Nancy"
+          - "Paul"
+          - "Kelly"
+          - "Katherine"
+      * "Paul" Washing Report
+          - Vehicle was dirty and is now Sparkling Aston Martin-Vantage-GTE
+          - Vehicle was dirty and is now Sparkling Ram 2500
+      * "Kelly" Washing Report
+          - Vehicle was dirty and is now Sparkling Porsche Taycan
+      * "Katherine" Washing Report
+          - Vehicle was dirty and is now Clean Husqvarna EE-5
+          - Vehicle was dirty and is now Clean War Wizard
 
 Repairing... 
-      * Vehicle was Clean and is now Dirty McLaren 720S-Spider. It was fixed by %s
-"Amanda"
-      * Vehicle was Clean and is now Dirty Chevrolet Bolt-EV. It was fixed by %s
-"Amanda"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Christopher"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Christopher"
-      * Vehicle was Used and is now Like New McLaren 720S-Spider. It was fixed by "Donald"
-      * Vehicle was Broken and is now Used Chevrolet Bolt-EV. It was fixed by "Donald"
 Selling... 
       * Number of customers came in on a week day are 0
 |Staff that quit|
 |Staff still working that|
-      * "Amanda", 40.0, 176.54, 500.5, Working
-      * "Christopher", 40.0, 176.54, 500.5, Working
-      * "Linda", 40.0, 151.32, 300.5, Working
-      * "Donald", 40.0, 176.54, 500.5, Working
-      * "Daniel", 40.0, 151.32, 300.5, Working
-      * "Nancy", 24.0, 151.32, 300.5, Working
+      * "Paul", 40.0, 151.32, 300.5, Working
+      * "Kelly", 16.0, 151.32, 300.5, Working
+      * "Katherine", 8.0, 151.32, 300.5, Working
 |Sold Vehicles|
-      * Shell Camino, 44817.10624403356, 89634.21248806712,New,Clean, Sold
-      * Porsche 718-Cayman-GT4, 36722.684696478864, 58756.29551436618,Used,Clean, Sold
-      * Hyundai Elantra, 19345.302729150215, 30952.484366640347,Used,Dirty, Sold
-      * Monster Mutt Dalmatian, 38760.04895694014, 62016.078331104225,Used,Clean, Sold
-      * GMC Canyon, 35201.902680297884, 70403.80536059577,New,Clean, Sold
+      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
+      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
+      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Clean, Sold
+      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, Sold
+      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, Sold
 |Current Vehicle Inventory|
-      * Acura TLX, 14948.105987644563, 29896.211975289127,New,Clean, In Stock
-      * McLaren 720S-Spider, 31698.61330092144, 50717.78128147431,Used,Dirty, In Stock
-      * Chevrolet Bolt-EV, 24880.154205184193, 24880.154205184193,Broken,Dirty, In Stock
-      * Cake Kalk&, 15870.549974094076, 25392.879958550522,Used,Clean, In Stock
-      * Chevrolet Cruze, 19514.89561138455, 19514.89561138455,Broken,Clean, In Stock
-      * Toyota Hilux, 18987.98049600122, 18987.98049600122,Broken,Sparkling, In Stock
-      * Polestar 2, 24723.079331276927, 49446.158662553855,New,Clean, In Stock
-      * Cake Kalk&, 18154.762071028104, 18154.762071028104,Broken,Clean, In Stock
-      * Air Force Afterburner, 40969.79537527474, 40969.79537527474,Broken,Clean, In Stock
-      * Ford Focus, 14345.520316574351, 22952.832506518964,Used,Sparkling, In Stock
-      * Chevrolet Corvette-C8, 22692.075385421078, 22692.075385421078,Broken,Sparkling, In Stock
-      * Ford Super, 25157.561540205585, 40252.09846432894,Used,Clean, In Stock
-      * Tesla Model-S, 39046.846777272905, 39046.846777272905,Broken,Clean, In Stock
-      * Harley-Davidson LiveWire, 15822.577196143204, 31645.154392286408,New,Clean, In Stock
-      * Jurassic Attack, 26772.981626440356, 42836.770602304576,Used,Clean, In Stock
-      * Ford GT, 24053.11897512666, 38484.99036020266,Used,Clean, In Stock
-      * Chevrolet Avalanche, 34626.58317463477, 34626.58317463477,Broken,Clean, In Stock
-      * Audi e-tron, 36865.875539847795, 36865.875539847795,Broken,Clean, In Stock
-      * Husqvarna EE-5, 13305.08459143812, 21288.135346300995,Used,Sparkling, In Stock
-      * Nissan Navara, 11918.700106879849, 23837.400213759698,New,Clean, In Stock
-      * Grinder, 46275.23428005881, 46275.23428005881,Broken,Clean, In Stock
-      * Ford Focus, 10553.389631884076, 10553.389631884076,Broken,Clean, In Stock
-      * Lamborghini Huracan-Performante, 23175.86902823386, 23175.86902823386,Broken,Sparkling, In Stock
-      * GMC Sierra, 26541.316350973302, 26541.316350973302,Broken,Dirty, In Stock
-      * Zombie, 38002.13835662384, 38002.13835662384,Broken,Dirty, In Stock
+      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
+      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
+      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Clean, In Stock
+      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
+      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Clean, In Stock
+      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
+      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
+      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
+      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
+      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
+      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
+      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
+      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
+      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
+      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Sparkling, In Stock
+      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Sparkling, In Stock
+      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Sparkling, In Stock
+      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Clean, In Stock
+      * War Wizard, 29392.882782786826, 58785.76556557365,New,Clean, In Stock
+      * Aston Martin-Vantage-GTE, 38140.64428871582, 76281.28857743164,New,Clean, In Stock
+      * Ford Ranger, 29893.26526699646, 29893.26526699646,Broken,Dirty, In Stock
+      * Avenger, 28760.559281585385, 28760.559281585385,Broken,Dirty, In Stock
+      * Hyundai Elantra, 10615.508021753718, 21231.016043507436,New,Dirty, In Stock
+      * Ram 1500, 38223.31693791502, 38223.31693791502,Broken,Sparkling, In Stock
+      * Bear Foot (2xtreme), 50698.51563835083, 81117.62502136134,Used,Sparkling, In Stock
+      * Mitsubishi Lancer, 16912.219710942067, 33824.43942188413,New,Dirty, In Stock
+      * WCW Nitro Machine, 35652.50186155024, 35652.50186155024,Broken,Dirty, In Stock
 |Our Budget & Total Sale Number?|
-      * 578839.6229455246 311762.8760607736
+      * 246488.2089921907 313081.06276024826
 
 Checking Staff... 
 
-      * "Amanda" Mechanic 500.5 340.0
-      * "Christopher" Mechanic 500.5 850.0
-      * "Linda" Intern 300.5 0.0
-      * "Donald" Mechanic 500.5 850.0
-      * "Daniel" Intern 300.5 150.0
-      * "Nancy" Intern 300.5 0.0
+      * "Paul" Intern 300.5 220.0
+      * "Kelly" Intern 300.5 100.0
+      * "Katherine" Intern 300.5 0.0

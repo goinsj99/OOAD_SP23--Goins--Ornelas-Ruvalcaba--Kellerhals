@@ -215,19 +215,20 @@ class Washing{
         for(Staff intern: this.staffList){
             // only can wash 2 cars per day
             while(internCount1 < 2){
+                fncd.LoggerReport("      * "+intern.getName()+" Washing Report");
                 // start cleaning dirty cars
                 for(Vehicle car: fncd.getVehicleList()){
                     if(car.getCleanliness() == "Dirty"){
                         // %80 chance on becoming clean %10 chance of becoming sparkling
                         double randomNumber = random.nextDouble();
                         if(randomNumber < 0.1){
-                            fncd.LoggerReport("      * Vehicle was dirty and is now Sparkling "+car.getName()+". It was cleaned by "+ intern.getName());
+                            fncd.LoggerReport("          - Vehicle was dirty and is now Sparkling "+car.getName());
                             car.setCleanliness("Sparkling");
                             intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                             internCount1++;
                             // increase bonus intern.bonus = 
                         }else if(randomNumber < 0.8){
-                            fncd.LoggerReport("      * Vehicle was dirty and is now Clean "+car.getName()+". It was cleaned by "+ intern.getName());
+                            fncd.LoggerReport("          - Vehicle was dirty and is now Clean "+car.getName());
                             car.setCleanliness("Clean");
                             internCount1++;
                         }else{
@@ -248,11 +249,11 @@ class Washing{
                         // %5 chance of becoming dirty, %30 chance on becmoming sparkling
                         double randomNumber = random.nextDouble();
                         if(randomNumber < 0.05){
-                            fncd.LoggerReport("      * Vehicle was Clean and is now Dirty "+car.getName()+". It was cleaned by "+intern.getName());
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Dirty "+car.getName());
                             car.setCleanliness("Dirty");
                             internCount1++;
                         }else if(randomNumber < 0.3){
-                            fncd.LoggerReport("      * Vehicle was Clean and is now Sparkling "+car.getName()+". It was cleaned by "+intern.getName());
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Sparkling "+car.getName());
                             car.setCleanliness("Sparkling");
                             intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                             internCount1++;
@@ -303,7 +304,7 @@ class Repair{
         Random random = new Random();
         double randomNumber = random.nextDouble();
         int mecCount = 0;
-
+        fncd.LoggerReport("      * "+mech.getName()+" Repairing Report");
         while(mecCount < 2){
             for(Vehicle vehicle: VehicleList){
                 // upgrade condtition
@@ -311,11 +312,11 @@ class Repair{
                 // mechanic can repair
                     if(randomNumber < 0.80){
                         if(vehicle.getCondition() == "Used"){
-                            fncd.LoggerReport("      * Vehicle was Used and is now Like New "+vehicle.getName()+". It was fixed by "+mech.getName());
+                            fncd.LoggerReport("          - Vehicle was Used and is now Like New "+vehicle.getName());
                             vehicle.setCondition("Like New");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.5);
                         }else if(vehicle.getCondition() == "Broken"){
-                            fncd.LoggerReport("      * Vehicle was Broken and is now Used "+vehicle.getName()+". It was fixed by "+mech.getName());
+                            fncd.LoggerReport("          - Vehicle was Broken and is now Used "+vehicle.getName());
                             vehicle.setCondition("Used");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.25);
                         }
@@ -323,10 +324,10 @@ class Repair{
                     }
                     if(vehicle.getCleanliness() != "Dirty"){
                         if(vehicle.getCleanliness() == "Sparkling"){
-                            fncd.LoggerReport("      * Vehicle was Sparkling and is now clean "+vehicle.getName()+". It was fixed by %s\n"+mech.getName());
+                            fncd.LoggerReport("          - Vehicle was Sparkling and is now clean "+vehicle.getName());
                             vehicle.setCleanliness("Clean");
                         }else if(vehicle.getCleanliness() == "Clean"){
-                            fncd.LoggerReport("      * Vehicle was Clean and is now Dirty "+vehicle.getName()+". It was fixed by %s\n"+mech.getName());
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Dirty "+vehicle.getName());
                             vehicle.setCleanliness("Dirty");
                         }
                     }
