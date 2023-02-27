@@ -290,12 +290,17 @@ class Selling {
         List<Staff> staffList = fncd.getStaffList();
         Staff tempStaff;
         for (Staff staff : staffList) {
-            if (staff.getPosition() == "Sales") {
+            if (staff instanceof SalesPerson) {
                 salesStaff.add(staff);
             }
         }
+        if(salesStaff.size() == 0){
+            //System.out.printf("      * ! No current Sales person works here !%s\n");
+            return null;
+        }
         Random randoms = new Random();
         int temp = randoms.nextInt(salesStaff.size());
+
         tempStaff = salesStaff.get(temp);
         return tempStaff;
     }
@@ -355,6 +360,7 @@ class Selling {
         Vehicle sVehicle = mostExpensive(fncd);
 
         if(sVehicle.getVim() == ""){
+            System.out.printf("\n            * Didn't Find a Valid Vehicle!\n");
             return fncd.getSoldVehicle();
         }else{
             if (sVehicle.getCondition() == "New") {
@@ -377,16 +383,20 @@ class Selling {
                 fncd.addVehiclesSold(sVehicle);
                 VehicleList.remove(sVehicle);
                 tempStaff = whoSold(fncd);
+                if(tempStaff == null){
+                    System.out.printf("\n            * Customer Interested but No current Sales person works here !\n");
+                    return fncd.getSoldVehicle();
+                }
                 //Double bnus = sVehicle.getVehicleBonus();
                 for(Staff staff : staffList) {
                     if(staff.getName() == tempStaff.getName()) {
                         staff.setBonus(staff.getBonus() + staff.getBonus());
                         fncd.setOpBudget(fncd.getOpBudget() + sVehicle.getSalesPrice());
-                        System.out.printf("      * Vehicle was Sold %s. It was fixed by %s\n", sVehicle.getName(), staff.getName());
+                        System.out.printf("\n            * Vehicle was Sold %s. It was fixed by %s\n", sVehicle.getName(), staff.getName());
                     }
                 }
             }else{
-                System.out.println("      * A car was not sold");
+                System.out.println("\n            * Customer Didnt Want A Car");
             }
             return fncd.getSoldVehicle();
         }
@@ -587,37 +597,38 @@ class Ending{
         tempReport = quitList;
     }
     public void pReport(FNCD fncd){
-
+        System.out.println("\n");
         List<Staff> staffList = fncd.getStaffList();
         List<Staff> tempQuit = new ArrayList<>();
         List<Vehicle> vehicleList = fncd.getVehicleList();
         Double totalSales = 0.0;
         tempQuit = this.quittList;
 
-        System.out.printf("Staff that quit\n");
+        System.out.printf("|Staff that quit|\n");
         for (Staff staff : tempQuit){
 //            staff.setHours(staff.getHours() + 8.0);
-            System.out.printf(staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits\n" );
+            System.out.printf("      * "+staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits\n" );
         }
-        System.out.printf("Staff still working that\n");
+        System.out.printf("|Staff still working that|\n");
         for (Staff staff : staffList){
 //            staff.setHours(8.0);
-            System.out.printf(staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", Working\n" );
+            System.out.printf("      * "+staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", Working\n" );
         }
+        System.out.printf("|Sold Vehicles|\n");
         for (Vehicle car : fncd.getSoldVehicle() ){
 //            staff.setHours(8.0);
-            System.out.printf(car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", Sold\n" );
+            System.out.printf("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", Sold\n" );
         }
-
+        System.out.printf("|Current Vehicle Inventory|\n");
         for (Vehicle car : fncd.getVehicleList()){
 //            staff.setHours(8.0);
-            System.out.printf(car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", In Stock\n" );
+            System.out.printf("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", In Stock\n" );
         }
-        
+    System.out.printf("|Our Budget & Total Sale Number?|\n");
         for (Vehicle car : fncd.getSoldVehicle()){
             totalSales += car.getSalesPrice();
        }
-       System.out.printf("%f %f", fncd.getOpBudget(), totalSales);
+       System.out.printf("      * %f %f", fncd.getOpBudget(), totalSales);
 
     }
 }
@@ -665,6 +676,7 @@ public class main {
                 int indext = random.nextInt(weekDays.size());
                 System.out.printf("      * Number of customers came in on a week day are %d\n", indext);
                 for(int j = 0; j < weekDays.get(indext); j++){
+                    System.out.printf("      * Customer %d", j+1);
                     mop.sellThisCar(fncd);
                 }
             }else{
@@ -674,18 +686,17 @@ public class main {
                     mop.sellThisCar(fncd);
                 }
             }
-
-            // // ending
-            // Ending end = new Ending();
-            // end.payStaff(fncd);
-            // end.pReport(fncd);
+            // ending
+            Ending end = new Ending();
+            end.payStaff(fncd);
+            end.pReport(fncd);
             System.out.println("\n");
-            for(Vehicle car: fncd.getVehicleList()){
-                System.out.println(car.getName()+" "+car.getCleanliness()+" "+car.getCondition());
+            
+            System.out.printf("Checking Staff... \n");
+            for(Staff pp: fncd.getStaffList()){
+                System.out.println("      * "+pp.getName()+" "+pp.getPosition()+" "+pp.getBonus()+" "+pp.getBonusTemp());
 
             }
-            System.out.println("\n");
-
         }    
     }
 }
