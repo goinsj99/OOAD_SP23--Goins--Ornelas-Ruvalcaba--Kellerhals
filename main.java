@@ -344,12 +344,7 @@ class Selling {
                 }
                 this.car4Sale = true;
             }
-            else {
-                System.out.println("      * No cars for sale");
-                break;
-            }
         }
-        //System.out.println("No cars for sale");
         return tempCar;
     }
 
@@ -668,11 +663,13 @@ public class main {
             Selling mop = new Selling();
             if(fncd.getDayIndex() < 5){
                 int indext = random.nextInt(weekDays.size());
+                System.out.printf("      * Number of customers came in on a week day are %d\n", indext);
                 for(int j = 0; j < weekDays.get(indext); j++){
                     mop.sellThisCar(fncd);
                 }
             }else{
                 int index = random.nextInt(weekEnds.size());
+                System.out.printf("      * Number of customers came in on a weekend day are %d\n", index);
                 for(int j = 0; j < weekEnds.get(index); j++){
                     mop.sellThisCar(fncd);
                 }
