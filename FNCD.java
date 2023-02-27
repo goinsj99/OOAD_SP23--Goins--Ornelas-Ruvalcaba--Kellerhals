@@ -6,6 +6,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import java.io.BufferedWriter; 
+import java.io.FileWriter; 
+import java.io.IOException; 
+import java.io.PrintWriter;
+import java.io.FileOutputStream;  
+
+
 
 public class FNCD {
     // added days of week
@@ -18,14 +25,19 @@ public class FNCD {
     public List<Vehicle> vehicleList = new ArrayList();
     public List<String> staffnames= new ArrayList();;
     public List<String> CarNames = new ArrayList();
-    public List<String> PerformanceCarNames = new ArrayList();;
-    public List<String> PickupCarNames = new ArrayList();;
+    public List<String> PerformanceCarNames = new ArrayList();
+    public List<String> PickupCarNames = new ArrayList();
+    public List<String> ElectricCarNames = new ArrayList();
+    public List<String> MotorcycleNames = new ArrayList();
+    public List<String> MonsterTruckNames = new ArrayList();
     public List<String> report = Arrays.asList();
     private List<Vehicle> vehiclesSold;
 
     //    report parameters need to be filled
     public Integer staffCount;
 
+    // used to delete logger-n.text to any new instance of fncd 
+    //https://www.baeldung.com/java-delete-file-contents 
     public FNCD(Double opBudget){
         // start on monday 
         this.currDay = weekDays.get(0);
@@ -35,12 +47,22 @@ public class FNCD {
         this.CarNames = setCarNmaes(CarNames, "RegularCars.txt");
         this.PerformanceCarNames = setCarNmaes(PerformanceCarNames, "PerformanceCar.txt");
         this.PickupCarNames = setCarNmaes(PickupCarNames, "PickupCars.txt");
+        this.ElectricCarNames = setCarNmaes(ElectricCarNames, "ElectricCarNames.txt");
+        this.MotorcycleNames = setCarNmaes(MotorcycleNames, "MotorcycleName.txt");
+        this.MonsterTruckNames = setCarNmaes(MonsterTruckNames, "MonsterTruckName.txt");
         this.staffnames =  setCarNmaes(staffnames, "workerNames.csv");
         this.vehicleList = dayOneVehicle();
         this.staffList = dayOneStaff();
         this.staffCount = 0;
         this.report = null;
         this.vehiclesSold = new ArrayList<>();
+        try {
+            FileWriter writer = new FileWriter("Logger-n.txt", false);
+            writer.write("");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     // Setters
     // go to next day
@@ -195,6 +217,37 @@ public class FNCD {
         //CarNames.remove(index);
         return newCar;
     }
+    // new cars 
+    // create Electric Car 
+    public Electric_Car createElectricCar(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(ElectricCarNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.ElectricCarNames.get(index).split("\\s+"); // make, model, vim
+        Electric_Car newCar = new Electric_Car(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    }
+    // create Motorcycles
+    public Motorcycle createMotorcycle(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(MotorcycleNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.MotorcycleNames.get(index).split("\\s+"); // make, model, vim
+        Motorcycle newCar = new Motorcycle(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    } 
+    public Monster_Truck createMonsterTruck(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(MonsterTruckNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
+        Monster_Truck newCar = new Monster_Truck(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    }
+    // create Monster Truck 
     // create Starting Staff
     public List<Staff> dayOneStaff(){
         List<Staff> listTemp = new ArrayList();
@@ -212,7 +265,22 @@ public class FNCD {
             listtemp.add(createCar());
             listtemp.add(createPerformanceCar());
             listtemp.add(createPickupCar());
+            listtemp.add(createElectricCar());
+            listtemp.add(createMotorcycle());
+            listtemp.add(createMonsterTruck());
         }
         return listtemp;
+    }
+    // to create loging to a file, I used this source 
+    // https://www.java67.com/2015/07/how-to-append-text-to-existing-file-in-java-example.html
+    public void LoggerReport(String line){
+        try (FileWriter file = new FileWriter("Logger-n.txt", true); 
+        BufferedWriter buffer = new BufferedWriter(file); 
+        PrintWriter write = new PrintWriter(buffer);) { 
+            write.println(line); 
+        } catch (IOException i) { 
+            i.printStackTrace(); 
+        }
+
     }
 }

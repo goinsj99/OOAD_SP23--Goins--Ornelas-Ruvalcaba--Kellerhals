@@ -6,36 +6,50 @@ import java.util.List;
 class Opening{
     private double currBudget = 0;
     private int internCount = 0;
-    private int carCount = 0;
+    private int carCount;
     private int performanceCarCount;
     private int pickupCarCount;
+    private int electricCarCount;
+    private int motorcycleCount;
+    private int monsterTruck;
     private List<Staff> interList = new ArrayList<>();
 
     Opening(FNCD fncd){
-        //this.staffList = fncd.getStaffList();
-        this.interList = retrunListInterns(fncd.getStaffList());
-        //this.currBudget = fncd.getOpBudget();
-        this.internCount = threeInterns(fncd.getStaffList());
-        this.carCount = fourCars(true, false, fncd);
-        this.performanceCarCount = fourCars(false, true, fncd);
-        this.pickupCarCount = fourCars(false, false, fncd);
+        this.internCount = threeInterns(fncd.getStaffList(), fncd);
+        this.interList = retrunListInterns(fncd.getStaffList(), fncd);
+        // defult 3 cars
+        fncd.LoggerReport("      * Current Vehicle Owned ");
+        fncd.LoggerReport("       * Regular Cars ");
+        this.carCount = fourCars(true, false, false, false, false, fncd);
+        fncd.LoggerReport("       * Performance Cars ");
+        this.performanceCarCount = fourCars(false, true, false, false, false, fncd);
+        fncd.LoggerReport("       * PickUp Cars ");
+        this.pickupCarCount = fourCars(false, false, true, false, false, fncd);
+        // new vehicles 
+        fncd.LoggerReport("       * Electric Cars ");
+        this.electricCarCount = this.pickupCarCount = fourCars(false, false, false, true, false, fncd);
+        fncd.LoggerReport("       * Motorcycle ");
+        this.motorcycleCount = this.pickupCarCount = fourCars(false, false, false, false, true, fncd);
+        fncd.LoggerReport("       * Monster Truck ");
+        this.monsterTruck = this.pickupCarCount = fourCars(false, false, false, false, false, fncd);
     }
     // check intern
-    public int threeInterns(List<Staff> curentStaff){
+    public int threeInterns(List<Staff> curentStaff, FNCD fncd){
         int count = 0;
         for(Staff staff: curentStaff){
             if(staff instanceof Intern){
                 count++;
             }
         }
-        System.out.printf("      * Current Intern Count %d\n", count);
+        fncd.LoggerReport("      * Current Intern Count " + count);
         return count;
     }
-    public List<Staff> retrunListInterns(List<Staff> curentStaff){
+    public List<Staff> retrunListInterns(List<Staff> curentStaff, FNCD fncd){
         List<Staff> temp = new ArrayList<>();
         for(Staff staff: curentStaff){
             if(staff instanceof Intern){
-                System.out.printf("      * Intern Currently Working %s\n", staff.getName());
+                //fncd.LoggerReport("      * Intern Currently Working "+staff.getName());
+                fncd.LoggerReport("          - "+staff.getName());
                 temp.add(staff);
             }
         }
@@ -53,39 +67,55 @@ class Opening{
             while(this.internCount < 3){
                 tempstaffie = fncd.createInternStaff();
                 curentStaff.add(tempstaffie);
-                System.out.printf("      * Intern Hired %s\n", tempstaffie.getName());
+                fncd.LoggerReport("      * Intern Hired "+ tempstaffie.getName());
                 this.internCount+=1;
             }
         }
         return curentStaff;
     }  
     // check Car
-    public int fourCars(boolean car, boolean pc, FNCD fncd){
-        int count = 0;
+    public int fourCars(boolean car, boolean pc, boolean pu, boolean ec, boolean m, FNCD fncd){
+        int count1 = 0;
         int count2 = 0;
-        int count3= 0;
+        int count3 = 0;
+        // new cars 
+        int count4 = 0;
+        int count5 = 0;
+        int count6 = 0;
         for(Vehicle cars: fncd.getVehicleList()){
             if(cars instanceof Car){
-                count++;
+                count1++;
             }else if(cars instanceof Performance_Car){
                 count2++;
             }else if(cars instanceof Pickup_Car){
                 count3++;
+            }else if(cars instanceof Electric_Car){
+                count4++;
+            }else if(cars instanceof Motorcycle){
+                count5++;
+            }else if(cars instanceof Monster_Truck){
+                count6++;
             }
-            System.out.printf("      * Current Vehicle Owned %s\n", cars.getName());
+            fncd.LoggerReport("          - "+ cars.getName());
         }
         if(car == true){
-            return count;
+            return count1;
         }else if(pc == true){
             return count2;
-        }else{
+        }else if(pu == true){
             return count3;
+        }else if(ec == true){
+            return count4;
+        }else if(m == true){
+            return count5;
+        }else{
+            return count6;
         }
     }
     public List<Vehicle> AddVehicle(FNCD fncd){
         // now what every dosnt have 4 go until their is four each or buget reached
         boolean flag = false;
-        while((this.carCount < 4 || this.performanceCarCount < 4 || this.pickupCarCount < 4) || flag == true){
+        while((this.carCount < 4 || this.performanceCarCount < 4 || this.pickupCarCount < 4 || this.electricCarCount < 4 || this.motorcycleCount < 4 || this.motorcycleCount < 4) || flag == true){
             if(this.carCount < 4){
                 Vehicle tempCar = fncd.createCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
@@ -94,7 +124,7 @@ class Opening{
                 }else{
                     fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
-                    System.out.printf("      * Bought Regular Car %s\n", tempCar.getName());
+                    fncd.LoggerReport("      * Bought Regular Car " + tempCar.getName());
                     this.carCount+=1;
 
                 }
@@ -107,7 +137,7 @@ class Opening{
                 }else{
                     fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
-                    System.out.printf("      * Bought Performance Car %s\n", tempCar.getName());
+                    fncd.LoggerReport("      * Bought Performance Car "+ tempCar.getName());
                     this.performanceCarCount+=1;
                 }
             }
@@ -119,11 +149,48 @@ class Opening{
                 }else{
                     fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
-                    System.out.printf("      * Adding PickUp Car %s\n", tempCar.getName());
+                    fncd.LoggerReport("      * Adding PickUp Car "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.electricCarCount < 4){
+                Vehicle tempCar = fncd.createElectricCar();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Electric Car "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.motorcycleCount < 4){
+                Vehicle tempCar = fncd.createMotorcycle();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Motorcycle "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.monsterTruck < 4){
+                Vehicle tempCar = fncd.createMonsterTruck();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Monster Truck "+ tempCar.getName());
                     this.pickupCarCount+=1;
                 }
             }
         }
+        fncd.LoggerReport("");
         return fncd.getVehicleList();
     }
 }
@@ -137,7 +204,7 @@ class Washing{
     Washing(FNCD fncd){
         this.randomChoice1 = 0;
         this.randomChoice2 = 0;
-        this.staffList = retrunListInterns(fncd.getStaffList());
+        this.staffList = retrunListInterns(fncd.getStaffList(), fncd);
     }
     // code to wash the vehicle
     public void washVehicle(FNCD fncd) {
@@ -154,20 +221,26 @@ class Washing{
                         // %80 chance on becoming clean %10 chance of becoming sparkling
                         double randomNumber = random.nextDouble();
                         if(randomNumber < 0.1){
-                            System.out.printf("      * Vehicle was dirty and is now Sparkling %s. It was cleaned by %s\n", car.getName(), intern.getName());
+                            fncd.LoggerReport("      * Vehicle was dirty and is now Sparkling "+car.getName()+". It was cleaned by "+ intern.getName());
                             car.setCleanliness("Sparkling");
                             intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
-                            internCount1 += 1;
+                            internCount1++;
                             // increase bonus intern.bonus = 
                         }else if(randomNumber < 0.8){
-                            System.out.printf("      * Vehicle was dirty and is now Clean %s. It was cleaned by %s\n", car.getName(), intern.getName());
+                            fncd.LoggerReport("      * Vehicle was dirty and is now Clean "+car.getName()+". It was cleaned by "+ intern.getName());
                             car.setCleanliness("Clean");
-                            internCount1 += 1;
+                            internCount1++;
                         }else{
                             //System.out.printf("Washing did not have an affect on the vehicle 1\n");
-                            internCount1 += 1;
+                            internCount1++;
                         }
                     }
+                    if(internCount1 == 2){
+                        break;
+                    }
+                }
+                if(internCount1 == 2){
+                    break;
                 }
                 // move on to clean cars
                 for(Vehicle car: fncd.getVehicleList()){
@@ -175,30 +248,35 @@ class Washing{
                         // %5 chance of becoming dirty, %30 chance on becmoming sparkling
                         double randomNumber = random.nextDouble();
                         if(randomNumber < 0.05){
-                            System.out.printf("      * Vehicle was Clean and is now Dirty %s. It was cleaned by %s\n", car.getName(), intern.getName());
+                            fncd.LoggerReport("      * Vehicle was Clean and is now Dirty "+car.getName()+". It was cleaned by "+intern.getName());
                             car.setCleanliness("Dirty");
-                            internCount1 += 1;
+                            internCount1++;
                         }else if(randomNumber < 0.3){
-                            System.out.printf("      * Vehicle was Clean and is now Sparkling %s. It was cleaned by %s\n", car.getName(), intern.getName());
+                            fncd.LoggerReport("      * Vehicle was Clean and is now Sparkling "+car.getName()+". It was cleaned by "+intern.getName());
                             car.setCleanliness("Sparkling");
                             intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
-                            internCount1 += 1;
+                            internCount1++;
                         }else{
                             //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
-                            internCount1 += 1;
+                            internCount1++;
                         }
+                    }
+                    if(internCount1 == 2){
+                        break;
                     }
                 }
             }
-            
+            internCount1=0;
         }
+        fncd.LoggerReport("");
     }
-    public List<Staff> retrunListInterns(List<Staff> curentStaff){
+    public List<Staff> retrunListInterns(List<Staff> curentStaff, FNCD fncd){
         int count = 0;
         List<Staff> temp = new ArrayList<>();
+        fncd.LoggerReport("      * Intern Currently Working ");
         for(Staff staff: curentStaff){
             if(staff instanceof Intern){
-                System.out.printf("      * Intern Currently Working %s\n", staff.getName());
+                fncd.LoggerReport("          - "+ staff.getName());
                 temp.add(staff);
                 count+=1;
             }
@@ -220,7 +298,7 @@ class Repair{
 
     }
 
-    public void repairVehicle(List<Vehicle> VehicleList, Staff mech) {
+    public void repairVehicle(List<Vehicle> VehicleList, Staff mech, FNCD fncd) {
         // repair the vehicle
         Random random = new Random();
         double randomNumber = random.nextDouble();
@@ -233,11 +311,11 @@ class Repair{
                 // mechanic can repair
                     if(randomNumber < 0.80){
                         if(vehicle.getCondition() == "Used"){
-                            System.out.printf("      * Vehicle was Used and is now Like New %s. It was fixed by %s\n", vehicle.getName(), mech.getName());
+                            fncd.LoggerReport("      * Vehicle was Used and is now Like New "+vehicle.getName()+". It was fixed by "+mech.getName());
                             vehicle.setCondition("Like New");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.5);
                         }else if(vehicle.getCondition() == "Broken"){
-                            System.out.printf("      * Vehicle was Broken and is now Used %s. It was fixed by %s\n", vehicle.getName(), mech.getName());
+                            fncd.LoggerReport("      * Vehicle was Broken and is now Used "+vehicle.getName()+". It was fixed by "+mech.getName());
                             vehicle.setCondition("Used");
                             vehicle.setSalesPrice(vehicle.getSalesPrice() * 1.25);
                         }
@@ -245,10 +323,10 @@ class Repair{
                     }
                     if(vehicle.getCleanliness() != "Dirty"){
                         if(vehicle.getCleanliness() == "Sparkling"){
-                            System.out.printf("      * Vehicle was Sparkling and is now clean %s. It was fixed by %s\n", vehicle.getName(), mech.getName());
+                            fncd.LoggerReport("      * Vehicle was Sparkling and is now clean "+vehicle.getName()+". It was fixed by %s\n"+mech.getName());
                             vehicle.setCleanliness("Clean");
                         }else if(vehicle.getCleanliness() == "Clean"){
-                            System.out.printf("      * Vehicle was Clean and is now Dirty %s. It was fixed by %s\n", vehicle.getName(), mech.getName());
+                            fncd.LoggerReport("      * Vehicle was Clean and is now Dirty "+vehicle.getName()+". It was fixed by %s\n"+mech.getName());
                             vehicle.setCleanliness("Dirty");
                         }
                     }
@@ -360,7 +438,7 @@ class Selling {
         Vehicle sVehicle = mostExpensive(fncd);
 
         if(sVehicle.getVim() == ""){
-            System.out.printf("\n            * Didn't Find a Valid Vehicle!\n");
+            fncd.LoggerReport("\n            * Didn't Find a Valid Vehicle!");
             return fncd.getSoldVehicle();
         }else{
             if (sVehicle.getCondition() == "New") {
@@ -384,7 +462,7 @@ class Selling {
                 VehicleList.remove(sVehicle);
                 tempStaff = whoSold(fncd);
                 if(tempStaff == null){
-                    System.out.printf("\n            * Customer Interested but No current Sales person works here !\n");
+                    fncd.LoggerReport("\n            * Customer Interested but No current Sales person works here !");
                     return fncd.getSoldVehicle();
                 }
                 //Double bnus = sVehicle.getVehicleBonus();
@@ -392,11 +470,11 @@ class Selling {
                     if(staff.getName() == tempStaff.getName()) {
                         staff.setBonus(staff.getBonus() + staff.getBonus());
                         fncd.setOpBudget(fncd.getOpBudget() + sVehicle.getSalesPrice());
-                        System.out.printf("\n            * Vehicle was Sold %s. It was fixed by %s\n", sVehicle.getName(), staff.getName());
+                        fncd.LoggerReport("\n            * Vehicle was Sold "+sVehicle.getName()+". It was fixed by %s\n"+staff.getName());
                     }
                 }
             }else{
-                System.out.println("\n            * Customer Didnt Want A Car");
+                fncd.LoggerReport("            * Customer Didnt Want A Car");
             }
             return fncd.getSoldVehicle();
         }
@@ -604,31 +682,31 @@ class Ending{
         Double totalSales = 0.0;
         tempQuit = this.quittList;
 
-        System.out.printf("|Staff that quit|\n");
+        fncd.LoggerReport("|Staff that quit|");
         for (Staff staff : tempQuit){
-//            staff.setHours(staff.getHours() + 8.0);
-            System.out.printf("      * "+staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits\n" );
+//          staff.setHours(staff.getHours() + 8.0);
+            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits\n" );
         }
-        System.out.printf("|Staff still working that|\n");
+        fncd.LoggerReport("|Staff still working that|");
         for (Staff staff : staffList){
-//            staff.setHours(8.0);
-            System.out.printf("      * "+staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", Working\n" );
+//          staff.setHours(8.0);
+            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", Working" );
         }
-        System.out.printf("|Sold Vehicles|\n");
+        fncd.LoggerReport("|Sold Vehicles|");
         for (Vehicle car : fncd.getSoldVehicle() ){
-//            staff.setHours(8.0);
-            System.out.printf("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", Sold\n" );
+//          staff.setHours(8.0);
+            fncd.LoggerReport("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", Sold" );
         }
-        System.out.printf("|Current Vehicle Inventory|\n");
+        fncd.LoggerReport("|Current Vehicle Inventory|");
         for (Vehicle car : fncd.getVehicleList()){
 //            staff.setHours(8.0);
-            System.out.printf("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", In Stock\n" );
+            fncd.LoggerReport("      * "+car.getName() + ", " + car.getCost() + ", "+ car.getSalesPrice() + ","+ car.getCondition()+ "," +car.getCleanliness()+  ", In Stock" );
         }
-    System.out.printf("|Our Budget & Total Sale Number?|\n");
+        fncd.LoggerReport("|Our Budget & Total Sale Number?|");
         for (Vehicle car : fncd.getSoldVehicle()){
             totalSales += car.getSalesPrice();
        }
-       System.out.printf("      * %f %f", fncd.getOpBudget(), totalSales);
+       fncd.LoggerReport("      * "+fncd.getOpBudget()+" "+totalSales);
 
     }
 }
@@ -645,43 +723,43 @@ public class main {
 
         // now open all 30 days 
         for(int i = 0; i < 5; i++){
-            System.out.println("----------------------------------------------");
-            System.out.printf("***** FNCD Day %s %d ****\n", fncd.getDay(), i);
+            fncd.LoggerReport("----------------------------------------------");
+            fncd.LoggerReport("***** FNCD Day "+fncd.getDay()+" "+(i+1)+ "****\n");
 
             // run every senerio with openeing
-            System.out.printf("Opening... (current budget $%f)\n", fncd.getOpBudget());
+            fncd.LoggerReport("Opening... (current budget "+fncd.getOpBudget()+")");
             Opening open = new Opening(fncd);
             open.internHire(fncd.getStaffList(), fncd);
             open.AddVehicle(fncd);
 
             // run washing
-            System.out.printf("Washing... \n");
+            fncd.LoggerReport("Washing...");
             Washing wash = new Washing(fncd);
             wash.washVehicle(fncd);
             
 
             //run repair
-            System.out.printf("Repairing... \n");
+            fncd.LoggerReport("Repairing... ");
             Repair repair = new Repair();
             for(Staff mec: fncd.getStaffList()){
                 if(mec instanceof Mechanic){
-                    repair.repairVehicle(fncd.getVehicleList(), mec);
+                    repair.repairVehicle(fncd.getVehicleList(), mec, fncd);
                 }
             }
 
             //run Selling
-            System.out.printf("Selling... \n");
+            fncd.LoggerReport("Selling... ");
             Selling mop = new Selling();
             if(fncd.getDayIndex() < 5){
                 int indext = random.nextInt(weekDays.size());
-                System.out.printf("      * Number of customers came in on a week day are %d\n", indext);
+                fncd.LoggerReport("      * Number of customers came in on a week day are "+indext);
                 for(int j = 0; j < weekDays.get(indext); j++){
-                    System.out.printf("      * Customer %d", j+1);
+                    fncd.LoggerReport("      * Customer "+(j+1));
                     mop.sellThisCar(fncd);
                 }
             }else{
                 int index = random.nextInt(weekEnds.size());
-                System.out.printf("      * Number of customers came in on a weekend day are %d\n", index);
+                fncd.LoggerReport("      * Number of customers came in on a weekend day are "+index+"\n");
                 for(int j = 0; j < weekEnds.get(index); j++){
                     mop.sellThisCar(fncd);
                 }
@@ -690,13 +768,15 @@ public class main {
             Ending end = new Ending();
             end.payStaff(fncd);
             end.pReport(fncd);
-            System.out.println("\n");
+            //System.out.println("\n");
             
-            System.out.printf("Checking Staff... \n");
+            fncd.LoggerReport("\nChecking Staff... \n");
             for(Staff pp: fncd.getStaffList()){
-                System.out.println("      * "+pp.getName()+" "+pp.getPosition()+" "+pp.getBonus()+" "+pp.getBonusTemp());
-
+                String newline = "      * "+pp.getName()+" "+pp.getPosition()+" "+pp.getBonus()+" "+pp.getBonusTemp();
+                fncd.LoggerReport(newline);
             }
+
+            fncd.nextDay();
         }    
     }
 }
