@@ -463,7 +463,7 @@ class Selling {
                 VehicleList.remove(sVehicle);
                 tempStaff = whoSold(fncd);
                 if(tempStaff == null){
-                    fncd.LoggerReport("\n            * Customer Interested but No current Sales person works here !");
+                    fncd.LoggerReport("            * Customer Interested but No current Sales person works here !");
                     return fncd.getSoldVehicle();
                 }
                 //Double bnus = sVehicle.getVehicleBonus();
@@ -589,7 +589,7 @@ class Selling {
 //         this.day = fncd.getDay();
 //         return carL;
 //     }
-// }
+// } 
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
