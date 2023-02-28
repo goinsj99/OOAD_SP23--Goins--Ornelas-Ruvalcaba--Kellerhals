@@ -3,1154 +3,586 @@
 
 Opening... (current budget 500000.0)
       * Current Intern Count 3
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
+          - "Susan"
+          - "Donna"
+          - "Steven"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Ford Focus, Bear Foot (1979), Mazda 3, Bear Foot (F-150), Honda Accord, Jurassic Attack, Hyundai Elantra, Gunslinger, 
        * Performance Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Aston Martin-Vantage-GTE, Bear Foot (1979), Aston Martin-Vantage-GTE, Bear Foot (F-150), Porsche 718-Cayman-GT4, Jurassic Attack, Lexus LC-500h, Gunslinger, 
        * PickUp Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Ram 2500, Bear Foot (1979), Honda Ridgeline, Bear Foot (F-150), Toyota Tundra, Jurassic Attack, Ford Ranger, Gunslinger, 
        * Electric Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - NIO ES6, Bear Foot (1979), Hyundai Kona-Electric, Bear Foot (F-150), Porsche Taycan, Jurassic Attack, Chevrolet Bolt-EV, Gunslinger, 
        * Motorcycle 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Vespa Elettrica, Bear Foot (1979), Lightning LS-218, Bear Foot (F-150), Black Tea-Moped, Jurassic Attack, Harley-Davidson Roadster, Gunslinger, 
        * Monster Truck 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Bear Foot (1979), Bear Foot (F-150), Jurassic Attack, Gunslinger, 
 
 Washing...
       * Intern Currently Working 
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
-      * "Kathleen" Washing Report
-          - Vehicle was dirty and is now Clean Chevrolet Camaro-ZL1
-      * "Donald" Washing Report
-          - Vehicle was dirty and is now Clean Lucid Air
-          - Vehicle was dirty and is now Sparkling Damon Hypersport
-      * "Paul" Washing Report
-          - Vehicle was dirty and is now Clean Grave Digger
-          - Vehicle was dirty and is now Sparkling Nissan Sentra
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * "Susan" Washing Report
+          - Vehicle was dirty and is now Sparkling Aston Martin-Vantage-GTE
+      * "Donna" Washing Report
+          - Vehicle was dirty and is now Clean Ford Focus
+          - Vehicle was dirty and is now Clean Ram 2500
+      * "Steven" Washing Report
+          - Vehicle was dirty and is now Clean NIO ES6
+          - Vehicle was dirty and is now Clean Aston Martin-Vantage-GTE
 
 Repairing... 
-      * "Daniel" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Clean and is now Dirty Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-          - Vehicle was Clean and is now Dirty Grave Digger
-      * "Joseph" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-      * "Cynthia" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-Selling... 
-      * Number of customers came in on a week day are 1
-      * Customer 1
-            * Customer Didnt Want A Car
-|Staff that quit|
-|Staff still working that|
-      * "Jonathan", 8.0, 126.1, 200.5, Working
-      * "Daniel", 8.0, 176.54, 500.5, Working
-      * "Kathleen", 8.0, 151.32, 300.5, Working
-      * "Brian", 8.0, 126.1, 200.5, Working
-      * "Joseph", 8.0, 176.54, 500.5, Working
-      * "Donald", 8.0, 151.32, 300.5, Working
-      * "Kyle", 8.0, 126.1, 200.5, Working
-      * "Cynthia", 8.0, 176.54, 500.5, Working
-      * "Paul", 8.0, 151.32, 300.5, Working
-|Sold Vehicles|
-|Current Vehicle Inventory|
-      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
-      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
-      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
-      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
-      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
-      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
-      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
-      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
-      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Dirty, In Stock
-      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
-      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Dirty, In Stock
-      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Dirty, In Stock
-      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
-      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Dirty, In Stock
-      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
-      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Dirty, In Stock
-      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Dirty, In Stock
-      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
-      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
-      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
-      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
-      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
-      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 498638.1200000001 0.0
-
-Checking Staff... 
-
-      * "Jonathan" Sales 200.5 0.0
-      * "Daniel" Mechanic 500.5 200.0
-      * "Kathleen" Intern 300.5 0.0
-      * "Brian" Sales 200.5 0.0
-      * "Joseph" Mechanic 500.5 200.0
-      * "Donald" Intern 300.5 100.0
-      * "Kyle" Sales 200.5 0.0
-      * "Cynthia" Mechanic 500.5 200.0
-      * "Paul" Intern 300.5 50.0
-----------------------------------------------
-***** FNCD Day Tuesday 2****
-
-Opening... (current budget 498638.1200000001)
-      * Current Intern Count 3
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
-      * Current Vehicle Owned 
-       * Regular Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Performance Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * PickUp Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Electric Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Motorcycle 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Monster Truck 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-
-Washing...
-      * Intern Currently Working 
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
-      * "Kathleen" Washing Report
-          - Vehicle was dirty and is now Sparkling Grave Digger
-      * "Donald" Washing Report
-          - Vehicle was dirty and is now Clean Lucid Air
-          - Vehicle was dirty and is now Clean Nissan Titan
-      * "Paul" Washing Report
-          - Vehicle was dirty and is now Clean Lightning LS-218
-
-Repairing... 
-      * "Daniel" Repairing Report
-          - Vehicle was Clean and is now Dirty Lucid Air
-          - Vehicle was Sparkling and is now clean Grave Digger
-      * "Joseph" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-          - Vehicle was Clean and is now Dirty Grave Digger
-      * "Cynthia" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-Selling... 
-      * Number of customers came in on a week day are 1
-      * Customer 1
-            * Customer Didnt Want A Car
-|Staff that quit|
-      * "Jonathan", 16.0, 126.1, 0.0, Quits
-
-      * "Brian", 16.0, 126.1, 0.0, Quits
-
-      * "Kyle", 16.0, 126.1, 0.0, Quits
-
-|Staff still working that|
-      * "Daniel", 16.0, 176.54, 500.5, Working
-      * "Kathleen", 16.0, 151.32, 300.5, Working
-      * "Joseph", 16.0, 176.54, 500.5, Working
-      * "Donald", 16.0, 151.32, 300.5, Working
-      * "Cynthia", 16.0, 176.54, 500.5, Working
-      * "Paul", 16.0, 151.32, 300.5, Working
-|Sold Vehicles|
-|Current Vehicle Inventory|
-      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
-      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
-      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
-      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
-      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
-      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
-      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
-      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
-      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
-      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
-      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
-      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Dirty, In Stock
-      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
-      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Dirty, In Stock
-      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
-      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Dirty, In Stock
-      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Dirty, In Stock
-      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
-      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
-      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
-      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
-      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
-      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 497276.2400000002 0.0
-
-Checking Staff... 
-
-      * "Daniel" Mechanic 500.5 200.0
-      * "Kathleen" Intern 300.5 100.0
-      * "Joseph" Mechanic 500.5 400.0
-      * "Donald" Intern 300.5 100.0
-      * "Cynthia" Mechanic 500.5 400.0
-      * "Paul" Intern 300.5 50.0
-----------------------------------------------
-***** FNCD Day Wensday 3****
-
-Opening... (current budget 497276.2400000002)
-      * Current Intern Count 3
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
-      * Current Vehicle Owned 
-       * Regular Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Performance Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * PickUp Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Electric Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Motorcycle 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-       * Monster Truck 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Bigfoot
-          - Volvo S60
-          - Acura NSX
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-
-Washing...
-      * Intern Currently Working 
-          - "Kathleen"
-          - "Donald"
-          - "Paul"
-      * "Kathleen" Washing Report
-          - Vehicle was dirty and is now Clean Lucid Air
-          - Vehicle was dirty and is now Clean Grave Digger
-      * "Donald" Washing Report
-          - Vehicle was dirty and is now Clean Bigfoot
-          - Vehicle was dirty and is now Clean Acura NSX
-      * "Paul" Washing Report
-          - Vehicle was dirty and is now Clean Tesla Model-S
-          - Vehicle was dirty and is now Clean KTM Freeride-E-XC
-
-Repairing... 
-      * "Daniel" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Clean and is now Dirty Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-          - Vehicle was Clean and is now Dirty Grave Digger
-      * "Joseph" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
-      * "Cynthia" Repairing Report
-          - Vehicle was Used and is now Like New Lucid Air
-          - Vehicle was Broken and is now Used Grave Digger
+      * "Scott" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Clean and is now Dirty Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Sparkling and is now clean Aston Martin-Vantage-GTE
+      * "Elizabeth" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Clean and is now Dirty Aston Martin-Vantage-GTE
+      * "Christine" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
 Selling... 
       * Number of customers came in on a week day are 3
       * Customer 1
-
-            * Customer Interested but No current Sales person works here !
+            * Vehicle was Sold Jurassic Attack. It was fixed by "Heather"
       * Customer 2
-            * Customer Didnt Want A Car
+            * Vehicle was Sold Toyota Tundra. It was fixed by "Heather"
       * Customer 3
-
-            * Customer Interested but No current Sales person works here !
-|Staff that quit|
-      * "Daniel", 24.0, 176.54, 400.0, Quits
-
-      * "Joseph", 24.0, 176.54, 600.0, Quits
-
-      * "Cynthia", 24.0, 176.54, 600.0, Quits
-
-|Staff still working that|
-      * "Donald", 24.0, 151.32, 300.5, Working
-      * "Paul", 24.0, 151.32, 300.5, Working
-|Sold Vehicles|
-      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
-      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
-|Current Vehicle Inventory|
-      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, In Stock
-      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
-      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
-      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Dirty, In Stock
-      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
-      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Dirty, In Stock
-      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
-      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
-      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
-      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
-      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
-      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
-      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
-      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
-      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
-      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, In Stock
-      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Dirty, In Stock
-      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
-      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
-      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
-      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 496292.66000000027 170315.55929875717
+            * Vehicle was Sold Aston Martin-Vantage-GTE. It was fixed by "Karen"
+| Staff that quit |
+| Staff still working that |
+      * "Heather", 8.0, 126.1, 802.0, Working
+      * "Scott", 8.0, 176.54, 500.5, Working
+      * "Susan", 8.0, 151.32, 300.5, Working
+      * "Karen", 8.0, 126.1, 401.0, Working
+      * "Elizabeth", 8.0, 176.54, 500.5, Working
+      * "Donna", 8.0, 151.32, 300.5, Working
+      * "Angela", 8.0, 126.1, 200.5, Working
+      * "Christine", 8.0, 176.54, 500.5, Working
+      * "Steven", 8.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Jurassic Attack, 55593.40352550585, 88949.44564080937,Used,Dirty, Sold
+      * Toyota Tundra, 37509.99332692745, 75019.9866538549,New,Dirty, Sold
+      * Aston Martin-Vantage-GTE, 36241.63447344661, 72483.26894689322,New,Clean, Sold
+| Current Vehicle Inventory |
+      * Ford Focus, 15801.906502060137, 25283.05040329622,Used,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 39594.51393878579, 63351.22230205727,Used,Dirty, In Stock
+      * Ram 2500, 30619.342129944464, 61238.68425988893,New,Clean, In Stock
+      * NIO ES6, 23114.58147798497, 23114.58147798497,Broken,Clean, In Stock
+      * Vespa Elettrica, 12414.917733569875, 24829.83546713975,New,Clean, In Stock
+      * Bear Foot (1979), 56357.34376721871, 56357.34376721871,Broken,Clean, In Stock
+      * Mazda 3, 17949.159025119465, 28718.654440191145,Used,Sparkling, In Stock
+      * Honda Ridgeline, 32083.422297994995, 32083.422297994995,Broken,Clean, In Stock
+      * Hyundai Kona-Electric, 24617.829162906048, 39388.52666064968,Used,Clean, In Stock
+      * Lightning LS-218, 19122.53111985282, 19122.53111985282,Broken,Dirty, In Stock
+      * Bear Foot (F-150), 33363.75309575813, 66727.50619151627,New,Dirty, In Stock
+      * Honda Accord, 12304.146294942064, 12304.146294942064,Broken,Clean, In Stock
+      * Porsche 718-Cayman-GT4, 24814.39410912676, 24814.39410912676,Broken,Clean, In Stock
+      * Porsche Taycan, 21322.2451383908, 34115.592221425286,Used,Dirty, In Stock
+      * Black Tea-Moped, 12479.552190685798, 12479.552190685798,Broken,Dirty, In Stock
+      * Hyundai Elantra, 18506.91323419194, 37013.82646838388,New,Dirty, In Stock
+      * Lexus LC-500h, 32803.864326230265, 65607.72865246053,New,Dirty, In Stock
+      * Ford Ranger, 30857.503747143473, 61715.00749428695,New,Dirty, In Stock
+      * Chevrolet Bolt-EV, 35650.24626102623, 57040.39401764197,Used,Clean, In Stock
+      * Harley-Davidson Roadster, 15086.964933132731, 30173.929866265462,New,Dirty, In Stock
+      * Gunslinger, 33012.07666513409, 33012.07666513409,Broken,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 735090.8212415576 236452.7012415575
 
 Checking Staff... 
 
-      * "Donald" Intern 300.5 100.0
-      * "Paul" Intern 300.5 50.0
+      * "Heather" Sales 802.0 0.0
+      * "Scott" Mechanic 500.5 120.0
+      * "Susan" Intern 300.5 70.0
+      * "Karen" Sales 401.0 0.0
+      * "Elizabeth" Mechanic 500.5 120.0
+      * "Donna" Intern 300.5 0.0
+      * "Angela" Sales 200.5 0.0
+      * "Christine" Mechanic 500.5 120.0
+      * "Steven" Intern 300.5 0.0
 ----------------------------------------------
-***** FNCD Day Thursday 4****
+***** FNCD Day Tuesday 2****
 
-Opening... (current budget 496292.66000000027)
-      * Current Intern Count 2
-          - "Donald"
-          - "Paul"
+Opening... (current budget 735090.8212415576)
+      * Current Intern Count 3
+          - "Susan"
+          - "Donna"
+          - "Steven"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Ford Focus, Bear Foot (1979), Mazda 3, Bear Foot (F-150), Honda Accord, Hyundai Elantra, Gunslinger, 
        * Performance Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Aston Martin-Vantage-GTE, Bear Foot (1979), Bear Foot (F-150), Porsche 718-Cayman-GT4, Lexus LC-500h, Gunslinger, 
        * PickUp Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Ram 2500, Bear Foot (1979), Honda Ridgeline, Bear Foot (F-150), Ford Ranger, Gunslinger, 
        * Electric Cars 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - NIO ES6, Bear Foot (1979), Hyundai Kona-Electric, Bear Foot (F-150), Porsche Taycan, Chevrolet Bolt-EV, Gunslinger, 
        * Motorcycle 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
+          - Vespa Elettrica, Bear Foot (1979), Lightning LS-218, Bear Foot (F-150), Black Tea-Moped, Harley-Davidson Roadster, Gunslinger, 
        * Monster Truck 
-          - Buick Verano
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Madusa
-          - Subaru Impreza
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-      * Intern Hired "Kelly"
-      * Bought Performance Car Aston Martin-Vantage-GTE
-      * Adding PickUp Car Ford Ranger
-      * Adding Monster Truck Avenger
+          - Bear Foot (1979), Bear Foot (F-150), Gunslinger, 
+      * Bought Performance Car Mercedes-AMG C63-S-Coupe
+      * Adding PickUp Car Chevrolet Colorado
+      * Adding Monster Truck The Destroyer
 
 Washing...
       * Intern Currently Working 
-          - "Donald"
-          - "Paul"
-          - "Kelly"
-      * "Donald" Washing Report
-          - Vehicle was dirty and is now Clean Lucid Air
-          - Vehicle was dirty and is now Clean Grave Digger
-      * "Paul" Washing Report
-          - Vehicle was dirty and is now Clean Subaru Impreza
-      * "Kelly" Washing Report
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * "Susan" Washing Report
+          - Vehicle was dirty and is now Clean Ford Focus
+          - Vehicle was dirty and is now Clean Aston Martin-Vantage-GTE
+      * "Donna" Washing Report
+          - Vehicle was dirty and is now Clean Lightning LS-218
+          - Vehicle was dirty and is now Clean Bear Foot (F-150)
+      * "Steven" Washing Report
+          - Vehicle was dirty and is now Clean Black Tea-Moped
 
 Repairing... 
+      * "Scott" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Clean and is now Dirty Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Clean and is now Dirty Aston Martin-Vantage-GTE
+      * "Elizabeth" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+      * "Christine" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
 Selling... 
       * Number of customers came in on a week day are 5
       * Customer 1
             * Customer Didnt Want A Car
       * Customer 2
-
-            * Customer Interested but No current Sales person works here !
+            * Vehicle was Sold The Destroyer. It was fixed by "Heather"
       * Customer 3
-            * Customer Didnt Want A Car
+            * Vehicle was Sold Lexus LC-500h. It was fixed by "Angela"
       * Customer 4
-
-            * Customer Interested but No current Sales person works here !
+            * Vehicle was Sold Ford Ranger. It was fixed by "Heather"
       * Customer 5
-
-            * Customer Interested but No current Sales person works here !
-|Staff that quit|
-|Staff still working that|
-      * "Paul", 32.0, 151.32, 300.5, Working
-      * "Kelly", 8.0, 151.32, 300.5, Working
-|Sold Vehicles|
-      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
-      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
-      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Clean, Sold
-      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, Sold
-      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, Sold
-|Current Vehicle Inventory|
-      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
-      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
-      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Clean, In Stock
-      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
-      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Clean, In Stock
-      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
-      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
-      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
-      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
-      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
-      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
-      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
-      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
-      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
-      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Dirty, In Stock
-      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Dirty, In Stock
-      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Dirty, In Stock
-      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Dirty, In Stock
-      * War Wizard, 29392.882782786826, 58785.76556557365,New,Dirty, In Stock
-      * Aston Martin-Vantage-GTE, 38140.64428871582, 76281.28857743164,New,Clean, In Stock
-      * Ford Ranger, 29893.26526699646, 29893.26526699646,Broken,Dirty, In Stock
-      * Avenger, 28760.559281585385, 28760.559281585385,Broken,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 399044.2311627026 313081.06276024826
+            * Vehicle was Sold Hyundai Elantra. It was fixed by "Angela"
+| Staff that quit |
+| Staff still working that |
+      * "Heather", 16.0, 126.1, 3208.0, Working
+      * "Scott", 16.0, 176.54, 500.5, Working
+      * "Susan", 16.0, 151.32, 300.5, Working
+      * "Karen", 16.0, 126.1, 401.0, Working
+      * "Elizabeth", 16.0, 176.54, 500.5, Working
+      * "Donna", 16.0, 151.32, 300.5, Working
+      * "Angela", 16.0, 126.1, 802.0, Working
+      * "Christine", 16.0, 176.54, 500.5, Working
+      * "Steven", 16.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Jurassic Attack, 55593.40352550585, 88949.44564080937,Used,Dirty, Sold
+      * Toyota Tundra, 37509.99332692745, 75019.9866538549,New,Dirty, Sold
+      * Aston Martin-Vantage-GTE, 36241.63447344661, 72483.26894689322,New,Clean, Sold
+      * The Destroyer, 55467.81165259012, 88748.4986441442,Used,Dirty, Sold
+      * Lexus LC-500h, 32803.864326230265, 65607.72865246053,New,Dirty, Sold
+      * Ford Ranger, 30857.503747143473, 61715.00749428695,New,Dirty, Sold
+      * Hyundai Elantra, 18506.91323419194, 37013.82646838388,New,Dirty, Sold
+| Current Vehicle Inventory |
+      * Ford Focus, 15801.906502060137, 25283.05040329622,Used,Dirty, In Stock
+      * Aston Martin-Vantage-GTE, 39594.51393878579, 63351.22230205727,Used,Dirty, In Stock
+      * Ram 2500, 30619.342129944464, 61238.68425988893,New,Clean, In Stock
+      * NIO ES6, 23114.58147798497, 23114.58147798497,Broken,Clean, In Stock
+      * Vespa Elettrica, 12414.917733569875, 24829.83546713975,New,Clean, In Stock
+      * Bear Foot (1979), 56357.34376721871, 56357.34376721871,Broken,Clean, In Stock
+      * Mazda 3, 17949.159025119465, 28718.654440191145,Used,Sparkling, In Stock
+      * Honda Ridgeline, 32083.422297994995, 32083.422297994995,Broken,Clean, In Stock
+      * Hyundai Kona-Electric, 24617.829162906048, 39388.52666064968,Used,Clean, In Stock
+      * Lightning LS-218, 19122.53111985282, 19122.53111985282,Broken,Clean, In Stock
+      * Bear Foot (F-150), 33363.75309575813, 66727.50619151627,New,Clean, In Stock
+      * Honda Accord, 12304.146294942064, 12304.146294942064,Broken,Clean, In Stock
+      * Porsche 718-Cayman-GT4, 24814.39410912676, 24814.39410912676,Broken,Clean, In Stock
+      * Porsche Taycan, 21322.2451383908, 34115.592221425286,Used,Dirty, In Stock
+      * Black Tea-Moped, 12479.552190685798, 12479.552190685798,Broken,Clean, In Stock
+      * Chevrolet Bolt-EV, 35650.24626102623, 57040.39401764197,Used,Clean, In Stock
+      * Harley-Davidson Roadster, 15086.964933132731, 30173.929866265462,New,Dirty, In Stock
+      * Gunslinger, 33012.07666513409, 33012.07666513409,Broken,Dirty, In Stock
+      * Mercedes-AMG C63-S-Coupe, 32835.77319302819, 52537.237108845104,Used,Dirty, In Stock
+      * Chevrolet Colorado, 25305.64628239043, 50611.29256478086,New,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 873204.7713728244 489537.7625008331
 
 Checking Staff... 
 
-      * "Paul" Intern 300.5 50.0
-      * "Kelly" Intern 300.5 0.0
+      * "Heather" Sales 3208.0 0.0
+      * "Scott" Mechanic 500.5 240.0
+      * "Susan" Intern 300.5 70.0
+      * "Karen" Sales 401.0 0.0
+      * "Elizabeth" Mechanic 500.5 240.0
+      * "Donna" Intern 300.5 0.0
+      * "Angela" Sales 802.0 0.0
+      * "Christine" Mechanic 500.5 240.0
+      * "Steven" Intern 300.5 0.0
 ----------------------------------------------
-***** FNCD Day Friday 5****
+***** FNCD Day Wensday 3****
 
-Opening... (current budget 399044.2311627026)
-      * Current Intern Count 2
-          - "Paul"
-          - "Kelly"
+Opening... (current budget 873204.7713728244)
+      * Current Intern Count 3
+          - "Susan"
+          - "Donna"
+          - "Steven"
       * Current Vehicle Owned 
        * Regular Cars 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
+          - Ford Focus, Bear Foot (1979), Mazda 3, Bear Foot (F-150), Honda Accord, Gunslinger, 
        * Performance Cars 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
+          - Aston Martin-Vantage-GTE, Bear Foot (1979), Bear Foot (F-150), Porsche 718-Cayman-GT4, Gunslinger, Mercedes-AMG C63-S-Coupe, 
        * PickUp Cars 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
+          - Ram 2500, Bear Foot (1979), Honda Ridgeline, Bear Foot (F-150), Gunslinger, Chevrolet Colorado, 
        * Electric Cars 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
+          - NIO ES6, Bear Foot (1979), Hyundai Kona-Electric, Bear Foot (F-150), Porsche Taycan, Chevrolet Bolt-EV, Gunslinger, 
        * Motorcycle 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
+          - Vespa Elettrica, Bear Foot (1979), Lightning LS-218, Bear Foot (F-150), Black Tea-Moped, Harley-Davidson Roadster, Gunslinger, 
        * Monster Truck 
-          - Chevrolet Camaro-ZL1
-          - Ford F-150
-          - Lucid Air
-          - Damon Hypersport
-          - Grave Digger
-          - Nissan Sentra
-          - BMW M2-Competition
-          - Nissan Titan
-          - Fisker Ocean
-          - Lightning LS-218
-          - Volvo S60
-          - GMC Canyon
-          - Tesla Model-S
-          - KTM Freeride-E-XC
-          - Aston Martin-Vantage-GTE
-          - Ram 2500
-          - Porsche Taycan
-          - Husqvarna EE-5
-          - War Wizard
-          - Aston Martin-Vantage-GTE
-          - Ford Ranger
-          - Avenger
-      * Intern Hired "Katherine"
-      * Bought Regular Car Hyundai Elantra
-      * Adding PickUp Car Ram 1500
-      * Adding Monster Truck Bear Foot (2xtreme)
-      * Bought Regular Car Mitsubishi Lancer
-      * Adding Monster Truck WCW Nitro Machine
+          - Bear Foot (1979), Bear Foot (F-150), Gunslinger, 
+      * Bought Regular Car Volvo S60
+      * Bought Performance Car BMW M5-Competition
+      * Adding PickUp Car Nissan Navara
+      * Adding Monster Truck Monster Mutt
 
 Washing...
       * Intern Currently Working 
-          - "Paul"
-          - "Kelly"
-          - "Katherine"
-      * "Paul" Washing Report
-          - Vehicle was dirty and is now Sparkling Aston Martin-Vantage-GTE
-          - Vehicle was dirty and is now Sparkling Ram 2500
-      * "Kelly" Washing Report
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * "Susan" Washing Report
+          - Vehicle was dirty and is now Clean Aston Martin-Vantage-GTE
+      * "Donna" Washing Report
+          - Vehicle was dirty and is now Clean Ford Focus
           - Vehicle was dirty and is now Sparkling Porsche Taycan
-      * "Katherine" Washing Report
-          - Vehicle was dirty and is now Clean Husqvarna EE-5
-          - Vehicle was dirty and is now Clean War Wizard
+      * "Steven" Washing Report
+          - Vehicle was dirty and is now Clean Gunslinger
 
 Repairing... 
+      * "Scott" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Clean and is now Dirty Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Clean and is now Dirty Aston Martin-Vantage-GTE
+      * "Elizabeth" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+      * "Christine" Repairing Report
+          - Vehicle was Used and is now Like New Ford Focus
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
 Selling... 
-      * Number of customers came in on a week day are 0
-|Staff that quit|
-|Staff still working that|
-      * "Paul", 40.0, 151.32, 300.5, Working
-      * "Kelly", 16.0, 151.32, 300.5, Working
-      * "Katherine", 8.0, 151.32, 300.5, Working
-|Sold Vehicles|
-      * Acura NSX, 39415.84806717267, 63065.35690747628,Used,Clean, Sold
-      * Bigfoot, 53625.101195640455, 107250.20239128091,New,Clean, Sold
-      * Subaru Impreza, 17735.35131872061, 28376.56210995298,Used,Clean, Sold
-      * Madusa, 44512.367823417815, 89024.73564683563,New,Clean, Sold
-      * Buick Verano, 12682.102852351234, 25364.20570470247,New,Clean, Sold
-|Current Vehicle Inventory|
-      * Chevrolet Camaro-ZL1, 30248.181495164034, 60496.36299032807,New,Clean, In Stock
-      * Ford F-150, 21135.326349004237, 42270.652698008475,New,Clean, In Stock
-      * Lucid Air, 27950.054052029922, 44720.08648324788,Used,Clean, In Stock
-      * Damon Hypersport, 17983.17467410883, 35966.34934821766,New,Sparkling, In Stock
-      * Grave Digger, 51345.789787683956, 51345.789787683956,Broken,Clean, In Stock
-      * Nissan Sentra, 12746.00391224099, 12746.00391224099,Broken,Sparkling, In Stock
-      * BMW M2-Competition, 29012.62251769244, 29012.62251769244,Broken,Clean, In Stock
-      * Nissan Titan, 33867.98883916334, 33867.98883916334,Broken,Clean, In Stock
-      * Fisker Ocean, 34783.358612638054, 34783.358612638054,Broken,Clean, In Stock
-      * Lightning LS-218, 14329.294000104317, 14329.294000104317,Broken,Clean, In Stock
-      * Volvo S60, 11286.759912370953, 18058.815859793525,Used,Clean, In Stock
-      * GMC Canyon, 25213.194551078865, 40341.11128172619,Used,Clean, In Stock
-      * Tesla Model-S, 39748.82881623157, 63598.12610597052,Used,Clean, In Stock
-      * KTM Freeride-E-XC, 12389.136526844522, 19822.618442951236,Used,Clean, In Stock
-      * Aston Martin-Vantage-GTE, 38698.7796296091, 61918.04740737456,Used,Sparkling, In Stock
-      * Ram 2500, 24421.32592716121, 39074.12148345794,Used,Sparkling, In Stock
-      * Porsche Taycan, 32227.01298037778, 32227.01298037778,Broken,Sparkling, In Stock
-      * Husqvarna EE-5, 15965.208174980748, 31930.416349961495,New,Clean, In Stock
-      * War Wizard, 29392.882782786826, 58785.76556557365,New,Clean, In Stock
-      * Aston Martin-Vantage-GTE, 38140.64428871582, 76281.28857743164,New,Clean, In Stock
-      * Ford Ranger, 29893.26526699646, 29893.26526699646,Broken,Dirty, In Stock
-      * Avenger, 28760.559281585385, 28760.559281585385,Broken,Dirty, In Stock
-      * Hyundai Elantra, 10615.508021753718, 21231.016043507436,New,Dirty, In Stock
-      * Ram 1500, 38223.31693791502, 38223.31693791502,Broken,Sparkling, In Stock
-      * Bear Foot (2xtreme), 50698.51563835083, 81117.62502136134,Used,Sparkling, In Stock
-      * Mitsubishi Lancer, 16912.219710942067, 33824.43942188413,New,Dirty, In Stock
-      * WCW Nitro Machine, 35652.50186155024, 35652.50186155024,Broken,Dirty, In Stock
-|Our Budget & Total Sale Number?|
-      * 246488.2089921907 313081.06276024826
+      * Number of customers came in on a week day are 5
+      * Customer 1
+            * Vehicle was Sold Bear Foot (F-150). It was fixed by "Karen"
+      * Customer 2
+            * Vehicle was Sold Volvo S60. It was fixed by "Heather"
+      * Customer 3
+            * Customer Didnt Want A Car
+      * Customer 4
+            * Vehicle was Sold Mazda 3. It was fixed by "Karen"
+      * Customer 5
+            * Vehicle was Sold Ford Focus. It was fixed by "Heather"
+| Staff that quit |
+| Staff still working that |
+      * "Heather", 24.0, 126.1, 12832.0, Working
+      * "Scott", 24.0, 176.54, 500.5, Working
+      * "Susan", 24.0, 151.32, 300.5, Working
+      * "Karen", 24.0, 126.1, 1604.0, Working
+      * "Elizabeth", 24.0, 176.54, 500.5, Working
+      * "Donna", 24.0, 151.32, 300.5, Working
+      * "Angela", 24.0, 126.1, 802.0, Working
+      * "Christine", 24.0, 176.54, 500.5, Working
+      * "Steven", 24.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Jurassic Attack, 55593.40352550585, 88949.44564080937,Used,Dirty, Sold
+      * Toyota Tundra, 37509.99332692745, 75019.9866538549,New,Dirty, Sold
+      * Aston Martin-Vantage-GTE, 36241.63447344661, 72483.26894689322,New,Clean, Sold
+      * The Destroyer, 55467.81165259012, 88748.4986441442,Used,Dirty, Sold
+      * Lexus LC-500h, 32803.864326230265, 65607.72865246053,New,Dirty, Sold
+      * Ford Ranger, 30857.503747143473, 61715.00749428695,New,Dirty, Sold
+      * Hyundai Elantra, 18506.91323419194, 37013.82646838388,New,Dirty, Sold
+      * Bear Foot (F-150), 33363.75309575813, 66727.50619151627,New,Clean, Sold
+      * Volvo S60, 15345.250264610786, 30690.500529221572,New,Clean, Sold
+      * Mazda 3, 17949.159025119465, 28718.654440191145,Used,Sparkling, Sold
+      * Ford Focus, 15801.906502060137, 25283.05040329622,Used,Dirty, Sold
+| Current Vehicle Inventory |
+      * Aston Martin-Vantage-GTE, 39594.51393878579, 63351.22230205727,Used,Dirty, In Stock
+      * Ram 2500, 30619.342129944464, 61238.68425988893,New,Clean, In Stock
+      * NIO ES6, 23114.58147798497, 23114.58147798497,Broken,Clean, In Stock
+      * Vespa Elettrica, 12414.917733569875, 24829.83546713975,New,Clean, In Stock
+      * Bear Foot (1979), 56357.34376721871, 56357.34376721871,Broken,Clean, In Stock
+      * Honda Ridgeline, 32083.422297994995, 32083.422297994995,Broken,Clean, In Stock
+      * Hyundai Kona-Electric, 24617.829162906048, 39388.52666064968,Used,Clean, In Stock
+      * Lightning LS-218, 19122.53111985282, 19122.53111985282,Broken,Clean, In Stock
+      * Honda Accord, 12304.146294942064, 12304.146294942064,Broken,Clean, In Stock
+      * Porsche 718-Cayman-GT4, 24814.39410912676, 24814.39410912676,Broken,Clean, In Stock
+      * Porsche Taycan, 21322.2451383908, 34115.592221425286,Used,Sparkling, In Stock
+      * Black Tea-Moped, 12479.552190685798, 12479.552190685798,Broken,Clean, In Stock
+      * Chevrolet Bolt-EV, 35650.24626102623, 57040.39401764197,Used,Clean, In Stock
+      * Harley-Davidson Roadster, 15086.964933132731, 30173.929866265462,New,Dirty, In Stock
+      * Gunslinger, 33012.07666513409, 33012.07666513409,Broken,Clean, In Stock
+      * Mercedes-AMG C63-S-Coupe, 32835.77319302819, 52537.237108845104,Used,Dirty, In Stock
+      * Chevrolet Colorado, 25305.64628239043, 50611.29256478086,New,Dirty, In Stock
+      * BMW M5-Competition, 27746.362722584072, 27746.362722584072,Broken,Dirty, In Stock
+      * Nissan Navara, 26017.128092958563, 26017.128092958563,Broken,Dirty, In Stock
+      * Monster Mutt, 35420.30693008465, 56672.49108813544,Used,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 918733.5549268118 640957.4740650583
 
 Checking Staff... 
 
-      * "Paul" Intern 300.5 220.0
-      * "Kelly" Intern 300.5 100.0
-      * "Katherine" Intern 300.5 0.0
+      * "Heather" Sales 12832.0 0.0
+      * "Scott" Mechanic 500.5 360.0
+      * "Susan" Intern 300.5 70.0
+      * "Karen" Sales 1604.0 0.0
+      * "Elizabeth" Mechanic 500.5 360.0
+      * "Donna" Intern 300.5 100.0
+      * "Angela" Sales 802.0 0.0
+      * "Christine" Mechanic 500.5 360.0
+      * "Steven" Intern 300.5 0.0
+----------------------------------------------
+***** FNCD Day Thursday 4****
+
+Opening... (current budget 918733.5549268118)
+      * Current Intern Count 3
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Bear Foot (1979), Honda Accord, Gunslinger, Monster Mutt, 
+       * Performance Cars 
+          - Aston Martin-Vantage-GTE, Bear Foot (1979), Porsche 718-Cayman-GT4, Gunslinger, Mercedes-AMG C63-S-Coupe, BMW M5-Competition, Monster Mutt, 
+       * PickUp Cars 
+          - Ram 2500, Bear Foot (1979), Honda Ridgeline, Gunslinger, Chevrolet Colorado, Nissan Navara, Monster Mutt, 
+       * Electric Cars 
+          - NIO ES6, Bear Foot (1979), Hyundai Kona-Electric, Porsche Taycan, Chevrolet Bolt-EV, Gunslinger, Monster Mutt, 
+       * Motorcycle 
+          - Vespa Elettrica, Bear Foot (1979), Lightning LS-218, Black Tea-Moped, Harley-Davidson Roadster, Gunslinger, Monster Mutt, 
+       * Monster Truck 
+          - Bear Foot (1979), Gunslinger, Monster Mutt, 
+      * Bought Regular Car Buick Verano
+      * Adding PickUp Car Toyota Hilux
+      * Adding Monster Truck The Felon
+      * Bought Regular Car Acura TLX
+      * Adding Monster Truck Madusa
+      * Bought Regular Car Acura TLX
+      * Adding Monster Truck Blacksmith
+
+Washing...
+      * Intern Currently Working 
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * "Susan" Washing Report
+          - Vehicle was dirty and is now Clean Harley-Davidson Roadster
+      * "Donna" Washing Report
+          - Vehicle was dirty and is now Clean Aston Martin-Vantage-GTE
+          - Vehicle was dirty and is now Clean Mercedes-AMG C63-S-Coupe
+      * "Steven" Washing Report
+          - Vehicle was dirty and is now Clean Chevrolet Colorado
+          - Vehicle was dirty and is now Clean BMW M5-Competition
+
+Repairing... 
+      * "Scott" Repairing Report
+          - Vehicle was Clean and is now Dirty Aston Martin-Vantage-GTE
+          - Vehicle was Clean and is now Dirty NIO ES6
+      * "Elizabeth" Repairing Report
+      * "Christine" Repairing Report
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Broken and is now Used NIO ES6
+Selling... 
+      * Number of customers came in on a week day are 3
+      * Customer 1
+            * Vehicle was Sold Madusa. It was fixed by "Heather"
+      * Customer 2
+            * Customer Didnt Want A Car
+      * Customer 3
+            * Customer Didnt Want A Car
+| Staff that quit |
+| Staff still working that |
+      * "Heather", 32.0, 126.1, 25664.0, Working
+      * "Scott", 32.0, 176.54, 500.5, Working
+      * "Susan", 32.0, 151.32, 300.5, Working
+      * "Karen", 32.0, 126.1, 1604.0, Working
+      * "Elizabeth", 32.0, 176.54, 500.5, Working
+      * "Donna", 32.0, 151.32, 300.5, Working
+      * "Angela", 32.0, 126.1, 802.0, Working
+      * "Christine", 32.0, 176.54, 500.5, Working
+      * "Steven", 32.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Jurassic Attack, 55593.40352550585, 88949.44564080937,Used,Dirty, Sold
+      * Toyota Tundra, 37509.99332692745, 75019.9866538549,New,Dirty, Sold
+      * Aston Martin-Vantage-GTE, 36241.63447344661, 72483.26894689322,New,Clean, Sold
+      * The Destroyer, 55467.81165259012, 88748.4986441442,Used,Dirty, Sold
+      * Lexus LC-500h, 32803.864326230265, 65607.72865246053,New,Dirty, Sold
+      * Ford Ranger, 30857.503747143473, 61715.00749428695,New,Dirty, Sold
+      * Hyundai Elantra, 18506.91323419194, 37013.82646838388,New,Dirty, Sold
+      * Bear Foot (F-150), 33363.75309575813, 66727.50619151627,New,Clean, Sold
+      * Volvo S60, 15345.250264610786, 30690.500529221572,New,Clean, Sold
+      * Mazda 3, 17949.159025119465, 28718.654440191145,Used,Sparkling, Sold
+      * Ford Focus, 15801.906502060137, 25283.05040329622,Used,Dirty, Sold
+      * Madusa, 39655.63431946874, 79311.26863893749,New,Sparkling, Sold
+| Current Vehicle Inventory |
+      * Aston Martin-Vantage-GTE, 39594.51393878579, 63351.22230205727,Used,Dirty, In Stock
+      * Ram 2500, 30619.342129944464, 61238.68425988893,New,Clean, In Stock
+      * NIO ES6, 23114.58147798497, 23114.58147798497,Broken,Dirty, In Stock
+      * Vespa Elettrica, 12414.917733569875, 24829.83546713975,New,Clean, In Stock
+      * Bear Foot (1979), 56357.34376721871, 56357.34376721871,Broken,Clean, In Stock
+      * Honda Ridgeline, 32083.422297994995, 32083.422297994995,Broken,Clean, In Stock
+      * Hyundai Kona-Electric, 24617.829162906048, 39388.52666064968,Used,Clean, In Stock
+      * Lightning LS-218, 19122.53111985282, 19122.53111985282,Broken,Clean, In Stock
+      * Honda Accord, 12304.146294942064, 12304.146294942064,Broken,Clean, In Stock
+      * Porsche 718-Cayman-GT4, 24814.39410912676, 24814.39410912676,Broken,Clean, In Stock
+      * Porsche Taycan, 21322.2451383908, 34115.592221425286,Used,Sparkling, In Stock
+      * Black Tea-Moped, 12479.552190685798, 12479.552190685798,Broken,Clean, In Stock
+      * Chevrolet Bolt-EV, 35650.24626102623, 57040.39401764197,Used,Clean, In Stock
+      * Harley-Davidson Roadster, 15086.964933132731, 30173.929866265462,New,Clean, In Stock
+      * Gunslinger, 33012.07666513409, 33012.07666513409,Broken,Clean, In Stock
+      * Mercedes-AMG C63-S-Coupe, 32835.77319302819, 52537.237108845104,Used,Clean, In Stock
+      * Chevrolet Colorado, 25305.64628239043, 50611.29256478086,New,Clean, In Stock
+      * BMW M5-Competition, 27746.362722584072, 27746.362722584072,Broken,Clean, In Stock
+      * Nissan Navara, 26017.128092958563, 26017.128092958563,Broken,Dirty, In Stock
+      * Monster Mutt, 35420.30693008465, 56672.49108813544,Used,Dirty, In Stock
+      * Buick Verano, 15618.023933016691, 15618.023933016691,Broken,Clean, In Stock
+      * Toyota Hilux, 32564.105035495515, 52102.56805679283,Used,Dirty, In Stock
+      * The Felon, 23486.600854850876, 37578.5613677614,Used,Dirty, In Stock
+      * Acura TLX, 18936.34292499189, 18936.34292499189,Broken,Dirty, In Stock
+      * Acura TLX, 17770.48448461403, 35540.96896922806,New,Clean, In Stock
+      * Blacksmith, 29329.31556985291, 29329.31556985291,Broken,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 819322.4364434589 720268.7427039958
+
+Checking Staff... 
+
+      * "Heather" Sales 25664.0 0.0
+      * "Scott" Mechanic 500.5 360.0
+      * "Susan" Intern 300.5 70.0
+      * "Karen" Sales 1604.0 0.0
+      * "Elizabeth" Mechanic 500.5 360.0
+      * "Donna" Intern 300.5 100.0
+      * "Angela" Sales 802.0 0.0
+      * "Christine" Mechanic 500.5 530.0
+      * "Steven" Intern 300.5 0.0
+----------------------------------------------
+***** FNCD Day Friday 5****
+
+Opening... (current budget 819322.4364434589)
+      * Current Intern Count 3
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Bear Foot (1979), Honda Accord, Gunslinger, Monster Mutt, Buick Verano, The Felon, Acura TLX, Acura TLX, Blacksmith, 
+       * Performance Cars 
+          - Aston Martin-Vantage-GTE, Bear Foot (1979), Porsche 718-Cayman-GT4, Gunslinger, Mercedes-AMG C63-S-Coupe, BMW M5-Competition, Monster Mutt, The Felon, Blacksmith, 
+       * PickUp Cars 
+          - Ram 2500, Bear Foot (1979), Honda Ridgeline, Gunslinger, Chevrolet Colorado, Nissan Navara, Monster Mutt, Toyota Hilux, The Felon, Blacksmith, 
+       * Electric Cars 
+          - NIO ES6, Bear Foot (1979), Hyundai Kona-Electric, Porsche Taycan, Chevrolet Bolt-EV, Gunslinger, Monster Mutt, The Felon, Blacksmith, 
+       * Motorcycle 
+          - Vespa Elettrica, Bear Foot (1979), Lightning LS-218, Black Tea-Moped, Harley-Davidson Roadster, Gunslinger, Monster Mutt, The Felon, Blacksmith, 
+       * Monster Truck 
+          - Bear Foot (1979), Gunslinger, Monster Mutt, The Felon, Blacksmith, 
+
+Washing...
+      * Intern Currently Working 
+          - "Susan"
+          - "Donna"
+          - "Steven"
+      * "Susan" Washing Report
+          - Vehicle was dirty and is now Clean Aston Martin-Vantage-GTE
+          - Vehicle was dirty and is now Clean NIO ES6
+      * "Donna" Washing Report
+          - Vehicle was dirty and is now Clean Nissan Navara
+          - Vehicle was dirty and is now Clean Monster Mutt
+      * "Steven" Washing Report
+          - Vehicle was dirty and is now Clean Toyota Hilux
+          - Vehicle was dirty and is now Clean The Felon
+
+Repairing... 
+      * "Scott" Repairing Report
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Clean and is now Dirty Aston Martin-Vantage-GTE
+          - Vehicle was Broken and is now Used NIO ES6
+          - Vehicle was Clean and is now Dirty NIO ES6
+      * "Elizabeth" Repairing Report
+          - Vehicle was Used and is now Like New Aston Martin-Vantage-GTE
+          - Vehicle was Broken and is now Used NIO ES6
+      * "Christine" Repairing Report
+Selling... 
+      * Number of customers came in on a week day are 2
+      * Customer 1
+            * Vehicle was Sold Acura TLX. It was fixed by "Karen"
+      * Customer 2
+            * Vehicle was Sold Aston Martin-Vantage-GTE. It was fixed by "Heather"
+| Staff that quit |
+| Staff still working that |
+      * "Heather", 40.0, 126.1, 51328.0, Working
+      * "Scott", 40.0, 176.54, 500.5, Working
+      * "Susan", 40.0, 151.32, 300.5, Working
+      * "Karen", 40.0, 126.1, 3208.0, Working
+      * "Elizabeth", 40.0, 176.54, 500.5, Working
+      * "Donna", 40.0, 151.32, 300.5, Working
+      * "Angela", 40.0, 126.1, 802.0, Working
+      * "Christine", 40.0, 176.54, 500.5, Working
+      * "Steven", 40.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Jurassic Attack, 55593.40352550585, 88949.44564080937,Used,Dirty, Sold
+      * Toyota Tundra, 37509.99332692745, 75019.9866538549,New,Dirty, Sold
+      * Aston Martin-Vantage-GTE, 36241.63447344661, 72483.26894689322,New,Clean, Sold
+      * The Destroyer, 55467.81165259012, 88748.4986441442,Used,Dirty, Sold
+      * Lexus LC-500h, 32803.864326230265, 65607.72865246053,New,Dirty, Sold
+      * Ford Ranger, 30857.503747143473, 61715.00749428695,New,Dirty, Sold
+      * Hyundai Elantra, 18506.91323419194, 37013.82646838388,New,Dirty, Sold
+      * Bear Foot (F-150), 33363.75309575813, 66727.50619151627,New,Clean, Sold
+      * Volvo S60, 15345.250264610786, 30690.500529221572,New,Clean, Sold
+      * Mazda 3, 17949.159025119465, 28718.654440191145,Used,Sparkling, Sold
+      * Ford Focus, 15801.906502060137, 25283.05040329622,Used,Dirty, Sold
+      * Madusa, 39655.63431946874, 79311.26863893749,New,Sparkling, Sold
+      * Acura TLX, 17770.48448461403, 35540.96896922806,New,Clean, Sold
+      * Aston Martin-Vantage-GTE, 39594.51393878579, 63351.22230205727,Used,Dirty, Sold
+| Current Vehicle Inventory |
+      * Ram 2500, 30619.342129944464, 61238.68425988893,New,Clean, In Stock
+      * NIO ES6, 23114.58147798497, 23114.58147798497,Broken,Dirty, In Stock
+      * Vespa Elettrica, 12414.917733569875, 24829.83546713975,New,Clean, In Stock
+      * Bear Foot (1979), 56357.34376721871, 56357.34376721871,Broken,Clean, In Stock
+      * Honda Ridgeline, 32083.422297994995, 32083.422297994995,Broken,Clean, In Stock
+      * Hyundai Kona-Electric, 24617.829162906048, 39388.52666064968,Used,Clean, In Stock
+      * Lightning LS-218, 19122.53111985282, 19122.53111985282,Broken,Clean, In Stock
+      * Honda Accord, 12304.146294942064, 12304.146294942064,Broken,Clean, In Stock
+      * Porsche 718-Cayman-GT4, 24814.39410912676, 24814.39410912676,Broken,Clean, In Stock
+      * Porsche Taycan, 21322.2451383908, 34115.592221425286,Used,Sparkling, In Stock
+      * Black Tea-Moped, 12479.552190685798, 12479.552190685798,Broken,Clean, In Stock
+      * Chevrolet Bolt-EV, 35650.24626102623, 57040.39401764197,Used,Clean, In Stock
+      * Harley-Davidson Roadster, 15086.964933132731, 30173.929866265462,New,Clean, In Stock
+      * Gunslinger, 33012.07666513409, 33012.07666513409,Broken,Clean, In Stock
+      * Mercedes-AMG C63-S-Coupe, 32835.77319302819, 52537.237108845104,Used,Clean, In Stock
+      * Chevrolet Colorado, 25305.64628239043, 50611.29256478086,New,Clean, In Stock
+      * BMW M5-Competition, 27746.362722584072, 27746.362722584072,Broken,Clean, In Stock
+      * Nissan Navara, 26017.128092958563, 26017.128092958563,Broken,Clean, In Stock
+      * Monster Mutt, 35420.30693008465, 56672.49108813544,Used,Clean, In Stock
+      * Buick Verano, 15618.023933016691, 15618.023933016691,Broken,Clean, In Stock
+      * Toyota Hilux, 32564.105035495515, 52102.56805679283,Used,Clean, In Stock
+      * The Felon, 23486.600854850876, 37578.5613677614,Used,Clean, In Stock
+      * Acura TLX, 18936.34292499189, 18936.34292499189,Broken,Dirty, In Stock
+      * Blacksmith, 29329.31556985291, 29329.31556985291,Broken,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 916852.7477147444 819160.9339752812
+
+Checking Staff... 
+
+      * "Heather" Sales 51328.0 0.0
+      * "Scott" Mechanic 500.5 530.0
+      * "Susan" Intern 300.5 70.0
+      * "Karen" Sales 3208.0 0.0
+      * "Elizabeth" Mechanic 500.5 530.0
+      * "Donna" Intern 300.5 100.0
+      * "Angela" Sales 802.0 0.0
+      * "Christine" Mechanic 500.5 530.0
+      * "Steven" Intern 300.5 0.0

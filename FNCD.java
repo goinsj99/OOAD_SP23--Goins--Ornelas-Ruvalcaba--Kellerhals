@@ -65,11 +65,18 @@ public class FNCD {
     // Setters
     // go to next day
     public void nextDay(){
+        budgetCheck();
         if(this.dayIndex == 7){
             this.dayIndex = 0;
         }else{
             this.dayIndex += 1;
             this.currDay = weekDays.get(this.dayIndex);
+        }
+    }
+    // check budget and incresse if needed
+    public void budgetCheck(){
+        if(this.getOpBudget() <= 1000){
+            this.setOpBudget(10000.00);
         }
     }
     // load car names
