@@ -131,3 +131,17 @@ class Mechanic extends Staff {
     public Double getSalary(){return this.salary;}
 
 }
+class Driver extends Staff {
+    Double myRate = 1.75;
+    private String position;
+    private Double salary;
+    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
+        this.position = "Driver";
+        this.salary = (salary*myRate);
+    }
+    @Override
+    public String getPosition(){return this.position; }
+    public Double getSalary(){return this.salary;}
+
+}
