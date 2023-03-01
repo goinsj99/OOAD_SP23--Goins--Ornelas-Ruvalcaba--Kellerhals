@@ -19,6 +19,8 @@ public class FNCD {
     private int dayIndex;
     public Double opBudget;
     public int currIDCount;
+    private double staffTotal;
+    private double fncdTotal;
     public List<Staff> staffList = new ArrayList();
     public List<Vehicle> vehicleList = new ArrayList();
     public List<String> staffnames= new ArrayList();;
@@ -54,8 +56,10 @@ public class FNCD {
         this.staffCount = 0;
         this.report = null;
         this.vehiclesSold = new ArrayList<>();
+        this.staffTotal = 0;
+        this.fncdTotal = 0;
         try {
-            FileWriter writer = new FileWriter("Logger-n.txt", false);
+            FileWriter writer = new FileWriter("SimResults.txt", false);
             writer.write("");
             writer.close();
         } catch (IOException e) {
@@ -279,13 +283,27 @@ public class FNCD {
     // to create loging to a file, I used this source 
     // https://www.java67.com/2015/07/how-to-append-text-to-existing-file-in-java-example.html
     public void LoggerReport(String line){
-        try (FileWriter file = new FileWriter("Logger-n.txt", true); 
+        try (FileWriter file = new FileWriter("SimResults.txt", true); 
         BufferedWriter buffer = new BufferedWriter(file); 
         PrintWriter write = new PrintWriter(buffer);) { 
             write.println(line); 
         } catch (IOException i) { 
             i.printStackTrace(); 
         }
-
     }
+
+
+    public double getStaffTotalEarn(){
+        return this.staffTotal;
+    }
+    public void setStaffTotalEarn(double newAmount){
+        this.staffTotal=newAmount;
+    }
+    public double getFncdEarning(){
+        return this.fncdTotal;
+    }
+    public void setFncdEarning(double newAmount){
+        this.fncdTotal = newAmount;
+    }
+
 }

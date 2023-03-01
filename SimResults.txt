@@ -1,0 +1,532 @@
+----------------------------------------------
+***** FNCD Day Monday 1****
+
+Opening... (current budget 500000.0)
+      * Current Intern Count 3
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Audi A4, Cyborg, Volvo S60, Bear Foot (1979), Ford Focus, The Felon, Kia Optima, Captain's Curse, 
+       * Performance Cars 
+          - Ford GT, Cyborg, Audi R8-V10-Performance, Bear Foot (1979), McLaren 720S-Spider, The Felon, Ford Mustang-Shelby-GT500, Captain's Curse, 
+       * PickUp Cars 
+          - Chevrolet Colorado, Cyborg, Ram Dakota, Bear Foot (1979), Chevrolet Colorado, The Felon, Ram 1500, Captain's Curse, 
+       * Electric Cars 
+          - Jaguar I-PACE, Cyborg, Chevrolet Bolt-EV, Bear Foot (1979), Porsche Taycan, The Felon, Rimac C_Two, Captain's Curse, 
+       * Motorcycle 
+          - Evoke Urban-S, Cyborg, Vespa Elettrica, Bear Foot (1979), Zero SR/F, The Felon, Energica Ego, Captain's Curse, 
+       * Monster Truck 
+          - Cyborg, Bear Foot (1979), The Felon, Captain's Curse, 
+
+Washing...
+      * Intern Currently Working 
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * "Thomas" Washing Report
+      * "Rachel" Washing Report
+          - Vehicle was dirty and is now Clean Audi A4
+          - Vehicle was dirty and is now Clean Ford GT
+      * "Carol" Washing Report
+          - Vehicle was dirty and is now Clean Chevrolet Colorado
+          - Vehicle was dirty and is now Clean Jaguar I-PACE
+
+Repairing... 
+      * "Brandon" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Clean and is now Dirty Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+          - Vehicle was Clean and is now Dirty Ford GT
+      * "Margaret" Repairing Report
+      * "William" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+Selling... 
+      * Number of customers came in on a week day are 1
+      * Customer 1
+            * Customer Didnt Want A Car
+| Staff that quit |
+| Staff still working that |
+      * "Debra", 8.0, 126.1, 200.5, Working
+      * "Brandon", 8.0, 176.54, 500.5, Working
+      * "Thomas", 8.0, 151.32, 300.5, Working
+      * "Anna", 8.0, 126.1, 200.5, Working
+      * "Margaret", 8.0, 176.54, 500.5, Working
+      * "Rachel", 8.0, 151.32, 300.5, Working
+      * "Jennifer", 8.0, 126.1, 200.5, Working
+      * "William", 8.0, 176.54, 500.5, Working
+      * "Carol", 8.0, 151.32, 300.5, Working
+| Sold Vehicles |
+| Current Vehicle Inventory |
+      * Audi A4, 10616.12484071519, 10616.12484071519,Broken,Dirty, In Stock
+      * Ford GT, 36639.843323857305, 36639.843323857305,Broken,Dirty, In Stock
+      * Chevrolet Colorado, 39249.91514835665, 62799.864237370646,Used,Clean, In Stock
+      * Jaguar I-PACE, 24009.072895229823, 38414.51663236772,Used,Clean, In Stock
+      * Evoke Urban-S, 15510.58172021342, 24816.930752341475,Used,Clean, In Stock
+      * Cyborg, 32538.7789971619, 52062.04639545904,Used,Sparkling, In Stock
+      * Volvo S60, 18986.807987796426, 30378.892780474285,Used,Dirty, In Stock
+      * Audi R8-V10-Performance, 29744.461620963317, 59488.92324192663,New,Clean, In Stock
+      * Ram Dakota, 24889.366335739513, 49778.732671479025,New,Dirty, In Stock
+      * Chevrolet Bolt-EV, 27468.635119381604, 43949.81619101057,Used,Dirty, In Stock
+      * Vespa Elettrica, 12325.36645553922, 12325.36645553922,Broken,Dirty, In Stock
+      * Bear Foot (1979), 49359.409920467144, 98718.81984093429,New,Dirty, In Stock
+      * Ford Focus, 18332.112742539506, 18332.112742539506,Broken,Dirty, In Stock
+      * McLaren 720S-Spider, 27726.184585637013, 44361.895337019225,Used,Dirty, In Stock
+      * Chevrolet Colorado, 30392.18104988329, 30392.18104988329,Broken,Dirty, In Stock
+      * Porsche Taycan, 25457.52001615937, 25457.52001615937,Broken,Clean, In Stock
+      * Zero SR/F, 13415.202839749885, 26830.40567949977,New,Dirty, In Stock
+      * The Felon, 57127.21521898725, 57127.21521898725,Broken,Dirty, In Stock
+      * Kia Optima, 13874.68914827847, 27749.37829655694,New,Clean, In Stock
+      * Ford Mustang-Shelby-GT500, 20756.992642045247, 20756.992642045247,Broken,Clean, In Stock
+      * Ram 1500, 36270.851884686985, 36270.851884686985,Broken,Dirty, In Stock
+      * Rimac C_Two, 32123.039381673087, 32123.039381673087,Broken,Dirty, In Stock
+      * Energica Ego, 13592.636772284945, 21748.218835655913,Used,Dirty, In Stock
+      * Captain's Curse, 22558.308021324334, 45116.61604264867,New,Clean, In Stock
+|O ur Budget & Total Sale Number? |
+      * 498638.1200000001 0.0
+
+Checking Staff... 
+
+      * "Debra" Sales 200.5 0.0
+      * "Brandon" Mechanic 500.5 120.0
+      * "Thomas" Intern 300.5 0.0
+      * "Anna" Sales 200.5 0.0
+      * "Margaret" Mechanic 500.5 0.0
+      * "Rachel" Intern 300.5 0.0
+      * "Jennifer" Sales 200.5 0.0
+      * "William" Mechanic 500.5 120.0
+      * "Carol" Intern 300.5 0.0
+----------------------------------------------
+***** FNCD Day Tuesday 2****
+
+Opening... (current budget 498638.1200000001)
+      * Current Intern Count 3
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Audi A4, Cyborg, Volvo S60, Bear Foot (1979), Ford Focus, The Felon, Kia Optima, Captain's Curse, 
+       * Performance Cars 
+          - Ford GT, Cyborg, Audi R8-V10-Performance, Bear Foot (1979), McLaren 720S-Spider, The Felon, Ford Mustang-Shelby-GT500, Captain's Curse, 
+       * PickUp Cars 
+          - Chevrolet Colorado, Cyborg, Ram Dakota, Bear Foot (1979), Chevrolet Colorado, The Felon, Ram 1500, Captain's Curse, 
+       * Electric Cars 
+          - Jaguar I-PACE, Cyborg, Chevrolet Bolt-EV, Bear Foot (1979), Porsche Taycan, The Felon, Rimac C_Two, Captain's Curse, 
+       * Motorcycle 
+          - Evoke Urban-S, Cyborg, Vespa Elettrica, Bear Foot (1979), Zero SR/F, The Felon, Energica Ego, Captain's Curse, 
+       * Monster Truck 
+          - Cyborg, Bear Foot (1979), The Felon, Captain's Curse, 
+
+Washing...
+      * Intern Currently Working 
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * "Thomas" Washing Report
+          - Vehicle was dirty and is now Clean Audi A4
+          - Vehicle was dirty and is now Clean Ford GT
+      * "Rachel" Washing Report
+          - Vehicle was dirty and is now Clean Volvo S60
+          - Vehicle was dirty and is now Clean Ram Dakota
+      * "Carol" Washing Report
+          - Vehicle was dirty and is now Sparkling Chevrolet Bolt-EV
+          - Vehicle was dirty and is now Sparkling Vespa Elettrica
+
+Repairing... 
+      * "Brandon" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Clean and is now Dirty Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+          - Vehicle was Clean and is now Dirty Ford GT
+      * "Margaret" Repairing Report
+      * "William" Repairing Report
+Selling... 
+      * Number of customers came in on a week day are 4
+      * Customer 1
+            * Vehicle was Sold Bear Foot (1979). It was fixed by "Jennifer"
+      * Customer 2
+            * Vehicle was Sold Chevrolet Colorado. It was fixed by "Debra"
+      * Customer 3
+            * Customer Didnt Want A Car
+      * Customer 4
+            * Customer Didnt Want A Car
+| Staff that quit |
+| Staff still working that |
+      * "Debra", 16.0, 126.1, 401.0, Working
+      * "Brandon", 16.0, 176.54, 500.5, Working
+      * "Thomas", 16.0, 151.32, 300.5, Working
+      * "Anna", 16.0, 126.1, 200.5, Working
+      * "Margaret", 16.0, 176.54, 500.5, Working
+      * "Rachel", 16.0, 151.32, 300.5, Working
+      * "Jennifer", 16.0, 126.1, 401.0, Working
+      * "William", 16.0, 176.54, 500.5, Working
+      * "Carol", 16.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Bear Foot (1979), 49359.409920467144, 98718.81984093429,New,Dirty, Sold
+      * Chevrolet Colorado, 39249.91514835665, 62799.864237370646,Used,Clean, Sold
+| Current Vehicle Inventory |
+      * Audi A4, 10616.12484071519, 10616.12484071519,Broken,Dirty, In Stock
+      * Ford GT, 36639.843323857305, 36639.843323857305,Broken,Dirty, In Stock
+      * Jaguar I-PACE, 24009.072895229823, 38414.51663236772,Used,Clean, In Stock
+      * Evoke Urban-S, 15510.58172021342, 24816.930752341475,Used,Clean, In Stock
+      * Cyborg, 32538.7789971619, 52062.04639545904,Used,Sparkling, In Stock
+      * Volvo S60, 18986.807987796426, 30378.892780474285,Used,Clean, In Stock
+      * Audi R8-V10-Performance, 29744.461620963317, 59488.92324192663,New,Clean, In Stock
+      * Ram Dakota, 24889.366335739513, 49778.732671479025,New,Clean, In Stock
+      * Chevrolet Bolt-EV, 27468.635119381604, 43949.81619101057,Used,Sparkling, In Stock
+      * Vespa Elettrica, 12325.36645553922, 12325.36645553922,Broken,Sparkling, In Stock
+      * Ford Focus, 18332.112742539506, 18332.112742539506,Broken,Dirty, In Stock
+      * McLaren 720S-Spider, 27726.184585637013, 44361.895337019225,Used,Dirty, In Stock
+      * Chevrolet Colorado, 30392.18104988329, 30392.18104988329,Broken,Dirty, In Stock
+      * Porsche Taycan, 25457.52001615937, 25457.52001615937,Broken,Clean, In Stock
+      * Zero SR/F, 13415.202839749885, 26830.40567949977,New,Dirty, In Stock
+      * The Felon, 57127.21521898725, 57127.21521898725,Broken,Dirty, In Stock
+      * Kia Optima, 13874.68914827847, 27749.37829655694,New,Clean, In Stock
+      * Ford Mustang-Shelby-GT500, 20756.992642045247, 20756.992642045247,Broken,Clean, In Stock
+      * Ram 1500, 36270.851884686985, 36270.851884686985,Broken,Dirty, In Stock
+      * Rimac C_Two, 32123.039381673087, 32123.039381673087,Broken,Dirty, In Stock
+      * Energica Ego, 13592.636772284945, 21748.218835655913,Used,Dirty, In Stock
+      * Captain's Curse, 22558.308021324334, 45116.61604264867,New,Clean, In Stock
+|O ur Budget & Total Sale Number? |
+      * 658794.9240783051 161518.68407830494
+
+Checking Staff... 
+
+      * "Debra" Sales 401.0 0.0
+      * "Brandon" Mechanic 500.5 240.0
+      * "Thomas" Intern 300.5 0.0
+      * "Anna" Sales 200.5 0.0
+      * "Margaret" Mechanic 500.5 0.0
+      * "Rachel" Intern 300.5 0.0
+      * "Jennifer" Sales 401.0 0.0
+      * "William" Mechanic 500.5 120.0
+      * "Carol" Intern 300.5 200.0
+----------------------------------------------
+***** FNCD Day Wensday 3****
+
+Opening... (current budget 658794.9240783051)
+      * Current Intern Count 3
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Audi A4, Cyborg, Volvo S60, Ford Focus, The Felon, Kia Optima, Captain's Curse, 
+       * Performance Cars 
+          - Ford GT, Cyborg, Audi R8-V10-Performance, McLaren 720S-Spider, The Felon, Ford Mustang-Shelby-GT500, Captain's Curse, 
+       * PickUp Cars 
+          - Cyborg, Ram Dakota, Chevrolet Colorado, The Felon, Ram 1500, Captain's Curse, 
+       * Electric Cars 
+          - Jaguar I-PACE, Cyborg, Chevrolet Bolt-EV, Porsche Taycan, The Felon, Rimac C_Two, Captain's Curse, 
+       * Motorcycle 
+          - Evoke Urban-S, Cyborg, Vespa Elettrica, Zero SR/F, The Felon, Energica Ego, Captain's Curse, 
+       * Monster Truck 
+          - Cyborg, The Felon, Captain's Curse, 
+      * Adding PickUp Car Ford Ranger
+      * Adding Monster Truck Bad News Travels Fast
+
+Washing...
+      * Intern Currently Working 
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * "Thomas" Washing Report
+          - Vehicle was dirty and is now Sparkling Audi A4
+          - Vehicle was dirty and is now Clean Ford GT
+      * "Rachel" Washing Report
+          - Vehicle was dirty and is now Clean Ford Focus
+          - Vehicle was dirty and is now Clean McLaren 720S-Spider
+      * "Carol" Washing Report
+          - Vehicle was dirty and is now Clean Chevrolet Colorado
+          - Vehicle was dirty and is now Clean Zero SR/F
+
+Repairing... 
+      * "Brandon" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Sparkling and is now clean Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+          - Vehicle was Clean and is now Dirty Ford GT
+      * "Margaret" Repairing Report
+          - Vehicle was Clean and is now Dirty Audi A4
+      * "William" Repairing Report
+Selling... 
+      * Number of customers came in on a week day are 4
+      * Customer 1
+            * Vehicle was Sold Ram Dakota. It was fixed by "Anna"
+      * Customer 2
+            * Vehicle was Sold Audi R8-V10-Performance. It was fixed by "Anna"
+      * Customer 3
+            * Vehicle was Sold Ford Ranger. It was fixed by "Jennifer"
+      * Customer 4
+            * Vehicle was Sold Volvo S60. It was fixed by "Anna"
+| Staff that quit |
+| Staff still working that |
+      * "Debra", 24.0, 126.1, 401.0, Working
+      * "Brandon", 24.0, 176.54, 500.5, Working
+      * "Thomas", 24.0, 151.32, 300.5, Working
+      * "Anna", 24.0, 126.1, 1604.0, Working
+      * "Margaret", 24.0, 176.54, 500.5, Working
+      * "Rachel", 24.0, 151.32, 300.5, Working
+      * "Jennifer", 24.0, 126.1, 802.0, Working
+      * "William", 24.0, 176.54, 500.5, Working
+      * "Carol", 24.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Bear Foot (1979), 49359.409920467144, 98718.81984093429,New,Dirty, Sold
+      * Chevrolet Colorado, 39249.91514835665, 62799.864237370646,Used,Clean, Sold
+      * Ram Dakota, 24889.366335739513, 49778.732671479025,New,Clean, Sold
+      * Audi R8-V10-Performance, 29744.461620963317, 59488.92324192663,New,Clean, Sold
+      * Ford Ranger, 14418.080086641565, 23068.928138626507,Used,Clean, Sold
+      * Volvo S60, 18986.807987796426, 30378.892780474285,Used,Clean, Sold
+| Current Vehicle Inventory |
+      * Audi A4, 10616.12484071519, 10616.12484071519,Broken,Dirty, In Stock
+      * Ford GT, 36639.843323857305, 36639.843323857305,Broken,Dirty, In Stock
+      * Jaguar I-PACE, 24009.072895229823, 38414.51663236772,Used,Clean, In Stock
+      * Evoke Urban-S, 15510.58172021342, 24816.930752341475,Used,Clean, In Stock
+      * Cyborg, 32538.7789971619, 52062.04639545904,Used,Sparkling, In Stock
+      * Chevrolet Bolt-EV, 27468.635119381604, 43949.81619101057,Used,Sparkling, In Stock
+      * Vespa Elettrica, 12325.36645553922, 12325.36645553922,Broken,Sparkling, In Stock
+      * Ford Focus, 18332.112742539506, 18332.112742539506,Broken,Clean, In Stock
+      * McLaren 720S-Spider, 27726.184585637013, 44361.895337019225,Used,Clean, In Stock
+      * Chevrolet Colorado, 30392.18104988329, 30392.18104988329,Broken,Clean, In Stock
+      * Porsche Taycan, 25457.52001615937, 25457.52001615937,Broken,Clean, In Stock
+      * Zero SR/F, 13415.202839749885, 26830.40567949977,New,Clean, In Stock
+      * The Felon, 57127.21521898725, 57127.21521898725,Broken,Dirty, In Stock
+      * Kia Optima, 13874.68914827847, 27749.37829655694,New,Clean, In Stock
+      * Ford Mustang-Shelby-GT500, 20756.992642045247, 20756.992642045247,Broken,Clean, In Stock
+      * Ram 1500, 36270.851884686985, 36270.851884686985,Broken,Dirty, In Stock
+      * Rimac C_Two, 32123.039381673087, 32123.039381673087,Broken,Dirty, In Stock
+      * Energica Ego, 13592.636772284945, 21748.218835655913,Used,Dirty, In Stock
+      * Captain's Curse, 22558.308021324334, 45116.61604264867,New,Clean, In Stock
+      * Bad News Travels Fast, 24728.585902411698, 24728.585902411698,Broken,Clean, In Stock
+|O ur Budget & Total Sale Number? |
+      * 781001.8549217583 324234.1609108114
+
+Checking Staff... 
+
+      * "Debra" Sales 401.0 0.0
+      * "Brandon" Mechanic 500.5 360.0
+      * "Thomas" Intern 300.5 50.0
+      * "Anna" Sales 1604.0 0.0
+      * "Margaret" Mechanic 500.5 0.0
+      * "Rachel" Intern 300.5 0.0
+      * "Jennifer" Sales 802.0 0.0
+      * "William" Mechanic 500.5 120.0
+      * "Carol" Intern 300.5 200.0
+----------------------------------------------
+***** FNCD Day Thursday 4****
+
+Opening... (current budget 781001.8549217583)
+      * Current Intern Count 3
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Audi A4, Cyborg, Ford Focus, The Felon, Kia Optima, Captain's Curse, Bad News Travels Fast, 
+       * Performance Cars 
+          - Ford GT, Cyborg, McLaren 720S-Spider, The Felon, Ford Mustang-Shelby-GT500, Captain's Curse, Bad News Travels Fast, 
+       * PickUp Cars 
+          - Cyborg, Chevrolet Colorado, The Felon, Ram 1500, Captain's Curse, Bad News Travels Fast, 
+       * Electric Cars 
+          - Jaguar I-PACE, Cyborg, Chevrolet Bolt-EV, Porsche Taycan, The Felon, Rimac C_Two, Captain's Curse, Bad News Travels Fast, 
+       * Motorcycle 
+          - Evoke Urban-S, Cyborg, Vespa Elettrica, Zero SR/F, The Felon, Energica Ego, Captain's Curse, Bad News Travels Fast, 
+       * Monster Truck 
+          - Cyborg, The Felon, Captain's Curse, Bad News Travels Fast, 
+      * Bought Regular Car Volvo S60
+      * Bought Performance Car Nissan GT-R-Nismo
+
+Washing...
+      * Intern Currently Working 
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * "Thomas" Washing Report
+          - Vehicle was dirty and is now Clean Audi A4
+          - Vehicle was dirty and is now Clean Ford GT
+      * "Rachel" Washing Report
+          - Vehicle was dirty and is now Clean The Felon
+          - Vehicle was dirty and is now Clean Ram 1500
+      * "Carol" Washing Report
+          - Vehicle was dirty and is now Clean Rimac C_Two
+
+Repairing... 
+      * "Brandon" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Clean and is now Dirty Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+          - Vehicle was Clean and is now Dirty Ford GT
+      * "Margaret" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+      * "William" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+Selling... 
+      * Number of customers came in on a week day are 2
+      * Customer 1
+            * Vehicle was Sold Nissan GT-R-Nismo. It was fixed by "Anna"
+      * Customer 2
+
+            * Didn't Find a Valid Vehicle!
+| Staff that quit |
+| Staff still working that |
+      * "Debra", 32.0, 126.1, 401.0, Working
+      * "Brandon", 32.0, 176.54, 500.5, Working
+      * "Thomas", 32.0, 151.32, 300.5, Working
+      * "Anna", 32.0, 126.1, 3208.0, Working
+      * "Margaret", 32.0, 176.54, 500.5, Working
+      * "Rachel", 32.0, 151.32, 300.5, Working
+      * "Jennifer", 32.0, 126.1, 802.0, Working
+      * "William", 32.0, 176.54, 500.5, Working
+      * "Carol", 32.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Bear Foot (1979), 49359.409920467144, 98718.81984093429,New,Dirty, Sold
+      * Chevrolet Colorado, 39249.91514835665, 62799.864237370646,Used,Clean, Sold
+      * Ram Dakota, 24889.366335739513, 49778.732671479025,New,Clean, Sold
+      * Audi R8-V10-Performance, 29744.461620963317, 59488.92324192663,New,Clean, Sold
+      * Ford Ranger, 14418.080086641565, 23068.928138626507,Used,Clean, Sold
+      * Volvo S60, 18986.807987796426, 30378.892780474285,Used,Clean, Sold
+      * Nissan GT-R-Nismo, 29513.238607811727, 59026.477215623454,New,Dirty, Sold
+| Current Vehicle Inventory |
+      * Audi A4, 10616.12484071519, 10616.12484071519,Broken,Dirty, In Stock
+      * Ford GT, 36639.843323857305, 36639.843323857305,Broken,Dirty, In Stock
+      * Jaguar I-PACE, 24009.072895229823, 38414.51663236772,Used,Clean, In Stock
+      * Evoke Urban-S, 15510.58172021342, 24816.930752341475,Used,Clean, In Stock
+      * Cyborg, 32538.7789971619, 52062.04639545904,Used,Sparkling, In Stock
+      * Chevrolet Bolt-EV, 27468.635119381604, 43949.81619101057,Used,Sparkling, In Stock
+      * Vespa Elettrica, 12325.36645553922, 12325.36645553922,Broken,Sparkling, In Stock
+      * Ford Focus, 18332.112742539506, 18332.112742539506,Broken,Clean, In Stock
+      * McLaren 720S-Spider, 27726.184585637013, 44361.895337019225,Used,Clean, In Stock
+      * Chevrolet Colorado, 30392.18104988329, 30392.18104988329,Broken,Clean, In Stock
+      * Porsche Taycan, 25457.52001615937, 25457.52001615937,Broken,Clean, In Stock
+      * Zero SR/F, 13415.202839749885, 26830.40567949977,New,Clean, In Stock
+      * The Felon, 57127.21521898725, 57127.21521898725,Broken,Clean, In Stock
+      * Kia Optima, 13874.68914827847, 27749.37829655694,New,Clean, In Stock
+      * Ford Mustang-Shelby-GT500, 20756.992642045247, 20756.992642045247,Broken,Clean, In Stock
+      * Ram 1500, 36270.851884686985, 36270.851884686985,Broken,Clean, In Stock
+      * Rimac C_Two, 32123.039381673087, 32123.039381673087,Broken,Clean, In Stock
+      * Energica Ego, 13592.636772284945, 21748.218835655913,Used,Dirty, In Stock
+      * Captain's Curse, 22558.308021324334, 45116.61604264867,New,Clean, In Stock
+      * Bad News Travels Fast, 24728.585902411698, 24728.585902411698,Broken,Clean, In Stock
+      * Volvo S60, 12909.430670018108, 12909.430670018108,Broken,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 796243.7828595521 383260.6381264349
+
+Checking Staff... 
+
+      * "Debra" Sales 401.0 0.0
+      * "Brandon" Mechanic 500.5 480.0
+      * "Thomas" Intern 300.5 50.0
+      * "Anna" Sales 3208.0 0.0
+      * "Margaret" Mechanic 500.5 120.0
+      * "Rachel" Intern 300.5 0.0
+      * "Jennifer" Sales 802.0 0.0
+      * "William" Mechanic 500.5 240.0
+      * "Carol" Intern 300.5 200.0
+----------------------------------------------
+***** FNCD Day Friday 5****
+
+Opening... (current budget 796243.7828595521)
+      * Current Intern Count 3
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * Current Vehicle Owned 
+       * Regular Cars 
+          - Audi A4, Cyborg, Ford Focus, The Felon, Kia Optima, Captain's Curse, Bad News Travels Fast, Volvo S60, 
+       * Performance Cars 
+          - Ford GT, Cyborg, McLaren 720S-Spider, The Felon, Ford Mustang-Shelby-GT500, Captain's Curse, Bad News Travels Fast, 
+       * PickUp Cars 
+          - Cyborg, Chevrolet Colorado, The Felon, Ram 1500, Captain's Curse, Bad News Travels Fast, 
+       * Electric Cars 
+          - Jaguar I-PACE, Cyborg, Chevrolet Bolt-EV, Porsche Taycan, The Felon, Rimac C_Two, Captain's Curse, Bad News Travels Fast, 
+       * Motorcycle 
+          - Evoke Urban-S, Cyborg, Vespa Elettrica, Zero SR/F, The Felon, Energica Ego, Captain's Curse, Bad News Travels Fast, 
+       * Monster Truck 
+          - Cyborg, The Felon, Captain's Curse, Bad News Travels Fast, 
+      * Bought Performance Car Ford Mustang-Shelby-GT500
+
+Washing...
+      * Intern Currently Working 
+          - "Thomas"
+          - "Rachel"
+          - "Carol"
+      * "Thomas" Washing Report
+          - Vehicle was dirty and is now Clean Audi A4
+      * "Rachel" Washing Report
+          - Vehicle was dirty and is now Clean Ford GT
+          - Vehicle was dirty and is now Clean Energica Ego
+      * "Carol" Washing Report
+
+Repairing... 
+      * "Brandon" Repairing Report
+          - Vehicle was Clean and is now Dirty Audi A4
+          - Vehicle was Clean and is now Dirty Ford GT
+      * "Margaret" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+      * "William" Repairing Report
+          - Vehicle was Broken and is now Used Audi A4
+          - Vehicle was Broken and is now Used Ford GT
+Selling... 
+      * Number of customers came in on a week day are 0
+| Staff that quit |
+| Staff still working that |
+      * "Debra", 40.0, 126.1, 401.0, Working
+      * "Brandon", 40.0, 176.54, 500.5, Working
+      * "Thomas", 40.0, 151.32, 300.5, Working
+      * "Anna", 40.0, 126.1, 3208.0, Working
+      * "Margaret", 40.0, 176.54, 500.5, Working
+      * "Rachel", 40.0, 151.32, 300.5, Working
+      * "Jennifer", 40.0, 126.1, 802.0, Working
+      * "William", 40.0, 176.54, 500.5, Working
+      * "Carol", 40.0, 151.32, 300.5, Working
+| Sold Vehicles |
+      * Bear Foot (1979), 49359.409920467144, 98718.81984093429,New,Dirty, Sold
+      * Chevrolet Colorado, 39249.91514835665, 62799.864237370646,Used,Clean, Sold
+      * Ram Dakota, 24889.366335739513, 49778.732671479025,New,Clean, Sold
+      * Audi R8-V10-Performance, 29744.461620963317, 59488.92324192663,New,Clean, Sold
+      * Ford Ranger, 14418.080086641565, 23068.928138626507,Used,Clean, Sold
+      * Volvo S60, 18986.807987796426, 30378.892780474285,Used,Clean, Sold
+      * Nissan GT-R-Nismo, 29513.238607811727, 59026.477215623454,New,Dirty, Sold
+| Current Vehicle Inventory |
+      * Audi A4, 10616.12484071519, 10616.12484071519,Broken,Dirty, In Stock
+      * Ford GT, 36639.843323857305, 36639.843323857305,Broken,Dirty, In Stock
+      * Jaguar I-PACE, 24009.072895229823, 38414.51663236772,Used,Clean, In Stock
+      * Evoke Urban-S, 15510.58172021342, 24816.930752341475,Used,Clean, In Stock
+      * Cyborg, 32538.7789971619, 52062.04639545904,Used,Sparkling, In Stock
+      * Chevrolet Bolt-EV, 27468.635119381604, 43949.81619101057,Used,Sparkling, In Stock
+      * Vespa Elettrica, 12325.36645553922, 12325.36645553922,Broken,Sparkling, In Stock
+      * Ford Focus, 18332.112742539506, 18332.112742539506,Broken,Clean, In Stock
+      * McLaren 720S-Spider, 27726.184585637013, 44361.895337019225,Used,Clean, In Stock
+      * Chevrolet Colorado, 30392.18104988329, 30392.18104988329,Broken,Clean, In Stock
+      * Porsche Taycan, 25457.52001615937, 25457.52001615937,Broken,Clean, In Stock
+      * Zero SR/F, 13415.202839749885, 26830.40567949977,New,Clean, In Stock
+      * The Felon, 57127.21521898725, 57127.21521898725,Broken,Clean, In Stock
+      * Kia Optima, 13874.68914827847, 27749.37829655694,New,Clean, In Stock
+      * Ford Mustang-Shelby-GT500, 20756.992642045247, 20756.992642045247,Broken,Clean, In Stock
+      * Ram 1500, 36270.851884686985, 36270.851884686985,Broken,Clean, In Stock
+      * Rimac C_Two, 32123.039381673087, 32123.039381673087,Broken,Clean, In Stock
+      * Energica Ego, 13592.636772284945, 21748.218835655913,Used,Clean, In Stock
+      * Captain's Curse, 22558.308021324334, 45116.61604264867,New,Clean, In Stock
+      * Bad News Travels Fast, 24728.585902411698, 24728.585902411698,Broken,Clean, In Stock
+      * Volvo S60, 12909.430670018108, 12909.430670018108,Broken,Dirty, In Stock
+      * Ford Mustang-Shelby-GT500, 29182.606522344297, 29182.606522344297,Broken,Dirty, In Stock
+|O ur Budget & Total Sale Number? |
+      * 765699.2963372079 383260.6381264349
+
+Checking Staff... 
+
+      * "Debra" Sales 401.0 0.0
+      * "Brandon" Mechanic 500.5 480.0
+      * "Thomas" Intern 300.5 50.0
+      * "Anna" Sales 3208.0 0.0
+      * "Margaret" Mechanic 500.5 240.0
+      * "Rachel" Intern 300.5 0.0
+      * "Jennifer" Sales 802.0 0.0
+      * "William" Mechanic 500.5 360.0
+      * "Carol" Intern 300.5 200.0

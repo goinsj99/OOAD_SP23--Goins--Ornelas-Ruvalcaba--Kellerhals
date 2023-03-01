@@ -83,7 +83,6 @@ public class Staff {
     public Double getBonusTemp(){return this.bonusTemp;} // bonus earned that day
     public Double getBonus(){ return this.bonus;} // total earned bonus
 
-
 }
 
 // Subclass (inherit from Animal)
