@@ -134,13 +134,20 @@ class Driver extends Staff {
     Double myRate = 1.75;
     private String position;
     private Double salary;
+    private boolean injury;
     public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Driver";
         this.salary = (salary*myRate);
+        this.injury = false;
     }
     @Override
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
-
+    public boolean getInjuryStat(){
+        return this.injury;
+    }
+    public void updateInjury(){
+        this.injury = true;
+    }
 }

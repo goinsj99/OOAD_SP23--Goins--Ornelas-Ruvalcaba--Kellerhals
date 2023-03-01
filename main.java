@@ -522,113 +522,131 @@ class Selling {
     }
 }
 // should occur only sunday and wednesday 
-// class RacingEvent{
-//     private List<Vehicle> carList = new ArrayList<>();
-//     private List<Staff> staffList = new ArrayList<>();
-//     private List<Observer> observers = new ArrayList<>();
+class RacingEvent{
+    private List<Vehicle> carList = new ArrayList<>();
+    private List<Staff> staffList = new ArrayList<>();
 
-//     RacingEvent(FNCD fncd){
-//         this.carList = racableCars(fncd);
-//         this.staffList = racingStaff(fncd);
-//     }
+    RacingEvent(FNCD fncd){
+        this.carList = racableCars(fncd);
+        this.staffList = racingStaff(fncd);
+    }
 
-//     // can only race on wendsday and sunday
-//     public void racingDay(FNCD fncd){
-//         Random random = new Random();
-//         List<Vehicle> VehicleList = fncd.getVehicleList();
-//         List<Staff> sList = fncd.getStaffList();
-//         // check if we are on a day to race
-//         fncd.LoggerReport("Racing... ");
-//         if(fncd.getDay() == "Wensday" || fncd.getDay() == "Sunday"){
-//             for(Vehicle car: VehicleList){
-//                 for(Staff staff: sList){
-//                     if(this.carList.contains(car) && this.staffList.contains(staff)){
-//                         int place = 1 + (20 - 1) * random.nextInt();
-//                         if(place == 1 || place == 2 || place == 3){
-//                             car.addWinCount();
-//                             car.setSalesPrice(car.getSalesPrice()*1.10);
-//                             staff.setBonus(staff.getBonus()+300);
-//                             fncd.LoggerReport("      * Vehicle that won in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Driver was "+staff.getName());
-//                         }else{
-//                             car.setCondition("Broken");
-//                             double injuryChance = random.nextDouble();
-//                             // 30% chance person is injured
-//                             if(injuryChance < 0.30){
-//                                 // set driver to injured 
-//                                 staff.giveInjury();
-//                                 staff.quit();
-//                                 fncd.LoggerReport("      * Vehicle that lost in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Injured Driver was "+staff.getName());
-//                             }else{
-//                                 fncd.LoggerReport("      * Vehicle that lost in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Driver was "+staff.getName());
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }else{
-//             System.out.println("You will not be racing today!");
-//         }
-//     } 
-//     public List<Staff> racingStaff(FNCD fncd){
-//         Random random1 = new Random();
-//         List<Staff> staffList = fncd.getStaffList();
-//         List<Staff> sL = new ArrayList();
-//         // check vehicles race elagability 
-//         for(Staff person: staffList){
-//             if(person instanceof Driver){
-//                 sL.add(person);
-//             }
-//         }
-//         if(sL.size() > 3 && this.carList.size() == 3){
-//                 int index1 = random1.nextInt(sL.size());
-//                 int index2 = random1.nextInt(sL.size());
-//                 int index3 = random1.nextInt(sL.size());
-//             List<Staff> threestaff = new ArrayList();
-//                 threestaff.add(sL.get(index1));
-//                 threestaff.add(sL.get(index2));
-//                 threestaff.add(sL.get(index3));
-//             return threestaff;
-//         }else if(sL.size() > 3 && this.carList.size() < 3){
-//             List<Staff> threestaff = new ArrayList();
-//             for(int i = 0; i < this.carList.size(); i++){
-//                 int index = random1.nextInt(sL.size());
-//                 threestaff.add(sL.get(index));
-//             }
-//             return threestaff;
-//         }else{
-//             return sL;
-//         }
-//     }
-//     public List<Vehicle> racableCars(FNCD fncd){
-//         List<Vehicle> vehicleList = fncd.getVehicleList();
-//         List<Vehicle> carL = new ArrayList();
-//         // check vehicles race elagability 
-//         for(Vehicle car: vehicleList){
-//             if(car instanceof Car || car instanceof Electric_Car){
-//                 continue;
-//             }else{
-//                 if(car.getCondition() == "Broken"){
-//                     continue;
-//                 }else{
-//                     carL.add(car);
-//                 }
-//             }
-//         }
-//         if(carL.size() > 3){
-//             Random random1 = new Random();
-//                 int index1 = random1.nextInt(carL.size());
-//                 int index2 = random1.nextInt(carL.size());
-//                 int index3 = random1.nextInt(carL.size());
-//             List<Vehicle> threecars = new ArrayList();
-//                 threecars.add(carL.get(index1));
-//                 threecars.add(carL.get(index2));
-//                 threecars.add(carL.get(index3));
-//             return threecars;
-//         }else{
-//             return carL;
-//         }
-//     }
-// } 
+    // can only race on wendsday and sunday
+    public void racingDay(FNCD fncd){
+        Random random = new Random();
+        List<Vehicle> VehicleList = fncd.getVehicleList();
+        List<Staff> sList = fncd.getStaffList();
+        int index = 0;
+        // check if we are on a day to race
+        fncd.LoggerReport("Racing... ");
+        if(fncd.getDay() == "Wensday" || fncd.getDay() == "Sunday"){
+            fncd.LoggerReport("  - Racing Day");
+            for(Vehicle car: VehicleList){
+                for(Staff staff: sList){
+                    if(car == this.carList.get(index) && staff == this.staffList.get(index)){
+                        int place = random.nextInt(20) + 1;
+                        // win
+                        if(place == 1 || place == 2 || place == 3){
+                            car.addWinCount();
+                            car.setSalesPrice(car.getSalesPrice()*1.10);
+                            staff.setBonus(staff.getBonus()+300);
+                            double curr = fncd.getStaffTotalEarn();
+                            fncd.setStaffTotalEarn(curr+=staff.getBonus()+300);
+                            fncd.LoggerReport("      * Vehicle that won in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Driver was "+staff.getName());
+                        // lose
+                        }else{
+                            car.setCondition("Broken");
+                            double injuryChance = random.nextDouble();
+                            // 30% chance person is injured
+                            if(injuryChance < 0.30){
+                                if(staff instanceof Driver){
+                                    // set driver to injured 
+                                    Driver driver = (Driver) staff;
+                                    driver.updateInjury();
+                                    fncd.LoggerReport("      * Vehicle that lost in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Injured Driver was "+staff.getName());
+                                }
+                            }else{
+                                fncd.LoggerReport("      * Vehicle that lost in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Driver was "+staff.getName());
+                            }
+                        }
+                        index++;
+                    }
+                    if(index >= this.carList.size()){
+                        break;
+                    }
+                }
+                if(index >= this.carList.size()){
+                    break;
+                }
+            }
+        }else{
+            fncd.LoggerReport("  - You will not be racing today!");
+        }
+    } 
+    public List<Staff> racingStaff(FNCD fncd){
+        Random random1 = new Random();
+        List<Staff> staffList = fncd.getStaffList();
+        List<Staff> sL = new ArrayList();
+        // check vehicles race elagability 
+        for(Staff person: staffList){
+            if(person instanceof Driver){
+                sL.add(person);
+                //fncd.LoggerReport("Diver Added to list "+person.getName());
+            }
+        }
+        if(sL.size() > 3 && carList.size() == 3){
+                int index1 = random1.nextInt(sL.size());
+                int index2 = random1.nextInt(sL.size());
+                int index3 = random1.nextInt(sL.size());
+            List<Staff> threestaff = new ArrayList();
+                threestaff.add(sL.get(index1));
+                threestaff.add(sL.get(index2));
+                threestaff.add(sL.get(index3));
+            return threestaff;
+        }else if(sL.size() > 3 && carList.size() < 3){
+            List<Staff> threestaff = new ArrayList();
+            for(int i = 0; i < carList.size(); i++){
+                int index = random1.nextInt(sL.size());
+                threestaff.add(sL.get(index));
+            }
+            return threestaff;
+        }else{
+            return sL;
+        }
+    }
+    public List<Vehicle> racableCars(FNCD fncd){
+        List<Vehicle> vehicleList = fncd.getVehicleList();
+        List<Vehicle> carL = new ArrayList();
+        // check vehicles race elagability 
+        for(Vehicle car: vehicleList){
+            if(car instanceof Car || car instanceof Electric_Car){
+                continue;
+            }else{
+                if(car.getCondition() == "Broken"){
+                    continue;
+                }else{
+                    carL.add(car);
+                }
+            }
+        }
+        if(carL.size() > 3){
+            Random random1 = new Random();
+                int index1 = random1.nextInt(carL.size());
+                int index2 = random1.nextInt(carL.size());
+                int index3 = random1.nextInt(carL.size());
+            List<Vehicle> threecars = new ArrayList();
+                threecars.add(carL.get(index1));
+                threecars.add(carL.get(index2));
+                threecars.add(carL.get(index3));
+                //fncd.LoggerReport("Vehicle Added to list "+carL.get(index1).getName());
+                //fncd.LoggerReport("Vehicle Added to list "+carL.get(index2).getName());
+                //fncd.LoggerReport("Vehicle Added to list "+carL.get(index3).getName());
+            return threecars;
+        }else{
+            return carL;
+        }
+    }
+} 
 class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
@@ -900,7 +918,7 @@ public class main {
         List<Integer> weekEnds = Arrays.asList(2,3,4,5,6,7,8);
 
         // now open all 30 days 
-        for(int i = 0; i < 5; i++){
+        for(int i = 0; i < 30; i++){
             // create instances
             Event_Publisher publisher = new Event_Publisher();
             Logger logger = new Logger(i+1);
@@ -921,10 +939,20 @@ public class main {
             Fncd_Event openingEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), fncd.getOpBudget());
             publisher.publishEvent(openingEvent.getType(), openingEvent.getMessage(), openingEvent.getData());
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // run racing
+            RacingEvent race = new RacingEvent(fncd);
+            race.racingDay(fncd);
+
+
+            //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run washing
             fncd.LoggerReport("Washing...");
             Washing wash = new Washing(fncd);
-            wash.washVehicle(fncd);   
+            wash.washVehicle(fncd); 
+            
+            // publish event to notify observers that opening is complete
+            Fncd_Event racingEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), fncd.getOpBudget());
+            publisher.publishEvent(racingEvent.getType(), racingEvent.getMessage(), racingEvent.getData());
             
             // publish event to notify observers that washing is complete
             Fncd_Event washingEvent = new Fncd_Event("washing_complete", "Washing is complete for day " + (i+1), wash.getWashCount());

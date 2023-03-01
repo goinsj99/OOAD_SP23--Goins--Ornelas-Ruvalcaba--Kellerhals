@@ -70,7 +70,7 @@ public class FNCD {
     // go to next day
     public void nextDay(){
         budgetCheck();
-        if(this.dayIndex == 7){
+        if(this.dayIndex == 6){
             this.dayIndex = 0;
         }else{
             this.dayIndex += 1;
@@ -195,6 +195,16 @@ public class FNCD {
         Mechanic newStaff = new Mechanic(name, 100.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
         return newStaff;
     }
+    // creat a Driver
+    public Driver createDriverStaff(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(this.staffnames.size());
+        String name = this.staffnames.get(index);
+        this.staffnames.remove(index);
+
+        Driver newStaff = new Driver(name, 100.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
+        return newStaff;
+    }
     // create a Car
     public Car createCar(){
         Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
@@ -264,6 +274,7 @@ public class FNCD {
             listTemp.add(createSalesPersonStaff());
             listTemp.add(createMecanicStaff());
             listTemp.add(createInternStaff());
+            listTemp.add(createDriverStaff());
         }
         return listTemp;
     }
