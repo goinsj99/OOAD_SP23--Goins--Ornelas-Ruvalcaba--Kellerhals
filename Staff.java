@@ -11,7 +11,7 @@ import java.util.UUID;
 
 public class Staff {
     Cleans cleans;
-
+    
     private Double salaryRate;
     private Integer staffID;
     private Double salary;
@@ -21,7 +21,6 @@ public class Staff {
     private Double bonus;
     private Double bonusTemp;
     private Float Rate;
-
 
     public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         this.firstName = firstName;
@@ -88,7 +87,6 @@ public class Staff {
     public Double getBonusTemp(){return this.bonusTemp;} // bonus earned that day
     public Double getBonus(){ return this.bonus;} // total earned bonus
 
-
 }
 
 // Subclass (inherit from Animal)
@@ -105,7 +103,7 @@ class SalesPerson extends Staff{
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
 
-}
+} 
 
 class Intern extends Staff {
     Double myRate = 1.5;
@@ -136,9 +134,6 @@ class Intern extends Staff {
     public void updateCleaningMethod(String newMethod){
         this.cleaningMethod = newMethod;
     }
-
-
-
 }
 
 class Mechanic extends Staff {
@@ -159,13 +154,20 @@ class Driver extends Staff {
     Double myRate = 1.75;
     private String position;
     private Double salary;
+    private boolean injury;
     public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Driver";
         this.salary = (salary*myRate);
+        this.injury = false;
     }
     @Override
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
-
+    public boolean getInjuryStat(){
+        return this.injury;
+    }
+    public void updateInjury(){
+        this.injury = true;
+    }
 }
