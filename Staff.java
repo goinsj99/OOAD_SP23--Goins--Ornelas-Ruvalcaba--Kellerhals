@@ -11,7 +11,7 @@ import java.util.UUID;
 
 public class Staff {
     Cleans cleans;
-    
+
     private Double salaryRate;
     private Integer staffID;
     private Double salary;
@@ -21,6 +21,7 @@ public class Staff {
     private Double bonus;
     private Double bonusTemp;
     private Float Rate;
+
 
     public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         this.firstName = firstName;
@@ -103,37 +104,23 @@ class SalesPerson extends Staff{
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
 
-} 
+}
 
 class Intern extends Staff {
     Double myRate = 1.5;
     private String position;
     private Double salary;
-    // project 3.2
-    private String cleaningMethod;
-    private List<String> cleaingMethodList = Arrays.asList("Chemical", "Elbow Grease", "Detailed");
+    private String cleanType;
 
     public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Intern";
         this.salary = (salary*myRate);
-        this.cleaningMethod = decideCleaningMethod(cleaingMethodList);
     }
     @Override
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
 
-    public String decideCleaningMethod(List<String> cml){
-        Random random = new Random();
-        int index = random.nextInt(cml.size());
-        return cml.get(index);
-    }
-    public String getCleaningMethod(){
-        return this.cleaningMethod;
-    }
-    public void updateCleaningMethod(String newMethod){
-        this.cleaningMethod = newMethod;
-    }
 }
 
 class Mechanic extends Staff {
@@ -143,6 +130,20 @@ class Mechanic extends Staff {
     public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Mechanic";
+        this.salary = (salary*myRate);
+    }
+    @Override
+    public String getPosition(){return this.position; }
+    public Double getSalary(){return this.salary;}
+
+}
+class Driver extends Staff {
+    Double myRate = 1.75;
+    private String position;
+    private Double salary;
+    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
+        this.position = "Driver";
         this.salary = (salary*myRate);
     }
     @Override
