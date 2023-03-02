@@ -111,14 +111,33 @@ class Intern extends Staff {
     Double myRate = 1.5;
     private String position;
     private Double salary;
+    // project 3.2
+    private String cleaningMethod;
+    private List<String> cleaingMethodList = Arrays.asList("Chemical", "Elbow Grease", "Detailed");
+
     public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Intern";
         this.salary = (salary*myRate);
+        this.cleaningMethod = decideCleaningMethod(cleaingMethodList);
     }
     @Override
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
+
+    public String decideCleaningMethod(List<String> cml){
+        Random random = new Random();
+        int index = random.nextInt(cml.size());
+        return cml.get(index);
+    }
+    public String getCleaningMethod(){
+        return this.cleaningMethod;
+    }
+    public void updateCleaningMethod(String newMethod){
+        this.cleaningMethod = newMethod;
+    }
+
+
 
 }
 

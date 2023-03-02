@@ -314,6 +314,9 @@ class Washing{
     public int getWashCount(){
         return this.washCount;
     }
+    public void washing(FNCD fncd, double cleanChance, double sparkingChance, double dirtyChance, double brokenChance, double newChance){
+        
+    }
 }
 class Repair{
     private double repairChance;
