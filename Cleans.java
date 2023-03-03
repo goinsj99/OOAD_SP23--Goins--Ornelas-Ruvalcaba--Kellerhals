@@ -1,3 +1,3 @@
 public interface Cleans{
-    public void behave();
+    public void behave(FNCD fncd);
 }
