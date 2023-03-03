@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.*;
+
 public class ChemClean implements Cleans {
     public void behave(){
         if(car.getCleanliness() == "Dirty"){
