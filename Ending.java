@@ -106,12 +106,12 @@ public class Ending{
         fncd.LoggerReport("| Staff that quit |");
         for (Staff staff : tempQuit){
         // staff.setHours(staff.getHours() + 8.0);
-            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits\n" );
+            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", "+ staff.getSalary() + ", " + staff.getBonusTemp() + ", Quits" );
         }
         fncd.LoggerReport("| Staff still working that |");
         for (Staff staff : staffList){
         // staff.setHours(8.0);
-            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", Working" );
+            fncd.LoggerReport("      * "+staff.getName() + ", " + staff.getHours() + ", " + staff.getSalary() + ", "+ staff.getBonus() + ", "+staff.getPosition() + ", Working" );
         }
         fncd.LoggerReport("| Sold Vehicles |");
         for (Vehicle car : fncd.getSoldVehicle() ){

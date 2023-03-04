@@ -29,6 +29,7 @@ public class main {
             publisher.registerSub(tracker);
             fncd.LoggerReport("----------------------------------------------");
             fncd.LoggerReport("***** FNCD Day "+fncd.getDay()+" "+(i+1)+ "****\n");
+
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run every senerio with openeing
             fncd.LoggerReport("Opening... (current budget "+fncd.getOpBudget()+")");
@@ -39,10 +40,12 @@ public class main {
             // publish event to notify observers that opening is complete
             Fncd_Event openingEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), fncd.getOpBudget());
             publisher.publishEvent(openingEvent.getType(), openingEvent.getMessage(), openingEvent.getData());
+
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run racing
             RacingEvent race = new RacingEvent(fncd);
             race.racingDay(fncd);
+
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run washing
             fncd.LoggerReport("Washing...");
@@ -56,6 +59,7 @@ public class main {
             // publish event to notify observers that washing is complete
             Fncd_Event washingEvent = new Fncd_Event("washing_complete", "Washing is complete for day " + (i+1), wash.getWashCount());
             publisher.publishEvent(washingEvent.getType(), washingEvent.getMessage(), washingEvent.getData());
+
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //run repair
             fncd.LoggerReport("Repairing... ");
@@ -68,6 +72,7 @@ public class main {
             // publish event to notify observers that repair is complete
             Fncd_Event repairEvent = new Fncd_Event("repair_complete", "Repair is complete for day " + (i+1), repair.getRepairCount());
             publisher.publishEvent(repairEvent.getType(), repairEvent.getMessage(), repairEvent.getData());
+            
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //run Selling
             fncd.LoggerReport("Selling... ");

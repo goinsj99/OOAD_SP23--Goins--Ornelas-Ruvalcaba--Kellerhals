@@ -65,6 +65,7 @@ public class Repair{
                 }
             }
         }
+        fncd.LoggerReport("");
     }
     public int getRepairCount(){
         return this.repairCount;

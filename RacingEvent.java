@@ -69,6 +69,7 @@ public  class RacingEvent{
         }else{
             fncd.LoggerReport("  - You will not be racing today!");
         }
+        fncd.LoggerReport("");
     } 
     public List<Staff> racingStaff(FNCD fncd){
         Random random1 = new Random();

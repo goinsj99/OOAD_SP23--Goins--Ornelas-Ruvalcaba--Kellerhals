@@ -33,9 +33,9 @@ public class Staff {
         this.bonus = bonus;
         this.bonusTemp = 0.0;
     }
-    public void cleanStrategy(){
-        cleans.behave();
-    }
+    // public void cleanStrategy(){
+    //     cleans.behave();
+    // }
     public void setName(String firstName) {
         this.firstName = firstName;
     }

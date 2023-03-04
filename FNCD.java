@@ -280,7 +280,7 @@ public class FNCD {
     }
     // create Starting Vehicles
     public List<Vehicle> dayOneVehicle(){
-        List<Vehicle> listtemp = new ArrayList();
+        List<Vehicle> listtemp = new ArrayList<>();
         for(int i = 0; i < 4; i++){
             listtemp.add(createCar());
             listtemp.add(createPerformanceCar());
