@@ -21,6 +21,7 @@ public class Staff {
     private Double bonus;
     private Double bonusTemp;
     private Float Rate;
+    private String cleanType;
 
 
     public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
@@ -32,14 +33,17 @@ public class Staff {
         this.salary = salary;
         this.bonus = bonus;
         this.bonusTemp = 0.0;
+        this.cleanType = "";
     }
-    // public void cleanStrategy(){
-    //     cleans.behave();
-    // }
+//    public void cleanStrategy(){
+//        cleans.behave();
+//    }
     public void setName(String firstName) {
         this.firstName = firstName;
     }
-
+    public void setCleanType(String cleanType){
+        this.cleanType = cleanType;
+    }
     public void setSalaryRate(Double salaryRate) {
         this.salaryRate = salaryRate;
     }
@@ -64,6 +68,9 @@ public class Staff {
     }
     public String getName() {
         return this.firstName;
+    }
+    public String getCleanType(){
+        return this.cleanType;
     }
 
     public Double getSalaryRate() {
@@ -111,15 +118,24 @@ class Intern extends Staff {
     private String position;
     private Double salary;
     private String cleanType;
+    private List<String> typesOfClean = Arrays.asList("Chemical", "Elbow", "Detail");
+
 
     public Intern(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Intern";
         this.salary = (salary*myRate);
+        this.cleanType = decideCleanType();
     }
     @Override
     public String getPosition(){return this.position; }
     public Double getSalary(){return this.salary;}
+    public String decideCleanType(){
+        Random random1 = new Random();
+        int temp = random1.nextInt(typesOfClean.size());
+        cleanType = typesOfClean.get(temp);
+        return this.cleanType;
+    }
 
 }
 
@@ -127,8 +143,8 @@ class Mechanic extends Staff {
     Double myRate = 1.75;
     private String position;
     private Double salary;
-    public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
-        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
+    public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus, String cleanType) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus, cleanType);
         this.position = "Mechanic";
         this.salary = (salary*myRate);
     }
@@ -137,27 +153,13 @@ class Mechanic extends Staff {
     public Double getSalary(){return this.salary;}
 
 }
-// class Driver extends Staff {
-//     Double myRate = 1.75;
-//     private String position;
-//     private Double salary;
-//     public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
-//         super(firstName, salaryRate, staffID, salary, hours, position, bonus);
-//         this.position = "Driver";
-//         this.salary = (salary*myRate);
-//     }
-//     @Override
-//     public String getPosition(){return this.position; }
-//     public Double getSalary(){return this.salary;}
-
-// }
 class Driver extends Staff {
     Double myRate = 1.75;
     private String position;
     private Double salary;
     private boolean injury;
-    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
-        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
+    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus, String cleanType) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus, cleanType);
         this.position = "Driver";
         this.salary = (salary*myRate);
         this.injury = false;

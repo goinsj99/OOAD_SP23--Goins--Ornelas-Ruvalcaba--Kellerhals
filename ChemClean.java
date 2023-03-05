@@ -2,11 +2,11 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.util.*;
 import java.util.List;
-import java.io.BufferedWriter; 
-import java.io.FileWriter; 
-import java.io.IOException; 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.FileOutputStream;  
+import java.io.FileOutputStream;
 
 public class ChemClean implements Cleans {
     public void behave(FNCD fncd){
@@ -36,7 +36,7 @@ public class ChemClean implements Cleans {
                     car.setCleanliness("Sparkling");
                     intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                     internCount1++;
-    
+
                     washCount++;
                     double curr = fncd.getStaffTotalEarn();
                     fncd.setStaffTotalEarn(curr+=car.getVehicleBonus());
@@ -64,7 +64,7 @@ public class ChemClean implements Cleans {
                     car.setCleanliness("Sparkling");
                     intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                     internCount1++;
-    
+
                     washCount++;
                     double curr = fncd.getStaffTotalEarn();
                     fncd.setStaffTotalEarn(curr+=car.getVehicleBonus());
