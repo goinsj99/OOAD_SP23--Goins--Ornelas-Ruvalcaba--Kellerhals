@@ -16,7 +16,7 @@ public class ChemClean implements Cleans {
         boolean flag = false;
         Random random = new Random();
         Intern intern = (Intern) fncd.getStaffList().get(index);
-
+        double randomBroke = random.nextDouble();
         for(Vehicle car: fncd.getVehicleList()){
             while(flag == false){
                 if(fncd.getStaffList().get(index) instanceof Intern){
@@ -50,6 +50,10 @@ public class ChemClean implements Cleans {
                     //System.out.printf("Washing did not have an affect on the vehicle 1\n");
                     internCount1++;
                 }
+                if(randomBroke < 0.1){
+                    fncd.LoggerReport("          - Vehicle broke from clean "+car.getName());
+                    car.setCondition("Broken");
+                }
             }
             if(car.getCleanliness() == "Clean"){
                 // %10 chance of becoming dirty, %20 chance on becoming sparkling
@@ -71,6 +75,10 @@ public class ChemClean implements Cleans {
                 }else{
                     //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
                     internCount1++;
+                }
+                if(randomBroke < 0.1){
+                    fncd.LoggerReport("          - Vehicle broke from clean "+car.getName());
+                    car.setCondition("Broken");
                 }
             }
             flag = false;

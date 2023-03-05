@@ -33,7 +33,7 @@ public class Staff {
         this.salary = salary;
         this.bonus = bonus;
         this.bonusTemp = 0.0;
-        this.cleanType = "";
+
     }
 //    public void cleanStrategy(){
 //        cleans.behave();
@@ -41,9 +41,9 @@ public class Staff {
     public void setName(String firstName) {
         this.firstName = firstName;
     }
-    public void setCleanType(String cleanType){
-        this.cleanType = cleanType;
-    }
+//    public void setCleanType(String cleanType){
+//        this.cleanType = cleanType;
+//    }
     public void setSalaryRate(Double salaryRate) {
         this.salaryRate = salaryRate;
     }
@@ -69,9 +69,9 @@ public class Staff {
     public String getName() {
         return this.firstName;
     }
-    public String getCleanType(){
-        return this.cleanType;
-    }
+//    public String getCleanType(){
+//        return this.cleanType;
+//    }
 
     public Double getSalaryRate() {
         return this.salaryRate;
@@ -132,8 +132,12 @@ class Intern extends Staff {
     public Double getSalary(){return this.salary;}
     public String decideCleanType(){
         Random random1 = new Random();
+        String cleanTemp;
         int temp = random1.nextInt(typesOfClean.size());
-        cleanType = typesOfClean.get(temp);
+        cleanTemp = typesOfClean.get(temp);
+        return cleanTemp;
+    }
+    public String getCleanType(){
         return this.cleanType;
     }
 
@@ -143,8 +147,8 @@ class Mechanic extends Staff {
     Double myRate = 1.75;
     private String position;
     private Double salary;
-    public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus, String cleanType) {
-        super(firstName, salaryRate, staffID, salary, hours, position, bonus, cleanType);
+    public Mechanic(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Mechanic";
         this.salary = (salary*myRate);
     }
@@ -158,8 +162,8 @@ class Driver extends Staff {
     private String position;
     private Double salary;
     private boolean injury;
-    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus, String cleanType) {
-        super(firstName, salaryRate, staffID, salary, hours, position, bonus, cleanType);
+    public Driver(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
+        super(firstName, salaryRate, staffID, salary, hours, position, bonus);
         this.position = "Driver";
         this.salary = (salary*myRate);
         this.injury = false;

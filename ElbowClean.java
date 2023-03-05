@@ -17,6 +17,7 @@ public class ElbowClean implements Cleans {
         boolean flag = false;
         Random random = new Random();
         Intern intern = (Intern) fncd.getStaffList().get(index);
+        double randomBroke = random.nextDouble();
 
         for(Vehicle car: fncd.getVehicleList()){
             while(flag == false){
@@ -51,6 +52,10 @@ public class ElbowClean implements Cleans {
                     //System.out.printf("Washing did not have an affect on the vehicle 1\n");
                     internCount1++;
                 }
+                if(randomBroke < 0.1){
+                    fncd.LoggerReport("          - Vehicle broke from clean "+car.getName());
+                    car.setCondition("Broken");
+                }
             }
             if(car.getCleanliness() == "Clean"){
                 // %15 chance of becoming dirty, %15 chance on becoming sparkling
@@ -71,6 +76,10 @@ public class ElbowClean implements Cleans {
                 }else{
                     //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
                     internCount1++;
+                }
+                if(randomBroke < 0.1){
+                    fncd.LoggerReport("          - Vehicle broke from clean "+car.getName());
+                    car.setCondition("Broken");
                 }
             }
             flag = false;
