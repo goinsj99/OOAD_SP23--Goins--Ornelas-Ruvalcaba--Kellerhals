@@ -13,6 +13,7 @@ public class main {
         // verables 
         double buget = 500000;
         int washcount = 0;
+        int repairCount = 0;
         FNCD fncd = new FNCD(buget); 
         Random random = new Random();
         // used to calculate for costomers on day 
@@ -79,6 +80,7 @@ public class main {
             
             // publish event to notify observers that washing is complete
             Fncd_Event washingEvent = new Fncd_Event("washing_complete", "Washing is complete for day " + (i+1), washcount);
+            washcount = 0;
             publisher.publishEvent(washingEvent.getType(), washingEvent.getMessage(), washingEvent.getData());
 
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -88,10 +90,12 @@ public class main {
             for(Staff mec: fncd.getStaffList()){
                 if(mec instanceof Mechanic){
                     repair.repairVehicle(fncd.getVehicleList(), mec, fncd);
+                    repairCount += repair.getRepairCount();
                 }
             }
             // publish event to notify observers that repair is complete
-            Fncd_Event repairEvent = new Fncd_Event("repair_complete", "Repair is complete for day " + (i+1), repair.getRepairCount());
+            Fncd_Event repairEvent = new Fncd_Event("repair_complete", "Repair is complete for day " + (i+1), repairCount);
+            repairCount = 0;
             publisher.publishEvent(repairEvent.getType(), repairEvent.getMessage(), repairEvent.getData());
             
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

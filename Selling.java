@@ -104,7 +104,7 @@ public class Selling {
         Vehicle sVehicle = mostExpensive(fncd);
 
         if(sVehicle.getVim() == ""){
-            fncd.LoggerReport("\n            * Didn't Find a Valid Vehicle!");
+            fncd.LoggerReport("            * Didn't Find a Valid Vehicle!");
             return fncd.getSoldVehicle();
         }else{
             if (sVehicle.getCondition() == "New") {
