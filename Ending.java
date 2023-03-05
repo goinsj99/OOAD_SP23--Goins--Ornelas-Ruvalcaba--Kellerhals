@@ -12,7 +12,7 @@ public class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
     List<Staff> quitList = new ArrayList<>();
-    Random random2 = new Random();
+    
 
     Ending(){
         this.tempPay = 0.0;
@@ -21,80 +21,84 @@ public class Ending{
     }
     public void payStaff(FNCD fncd){
         List<Staff> staffList = fncd.getStaffList();
+        List<Staff> coppyStaff = List.copyOf(staffList);
         Double quitChance = 0.1;
-        Double mechChance = random2.nextDouble();
-        Double salesChance = random2.nextDouble();
-        Double internChance = random2.nextDouble();
         double staffTotalEarning = 0;
+        int mecCount = 3;
+        int salesCout = 3;
         //Staff tempIntern1;
         Staff tempIntern2;
-        // should I make a payStaff option in
-        for(Staff staff: staffList){
+        
+        for(Staff staff: coppyStaff){
+            Random random2 = new Random();
+            Double mechChance = random2.nextDouble();
+            Double salesChance = random2.nextDouble();
+            Double internChance = random2.nextDouble();
+            // pay staff
             if(fncd.getOpBudget() >= staff.getSalary()){
                 fncd.setOpBudget(fncd.getOpBudget() - staff.getSalary());
                 staff.setHours(staff.getHours() +8.0);
                 double curr = fncd.getStaffTotalEarn();
-                fncd.setStaffTotalEarn(curr+=staff.getSalary());
+                //fncd.setStaffTotalEarn(curr+=staff.getSalary());
             }
-        }
-        // if the random intern chance is within 10% fire/quit intern
-        List<Staff> copyList5 = List.copyOf(staffList); 
-        if(internChance < quitChance){
-            for (Staff staff : copyList5) {
-                if (staff instanceof Intern) {
+            // intern quits
+            if(staff instanceof Intern) {
+                if(internChance < quitChance){
                     this.quitList.add(staff);
                     staffList.remove(staff);
-                    fncd.setStaffList(staffList);
+                    break;
+                    //fncd.setStaffList(staffList);
+                }
+            }
+            // mec quit
+            if (staff instanceof Mechanic) {
+                if(mechChance < quitChance){
+                    mecCount--;
+                    this.quitList.add(staff);
+                    staffList.remove(staff);
+                    //fncd.setStaffList(staffList);
                     break;
                 }
             }
-
-        }
-        // mechanic quits
-        if(mechChance < quitChance){
-            Staff tempIntern1 = new Staff("",0.0,0,0.0,0.0,"",0.0);
-            List<Staff> copyList = List.copyOf(staffList); 
-            for (Staff staff : copyList) {
-                if (staff instanceof Mechanic) {
+            // sals person quits
+            if(staff instanceof SalesPerson) {
+                if(salesChance < quitChance){
+                    salesCout--;
                     this.quitList.add(staff);
                     staffList.remove(staff);
-                    fncd.setStaffList(staffList);
+                    //fncd.setStaffList(staffList);
+                    break;
                 }
             }
-            // grabbing an intern to replace a mechanic
-            List<Staff> copyList2 = List.copyOf(staffList);
-            for (Staff staff : copyList2) {
-                if (staff instanceof Intern) {
-                    tempIntern1 = fncd.createMecanicStaff();
-                    tempIntern1.setName(staff.getName());
-                    staffList.remove(staff);
-                    fncd.setStaffList(staffList);
+            // is driver injuried 
+            if(staff instanceof Driver){
+                Driver s = (Driver) staff;
+                boolean flag = s.getInjuryStat();
+                if(flag == true){
+                    this.quitList.add(s);
+                    staffList.remove(s);
                 }
-                break;
             }
         }
-        // sales person quites
-        List<Staff> copyList3 = List.copyOf(staffList);
-        if(salesChance < quitChance){
-            for(Staff staff : copyList3) {
-                if(staff instanceof SalesPerson) {
-                    this.quitList.add(staff);
+        for(Staff staff: coppyStaff){
+            if(staff instanceof Intern){
+                if(mecCount < 3){
+                    Mechanic newmec = fncd.createMecanicStaff();
+                    newmec.setName(staff.getName());
+                    staffList.add(newmec);
                     staffList.remove(staff);
-                    fncd.setStaffList(staffList);
+                    mecCount++;
                 }
-            }
-            // grabbing an intern to replace a salesperson
-            List<Staff> copyList4 = List.copyOf(staffList);
-            for(Staff staff : copyList4) {
-                if(staff instanceof Intern) {
-                    tempIntern2 = fncd.createSalesPersonStaff();
-                    tempIntern2.setName(staff.getName());
+                if(salesCout < 3){
+                    SalesPerson newsale = fncd.createSalesPersonStaff();
+                    newsale.setName(staff.getName());
+                    staffList.add(newsale);
                     staffList.remove(staff);
-                    fncd.setStaffList(staffList);
+                    salesCout++;
                 }
-                break;
             }
         }
+        fncd.setStaffList(staffList);
     }
 
     public void pReport(FNCD fncd){

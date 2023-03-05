@@ -42,35 +42,41 @@ public class DetailClean implements Cleans {
                         internCount1++;
                     }
                 }
-            }
-            for (Vehicle car : fncd.getVehicleList()) {
-                Random random = new Random();
-                double randomBroke = random.nextDouble();
-                if (car.getCleanliness() == "Clean") {
-                    // %05 chance of becoming dirty, %40 chance on becoming sparkling
-                    double randomNumber = random.nextDouble();
-                    if (randomNumber < 0.05) {
-                        fncd.LoggerReport("          - Vehicle was Clean and is now Dirty by Detail method " + car.getName());
-                        car.setCleanliness("Dirty");
-                        internCount1++;
-                        this.washCount++;
-                    } else if (randomNumber < 0.4) {
-                        fncd.LoggerReport("          - Vehicle was Clean and is now Sparkling by Detail method " + car.getName());
-                        car.setCleanliness("Sparkling");
-                        intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
-                        internCount1++;
-                        this.washCount++;
-                        double curr = fncd.getStaffTotalEarn();
-                        fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
-                    } else {
-                        fncd.LoggerReport("          - Was not able to wash: " + car.getName());
-                        internCount1++;
-                    }
-                }
-                flag = false;
                 if(internCount1 == 2){
                     break;
                 }
+            }
+            if(internCount1 < 2){
+                for (Vehicle car : fncd.getVehicleList()) {
+                    Random random = new Random();
+                    double randomBroke = random.nextDouble();
+                    if (car.getCleanliness() == "Clean") {
+                        // %05 chance of becoming dirty, %40 chance on becoming sparkling
+                        double randomNumber = random.nextDouble();
+                        if (randomNumber < 0.05) {
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Dirty by Detail method " + car.getName());
+                            car.setCleanliness("Dirty");
+                            internCount1++;
+                            this.washCount++;
+                        } else if (randomNumber < 0.4) {
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Sparkling by Detail method " + car.getName());
+                            car.setCleanliness("Sparkling");
+                            intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
+                            internCount1++;
+                            this.washCount++;
+                            double curr = fncd.getStaffTotalEarn();
+                            fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
+                        } else {
+                            fncd.LoggerReport("          - Was not able to wash: " + car.getName());
+                            internCount1++;
+                        }
+                    }
+                    flag = false;
+                    if(internCount1 == 2){
+                        break;
+                    }
+                }
+
             }
             if(internCount1 == 2){
                 break;

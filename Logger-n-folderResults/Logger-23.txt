@@ -1,5 +1,5 @@
-Type: opening_complete, Message: Opening is complete for day 23, Data: 4926.402761099215
-Type: opening_complete, Message: Opening is complete for day 23, Data: 4926.402761099215
-Type: washing_complete, Message: Washing is complete for day 23, Data: 0
+Type: opening_complete, Message: Opening is complete for day 23, Data: 19442.263233611593
+Type: opening_complete, Message: Opening is complete for day 23, Data: 19442.263233611593
+Type: washing_complete, Message: Washing is complete for day 23, Data: 2
 Type: repair_complete, Message: Repair is complete for day 23, Data: 0
 Type: selling_complete, Message: Selling is complete for day 23, Data: 0

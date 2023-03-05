@@ -49,38 +49,43 @@ public class ElbowClean implements Cleans {
                         car.setCondition("Broken");
                     }
                 }
-            }
-            for (Vehicle car : fncd.getVehicleList()) {
-                Random random = new Random();
-                double randomBroke = random.nextDouble();
-                if (car.getCleanliness() == "Clean") {
-                    // %15 chance of becoming dirty, %15 chance on becoming sparkling
-                    double randomNumber = random.nextDouble();
-                    if (randomNumber < 0.15) {
-                        fncd.LoggerReport("          - Vehicle was Clean and is now Dirty by Elbow method " + car.getName());
-                        car.setCleanliness("Dirty");
-                        internCount1++;
-                        washCount++;
-                    } else if (randomNumber < 0.15) {
-                        fncd.LoggerReport("          - Vehicle was Clean and is now Sparkling by Elbow method" + car.getName());
-                        car.setCleanliness("Sparkling");
-                        intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
-                        internCount1++;
-                        washCount++;
-                        double curr = fncd.getStaffTotalEarn();
-                        fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
-                    } else {
-                        fncd.LoggerReport("          - Was not able to wash: " + car.getName());
-                        internCount1++;
-                    }
-                    if (randomBroke < 0.1) {
-                        fncd.LoggerReport("          - Vehicle broke from Elbow method " + car.getName());
-                        car.setCondition("Broken");
-                    }
-                }
-                flag = false;
                 if(internCount1 == 2){
                     break;
+                }
+            }
+            if(internCount1 < 2){
+                for (Vehicle car : fncd.getVehicleList()) {
+                    Random random = new Random();
+                    double randomBroke = random.nextDouble();
+                    if (car.getCleanliness() == "Clean") {
+                        // %15 chance of becoming dirty, %15 chance on becoming sparkling
+                        double randomNumber = random.nextDouble();
+                        if (randomNumber < 0.15) {
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Dirty by Elbow method " + car.getName());
+                            car.setCleanliness("Dirty");
+                            internCount1++;
+                            washCount++;
+                        } else if (randomNumber < 0.15) {
+                            fncd.LoggerReport("          - Vehicle was Clean and is now Sparkling by Elbow method" + car.getName());
+                            car.setCleanliness("Sparkling");
+                            intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
+                            internCount1++;
+                            washCount++;
+                            double curr = fncd.getStaffTotalEarn();
+                            fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
+                        } else {
+                            fncd.LoggerReport("          - Was not able to wash: " + car.getName());
+                            internCount1++;
+                        }
+                        if (randomBroke < 0.1) {
+                            fncd.LoggerReport("          - Vehicle broke from Elbow method " + car.getName());
+                            car.setCondition("Broken");
+                        }
+                    }
+                    flag = false;
+                    if(internCount1 == 2){
+                        break;
+                    }
                 }
             }
             if(internCount1 == 2){

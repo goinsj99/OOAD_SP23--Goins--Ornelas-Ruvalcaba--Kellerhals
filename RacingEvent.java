@@ -40,6 +40,7 @@ public  class RacingEvent{
                             double curr = fncd.getStaffTotalEarn();
                             fncd.setStaffTotalEarn(curr+=staff.getBonus()+300);
                             fncd.LoggerReport("      * Vehicle that won in the race: "+car.getName()+" came in position "+place+" with a win count of "+car.getWinCount()+". The Driver was "+staff.getName());
+                            index++;
                         // lose
                         }else{
                             car.setCondition("Broken");
@@ -57,12 +58,15 @@ public  class RacingEvent{
                             }
                         }
                         index++;
+                        if(index == this.carList.size()){
+                            break;
+                        }
                     }
-                    if(index >= this.carList.size()){
+                    if(index == this.carList.size()){
                         break;
                     }
                 }
-                if(index >= this.carList.size()){
+                if(index == this.carList.size()){
                     break;
                 }
             }
