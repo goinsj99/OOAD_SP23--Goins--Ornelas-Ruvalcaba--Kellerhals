@@ -160,8 +160,6 @@ public class Selling {
                         }else{
                             fncd.LoggerReport("                = I understand, Cars are already expensive!");
                         }
-                        //fncd.LoggerReport("            * "+currCar.getDescription());
-
 
                         staff.setBonus(staff.getBonus() + staff.getBonus());
                         fncd.setOpBudget(fncd.getOpBudget() + currCar.getSellsPrice());
