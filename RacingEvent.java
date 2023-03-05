@@ -20,7 +20,6 @@ public  class RacingEvent{
 
     // can only race on wendsday and sunday
     public void racingDay(FNCD fncd){
-        Random random = new Random();
         List<Vehicle> VehicleList = fncd.getVehicleList();
         List<Staff> sList = fncd.getStaffList();
         int index = 0;
@@ -30,6 +29,7 @@ public  class RacingEvent{
             fncd.LoggerReport("  - Racing Day");
             for(Vehicle car: VehicleList){
                 for(Staff staff: sList){
+                    Random random = new Random();
                     if(car == this.carList.get(index) && staff == this.staffList.get(index)){
                         int place = random.nextInt(20) + 1;
                         // win

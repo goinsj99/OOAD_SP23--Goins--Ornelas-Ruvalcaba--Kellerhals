@@ -12,6 +12,7 @@ public class main {
     public static void main(String[] args) {
         // verables 
         double buget = 500000;
+        int washcount = 0;
         FNCD fncd = new FNCD(buget); 
         Random random = new Random();
         // used to calculate for costomers on day 
@@ -54,14 +55,20 @@ public class main {
             for(Staff staff: fncd.getStaffList()){
                 if(staff instanceof Intern){
                     if( staff.getCleanType() == "Chemical"){
-
-
+                        Cleans wash = new ChemClean(fncd, (Intern) staff);
+                        wash.behave(fncd, (Intern) staff);
+                        washcount += wash.getWashCount();
+                        System.out.println("met in at wash count !!!!!!!!!!!!!!!!!!!!"+wash.getWashCount());
                     }
-                    if( staff.getCleanType() == "Elbow"){
-
+                    else if( staff.getCleanType() == "Elbow"){
+                        Cleans wash = new ElbowClean(fncd, (Intern) staff);
+                        wash.behave(fncd, (Intern) staff);
+                        washcount += wash.getWashCount();
                     }
-                    if( staff.getCleanType() == "Detailed"){
-
+                    else if( staff.getCleanType() == "Detailed"){
+                        Cleans wash = new DetailClean(fncd, (Intern) staff);
+                        wash.behave(fncd, (Intern) staff);
+                        washcount += wash.getWashCount();
                     }
                 }
             }
@@ -71,7 +78,7 @@ public class main {
             publisher.publishEvent(racingEvent.getType(), racingEvent.getMessage(), racingEvent.getData());
             
             // publish event to notify observers that washing is complete
-            Fncd_Event washingEvent = new Fncd_Event("washing_complete", "Washing is complete for day " + (i+1), wash.getWashCount());
+            Fncd_Event washingEvent = new Fncd_Event("washing_complete", "Washing is complete for day " + (i+1), washcount);
             publisher.publishEvent(washingEvent.getType(), washingEvent.getMessage(), washingEvent.getData());
 
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

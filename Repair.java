@@ -22,12 +22,12 @@ public class Repair{
 
     public void repairVehicle(List<Vehicle> VehicleList, Staff mech, FNCD fncd) {
         // repair the vehicle
-        Random random = new Random();
-        double randomNumber = random.nextDouble();
         int mecCount = 0;
         fncd.LoggerReport("      * "+mech.getName()+" Repairing Report");
         while(mecCount < 2){
             for(Vehicle vehicle: VehicleList){
+                Random random = new Random();
+                double randomNumber = random.nextDouble();
                 // upgrade condtition
                 if(vehicle.getCondition() != "New"){
                 // mechanic can repair
@@ -58,7 +58,7 @@ public class Repair{
                             this.repairCount++;
                         }
                     }
-                    mecCount+=1;
+                    mecCount++;
                     if(mecCount == 2){
                         break;
                     }

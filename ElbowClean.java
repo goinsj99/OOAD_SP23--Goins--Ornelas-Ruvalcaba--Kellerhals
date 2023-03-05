@@ -1,26 +1,25 @@
 import java.util.Random;
-import java.util.ArrayList;
-import java.util.*;
-import java.util.List;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.FileOutputStream;
 
-public class ElbowClean extends Strategy {
+public class ElbowClean implements Cleans {
+    String complete; 
+    Integer washCount;
+
+    ElbowClean(FNCD fncd, Intern intern){
+        this.washCount = 0;
+        this.complete = "true";
+    }
 
     public void behave(FNCD fncd, Intern intern){
         int index = 0;
         int washCount = 0;
         int internCount1 = 0;
         boolean flag = false;
-        Random random = new Random();
-
-        double randomBroke = random.nextDouble();
         while(internCount1 <= 2) {
+            fncd.LoggerReport("      * "+intern.getName()+" Washing Report");
+            
             for (Vehicle car : fncd.getVehicleList()) {
-
+                Random random = new Random();
+                double randomBroke = random.nextDouble();
 
                 if (car.getCleanliness() == "Dirty") {
                     // %70 chance on becoming clean %05 chance of becoming sparkling
@@ -31,7 +30,7 @@ public class ElbowClean extends Strategy {
                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1++;
 
-                        washCount++;
+                        this.washCount++;
                         double curr = fncd.getStaffTotalEarn();
                         fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
                         // increase bonus intern.bonus =
@@ -39,9 +38,10 @@ public class ElbowClean extends Strategy {
                         fncd.LoggerReport("          - Vehicle was dirty and is now Clean by Elbow method " + car.getName());
                         car.setCleanliness("Clean");
                         internCount1++;
-                        washCount++;
-                    } else {
+                        this.washCount++;
+                    } else if (randomNumber >= 0.7){
                         //System.out.printf("Washing did not have an affect on the vehicle 1\n");
+                        fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;
                     }
                     if (randomBroke < 0.1) {
@@ -49,7 +49,7 @@ public class ElbowClean extends Strategy {
                         car.setCondition("Broken");
                     }
                 }
-                if (car.getCleanliness() == "Clean") {
+                else if (car.getCleanliness() == "Clean") {
                     // %15 chance of becoming dirty, %15 chance on becoming sparkling
                     double randomNumber = random.nextDouble();
                     if (randomNumber < 0.15) {
@@ -66,7 +66,7 @@ public class ElbowClean extends Strategy {
                         double curr = fncd.getStaffTotalEarn();
                         fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
                     } else {
-                        //System.out.printf("Washing did not have an affect on the vehicle 2 \n");
+                        fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;
                     }
                     if (randomBroke < 0.1) {
@@ -83,5 +83,8 @@ public class ElbowClean extends Strategy {
                 break;
             }
         }
+    }
+    public Integer getWashCount(){
+        return this.washCount;
     }
 }
