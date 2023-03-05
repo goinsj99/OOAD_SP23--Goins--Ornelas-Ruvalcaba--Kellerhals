@@ -21,7 +21,7 @@ public class Staff {
     private Double bonus;
     private Double bonusTemp;
     private Float Rate;
-    private String cleanType;
+    public String cleanType;
 
 
     public Staff(String firstName, Double salaryRate, Integer staffID, Double salary, Double hours, String position, Double bonus) {
@@ -94,6 +94,10 @@ public class Staff {
     }
     public Double getBonusTemp(){return this.bonusTemp;} // bonus earned that day
     public Double getBonus(){ return this.bonus;} // total earned bonus
+    public String getCleanType(){
+        return this.cleanType;
+    }
+
 
 }
 
@@ -117,7 +121,7 @@ class Intern extends Staff {
     Double myRate = 1.5;
     private String position;
     private Double salary;
-    private String cleanType;
+
     private List<String> typesOfClean = Arrays.asList("Chemical", "Elbow", "Detail");
 
 
@@ -136,9 +140,6 @@ class Intern extends Staff {
         int temp = random1.nextInt(typesOfClean.size());
         cleanTemp = typesOfClean.get(temp);
         return cleanTemp;
-    }
-    public String getCleanType(){
-        return this.cleanType;
     }
 
 }

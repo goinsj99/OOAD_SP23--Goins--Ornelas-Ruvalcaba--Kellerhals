@@ -49,8 +49,22 @@ public class main {
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run washing
             fncd.LoggerReport("Washing...");
-            Washing wash = new Washing(fncd);
-            wash.washVehicle(fncd); 
+//            Washing wash = new Washing(fncd);
+//            wash.washVehicle(fncd);
+            for(Staff staff: fncd.getStaffList()){
+                if(staff instanceof Intern){
+                    if( staff.getCleanType() == "Chemical"){
+
+
+                    }
+                    if( staff.getCleanType() == "Elbow"){
+
+                    }
+                    if( staff.getCleanType() == "Detailed"){
+
+                    }
+                }
+            }
             
             // publish event to notify observers that opening is complete
             Fncd_Event racingEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), fncd.getOpBudget());
