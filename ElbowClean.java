@@ -49,7 +49,11 @@ public class ElbowClean implements Cleans {
                         car.setCondition("Broken");
                     }
                 }
-                else if (car.getCleanliness() == "Clean") {
+            }
+            for (Vehicle car : fncd.getVehicleList()) {
+                Random random = new Random();
+                double randomBroke = random.nextDouble();
+                if (car.getCleanliness() == "Clean") {
                     // %15 chance of becoming dirty, %15 chance on becoming sparkling
                     double randomNumber = random.nextDouble();
                     if (randomNumber < 0.15) {

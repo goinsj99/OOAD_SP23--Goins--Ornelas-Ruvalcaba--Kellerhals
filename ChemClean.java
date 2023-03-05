@@ -36,7 +36,7 @@ public class ChemClean implements Cleans {
                         car.setCleanliness("Clean");
                         internCount1++;
                         this.washCount++;
-                    } else if (randomNumber >= 0.8){
+                    } else if (randomNumber >= 0.8) {
                         fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;
                     }
@@ -45,7 +45,11 @@ public class ChemClean implements Cleans {
                         car.setCondition("Broken");
                     }
                 }
-                else if (car.getCleanliness() == "Clean") {
+            }
+            for (Vehicle car : fncd.getVehicleList()) {
+                Random random = new Random();
+                double randomBroke = random.nextDouble();
+                if (car.getCleanliness() == "Clean") {
                     // %10 chance of becoming dirty, %20 chance on becoming sparkling
                     double randomNumber = random.nextDouble();
                     if (randomNumber < 0.1) {
