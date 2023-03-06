@@ -1,5 +1,7 @@
 import java.util.Random;
 
+// Clean Behvior, chemical clean
+
 public class ChemClean implements Cleans {
     String complete; 
     int washCount;
@@ -13,14 +15,17 @@ public class ChemClean implements Cleans {
         int index = 0;
         int internCount1 = 0;
         boolean flag = false;
+//         while the intern count for clean vehicle is 2 or less 
         while(internCount1 <= 2) {
             fncd.LoggerReport("      * "+intern.getName()+" Washing Report");
+//             Iterating through vehicle list to clean if possible
             for (Vehicle car : fncd.getVehicleList()) {
                 Random random = new Random();
                 double randomBroke = random.nextDouble();
                 if (car.getCleanliness() == "Dirty") {
                     // %80 chance on becoming clean %10 chance of becoming sparkling
                     double randomNumber = random.nextDouble();
+//                     sparkingling case
                     if (randomNumber < 0.1) {
                         fncd.LoggerReport("          - Vehicle was dirty and is now Sparkling by chemical method " + car.getName());
                         car.setCleanliness("Sparkling");
@@ -31,15 +36,22 @@ public class ChemClean implements Cleans {
                         double curr = fncd.getStaffTotalEarn();
                         fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
                         // increase bonus intern.bonus =
-                    } else if (randomNumber < 0.8) {
+                   
+                    } 
+//                     Clean case
+                    else if (randomNumber < 0.8) {
                         fncd.LoggerReport("          - Vehicle was dirty and is now Clean by chemical method " + car.getName());
                         car.setCleanliness("Clean");
                         internCount1++;
                         this.washCount++;
-                    } else if (randomNumber >= 0.8) {
+                    
+                    } 
+//                     Could not wash case
+                    else if (randomNumber >= 0.8) {
                         fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;
                     }
+//                     If the intern broke the car
                     if (randomBroke < 0.1) {
                         fncd.LoggerReport("          - Vehicle broke from chemical method " + car.getName());
                         car.setCondition("Broken");
@@ -50,6 +62,7 @@ public class ChemClean implements Cleans {
                 }
             }
             if(internCount1 < 2){
+//                 itterating through clean vehicles vehicle
                 for (Vehicle car : fncd.getVehicleList()) {
                     Random random = new Random();
                     double randomBroke = random.nextDouble();
@@ -70,10 +83,14 @@ public class ChemClean implements Cleans {
                             this.washCount++;
                             double curr = fncd.getStaffTotalEarn();
                             fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
-                        } else {
+                        } 
+//                         Cant wash case
+                        else {
                             fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                             internCount1++;
                         }
+//       Broke clean vehicle case                  
+         
                         if (randomBroke < 0.1) {
                             fncd.LoggerReport("          - Vehicle broke from chemical method " + car.getName());
                             car.setCondition("Broken");
