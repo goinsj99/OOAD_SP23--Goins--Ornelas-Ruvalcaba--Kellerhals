@@ -1,4 +1,5 @@
 import java.util.Random;
+// Detail clean behavior
 
 public class DetailClean implements Cleans {
     String complete;
@@ -13,31 +14,37 @@ public class DetailClean implements Cleans {
         //int index = 0;
         int internCount1 = 0;
         boolean flag = false;
+//         while the intern count for clean vehicle is 2 or less 
+
         while(internCount1 <= 2) {
             fncd.LoggerReport("      * "+intern.getName()+" Washing Report");
+            //             Iterating through vehicle list to clean if possible
             for (Vehicle car : fncd.getVehicleList()) {
                 Random random = new Random();
                 double randomBroke = random.nextDouble();
                 if (car.getCleanliness() == "Dirty") {
                     // %60 chance on becoming clean %20 chance of becoming sparkling
                     double randomNumber = random.nextDouble();
+                    //                     sparkingling case
                     if (randomNumber < 0.2) {
                         fncd.LoggerReport("          - Vehicle was dirty and is now Sparkling by Detail method" + car.getName());
                         car.setCleanliness("Sparkling");
                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1++;
                         this.washCount++;
-                        //.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
                         double curr = fncd.getStaffTotalEarn();
                         fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
                         // increase bonus intern.bonus =
-                    } else if (randomNumber < 0.6) {
+                    } 
+                    //                     Clean case
+                    else if (randomNumber < 0.6) {
                         fncd.LoggerReport("          - Vehicle was dirty and is now Clean by Detail method" + car.getName());
                         car.setCleanliness("Clean");
                         internCount1++;
                         this.washCount++;
-                        //System.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
-                    } else if (randomNumber >= 0.6) {
+                    } 
+                    //                     Could not wash case
+                    else if (randomNumber >= 0.6) {
                         fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;
                     }
@@ -47,6 +54,7 @@ public class DetailClean implements Cleans {
                 }
             }
             if(internCount1 < 2){
+                //                 itterating through clean vehicles vehicle
                 for (Vehicle car : fncd.getVehicleList()) {
                     Random random = new Random();
                     double randomBroke = random.nextDouble();
@@ -66,7 +74,9 @@ public class DetailClean implements Cleans {
                             this.washCount++;
                             double curr = fncd.getStaffTotalEarn();
                             fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
-                        } else {
+                        } 
+                        //                         Cant wash case
+                        else {
                             fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                             internCount1++;
                         }
