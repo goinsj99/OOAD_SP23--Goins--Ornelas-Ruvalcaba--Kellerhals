@@ -26,12 +26,10 @@ abstract class Decorator implements Vehicle_Interface {
 // If customer wants to add Exteneded Warranty 
 class Extended_Warranty extends Decorator {
     private double upSale;
-    //private double randomChance;
 
     public Extended_Warranty(Vehicle_Interface decoratedVehicle) {
         super(decoratedVehicle);
         this.upSale = 1.2;
-        //this.randomChance = 0.25;
     }
     // add extended warranty to discription 
     @Override
@@ -42,19 +40,16 @@ class Extended_Warranty extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        //System.out.println("Customer Added Extended Warranty!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
 // If customer wants to add Undercoating 
 class Undercoating extends Decorator {
     private double upSale;
-    //private double randomChance;
 
     public Undercoating(Vehicle_Interface decoratedVehicle) {
         super(decoratedVehicle);
         this.upSale = 1.05;
-        //this.randomChance = 0.10;
     }
     // add undercoating to discription 
     @Override
@@ -65,19 +60,16 @@ class Undercoating extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        //System.out.println("Customer Added Undercoating!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
 // If customer wants to add Road Rescue Coverage 
 class Road_Rescue_Coverage extends Decorator {
     private double upSale;
-    //private double randomChance;
 
     public Road_Rescue_Coverage(Vehicle_Interface decoratedVehicle) {
         super(decoratedVehicle);
         this.upSale = 1.02;
-        //this.randomChance = 0.05;
     }
     // add road rescue coverage to discription 
     @Override
@@ -88,19 +80,16 @@ class Road_Rescue_Coverage extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        //System.out.println("Customer Added Road Rescue Coverage!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
 // If customer wants to add Raido 
 class Radio extends Decorator {
     private double upSale;
-    //private double randomChance;
 
     public Radio(Vehicle_Interface decoratedVehicle) {
         super(decoratedVehicle);
         this.upSale = 1.05;
-        //this.randomChance = 0.4;
     }
     // add radio to discription 
     @Override
@@ -111,7 +100,6 @@ class Radio extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        //System.out.println("Customer Added Satellite Radio!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
