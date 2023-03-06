@@ -30,7 +30,7 @@ public  class RacingEvent{
             for(Vehicle car: VehicleList){
                 for(Staff staff: sList){
                     Random random = new Random();
-                    if(index == this.staffList.size() || index == this.carList.size()){
+                    if(index >= this.staffList.size() || index == this.carList.size()){
                         break;
                     }
                     else if(car == this.carList.get(index) && staff == this.staffList.get(index)){

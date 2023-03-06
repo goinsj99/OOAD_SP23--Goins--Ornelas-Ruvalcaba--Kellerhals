@@ -42,7 +42,7 @@ class Extended_Warranty extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        System.out.println("Customer Added Extended Warranty!");
+        //System.out.println("Customer Added Extended Warranty!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
@@ -65,7 +65,7 @@ class Undercoating extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        System.out.println("Customer Added Undercoating!");
+        //System.out.println("Customer Added Undercoating!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
@@ -88,7 +88,7 @@ class Road_Rescue_Coverage extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        System.out.println("Customer Added Road Rescue Coverage!");
+        //System.out.println("Customer Added Road Rescue Coverage!");
         return(super.getSellsPrice() * this.upSale);
     }
 }
@@ -111,7 +111,7 @@ class Radio extends Decorator {
     @Override
     public double getSellsPrice() {
         // may need to logg
-        System.out.println("Customer Added Satellite Radio!");
+        //System.out.println("Customer Added Satellite Radio!");
         return(super.getSellsPrice() * this.upSale);
     }
 }

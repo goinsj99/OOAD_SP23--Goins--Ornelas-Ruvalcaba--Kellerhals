@@ -25,18 +25,18 @@ public class Opening{
         // defult 3 cars
         fncd.LoggerReport("      * Current Vehicle Owned ");
         fncd.LoggerReport("       * Regular Cars ");
-        this.carCount = fourCars(true, false, false, false, false, fncd);
+        this.carCount = fourCars("Car",fncd);
         fncd.LoggerReport("       * Performance Cars ");
-        this.performanceCarCount = fourCars(false, true, false, false, false, fncd);
+        this.performanceCarCount = fourCars("Performance Car", fncd);
         fncd.LoggerReport("       * PickUp Cars ");
-        this.pickupCarCount = fourCars(false, false, true, false, false, fncd);
+        this.pickupCarCount = fourCars("Pickup Car", fncd);
         // new vehicles 
         fncd.LoggerReport("       * Electric Cars ");
-        this.electricCarCount = this.pickupCarCount = fourCars(false, false, false, true, false, fncd);
+        this.electricCarCount = this.pickupCarCount = fourCars("Electric Car", fncd);
         fncd.LoggerReport("       * Motorcycle ");
-        this.motorcycleCount = this.pickupCarCount = fourCars(false, false, false, false, true, fncd);
+        this.motorcycleCount = this.pickupCarCount = fourCars("Motorcycle", fncd);
         fncd.LoggerReport("       * Monster Truck ");
-        this.monsterTruck = this.pickupCarCount = fourCars(false, false, false, false, false, fncd);
+        this.monsterTruck = this.pickupCarCount = fourCars("Monster Truck", fncd);
     }
     // check intern
     public int threeInterns(List<Staff> curentStaff, FNCD fncd){
@@ -79,50 +79,15 @@ public class Opening{
         return curentStaff;
     }  
     // check Car
-    public int fourCars(boolean car, boolean pc, boolean pu, boolean ec, boolean m, FNCD fncd){
-        int count1 = 0;
-        int count2 = 0;
-        int count3 = 0;
-        // new cars 
-        int count4 = 0;
-        int count5 = 0;
-        int count6 = 0;
-        String tempHold = "          - ";
-        for(Vehicle cars: fncd.getVehicleList()){
-            if(cars instanceof Car && car == true){
-                count1++;
-                tempHold += cars.getName()+", ";
-            }else if(cars instanceof Performance_Car && pc == true){
-                count2++;
-                tempHold += cars.getName()+", ";
-            }else if(cars instanceof Pickup_Car && pu == true){
-                count3++;
-                tempHold += cars.getName()+", ";
-            }else if(cars instanceof Electric_Car && ec == true){
-                count4++;
-                tempHold += cars.getName()+", ";
-            }else if(cars instanceof Motorcycle && m  == true){
-                count5++;
-                tempHold += cars.getName()+", ";
-            }else if(cars instanceof Monster_Truck){
-                count6++;
-                tempHold += cars.getName()+", ";
-            }
+    public int fourCars(String carType, FNCD fncd){
+        int count = 0;
+        for(Vehicle s: fncd.getVehicleList()){
+            if(s.getType() == carType){
+                count++;
+            }   
         }
-        fncd.LoggerReport(tempHold);
-        if(car == true){
-            return count1;
-        }else if(pc == true){
-            return count2;
-        }else if(pu == true){
-            return count3;
-        }else if(ec == true){
-            return count4;
-        }else if(m == true){
-            return count5;
-        }else{
-            return count6;
-        }
+        return count;
+        
     }
     public List<Vehicle> AddVehicle(FNCD fncd){
         // now what every dosnt have 4 go until their is four each or buget reached

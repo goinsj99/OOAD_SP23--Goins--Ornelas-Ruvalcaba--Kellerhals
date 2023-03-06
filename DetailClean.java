@@ -27,7 +27,7 @@ public class DetailClean implements Cleans {
                         intern.setBonusTemp(intern.getBonusTemp() + car.getVehicleBonus());
                         internCount1++;
                         this.washCount++;
-                        System.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
+                        //.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
                         double curr = fncd.getStaffTotalEarn();
                         fncd.setStaffTotalEarn(curr += car.getVehicleBonus());
                         // increase bonus intern.bonus =
@@ -36,7 +36,7 @@ public class DetailClean implements Cleans {
                         car.setCleanliness("Clean");
                         internCount1++;
                         this.washCount++;
-                        System.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
+                        //System.out.println("Met at wash count !!!!!!!!!!!!!!!!!!!!" + this.washCount);
                     } else if (randomNumber >= 0.6) {
                         fncd.LoggerReport("          - Was not able to wash: " + car.getName());
                         internCount1++;

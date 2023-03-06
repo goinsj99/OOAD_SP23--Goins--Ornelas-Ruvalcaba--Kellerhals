@@ -59,7 +59,6 @@ public class main {
                         Cleans wash = new ChemClean(fncd, (Intern) staff);
                         wash.behave(fncd, (Intern) staff);
                         washcount += wash.getWashCount();
-                        System.out.println("met in at wash count !!!!!!!!!!!!!!!!!!!!"+wash.getWashCount());
                     }
                     else if( staff.getCleanType() == "Elbow"){
                         Cleans wash = new ElbowClean(fncd, (Intern) staff);
