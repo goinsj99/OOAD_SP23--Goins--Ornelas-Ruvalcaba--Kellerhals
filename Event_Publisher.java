@@ -83,6 +83,29 @@ interface Event_Manager {
     void pushSub(Fncd_Event event);
 }
 // set up observer/su to update each event added
+
+class EagerTrackerSingleton {
+    private static final EagerTrackerSingleton tracker = new EagerTrackerSingleton();
+
+    private EagerTrackerSingleton(){}
+
+    public static EagerTrackerSingleton getInstance() {
+        return tracker;
+    }
+}
+
+class LazyLoggerSingleton {
+    private static LazyLoggerSingleton logger;
+
+    private LazyLoggerSingleton(){}
+
+    public static LazyLoggerSingleton getInstance() {
+        if (logger == null) {
+            logger = new LazyLoggerSingleton();
+        }
+        return logger;
+    }
+}
 interface Fncd_Observer {
     void update(Fncd_Event event);
 }
