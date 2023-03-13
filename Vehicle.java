@@ -477,3 +477,184 @@ class Monster_Truck extends Vehicle{
         return this.stageName;
     }
 }
+// hybrid sub class
+// cost $20,000 - $30,000
+class Hybrid extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private int winCount;
+    private double batteryHealth;
+    public Hybrid(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(20000.00, 30000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.winCount = 0;
+        this.batteryHealth = decideCost(70, 100);
+        this.type = "Hybrid";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
+    
+    // get battery health
+    public double getBatteryHealth(){
+        return this.batteryHealth;
+    }
+}
+// moped sub class
+// cost $3,000 - $12,000
+class Moped extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private int winCount;
+    private double rangeMPG;
+    public Moped(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(3000.00, 12000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.winCount = 0;
+        this.rangeMPG = decideCost(60, 200);
+        this.type = "Moped";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
+    
+    // get battery health
+    public double getRangeMPG(){
+        return this.rangeMPG;
+    }
+}
+// cunstruction sub class
+// cost $20,000 - $50,000
+class Cunstruction extends Vehicle{
+    private Double cost;
+    private Double sales_price;
+    private Double vehicleBonus;
+    private String condition;
+    private String type;
+    private int winCount;
+    private List<String> cTypeList = Arrays.asList("Digger", "Roller", "Lifter");
+    private String Ctype;
+    private boolean working;
+    public Cunstruction(String vim, String make, String model){
+        super(vim, make, model);
+        this.cost = decideCost(20000.00, 50000.00);
+        this.condition = decideCondition();
+        this.sales_price = decidePrice(this.condition, this.cost);
+        this.vehicleBonus = 100.00;
+        this.winCount = 0;
+        this.Ctype = generateCtype();
+        this.working = test();
+        this.type = "Cunstruction";
+    }
+    @Override
+    public String getType(){
+        return this.type;
+    }
+    @Override
+    public Double getVehicleBonus(){
+        return this.vehicleBonus;
+    }
+    @Override
+    public Double getCost(){
+        return this.cost;
+    }
+    @Override 
+    public String getCondition(){
+        return this.condition;
+    }
+    @Override 
+    public Double getSalesPrice(){
+        return this.sales_price;
+    }
+    @Override
+    public int getWinCount(){
+        return this.winCount;
+    }
+    @Override
+    public void addWinCount(){
+        this.winCount += 1;
+    }
+    // test function
+    public Boolean test(){
+        Random random = new Random();
+        double index = random.nextDouble();
+        if(index < 0.1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    // random range 
+    public String generateCtype(){
+        // https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        Random random = new Random();
+        int index = random.nextInt(cTypeList.size());
+        return cTypeList.get(index);
+    }
+    // get battery health
+    public String getCtype(){
+        return this.Ctype;
+    }
+}
