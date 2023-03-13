@@ -30,6 +30,9 @@ public class FNCD {
     public List<String> ElectricCarNames = new ArrayList();
     public List<String> MotorcycleNames = new ArrayList();
     public List<String> MonsterTruckNames = new ArrayList();
+    public List<String> HybridCarNames = new ArrayList();
+    public List<String> MopedNames = new ArrayList();
+    public List<String> CunstructionNames = new ArrayList();
     public List<String> report = Arrays.asList();
     private List<Vehicle> vehiclesSold;
 
@@ -50,6 +53,9 @@ public class FNCD {
         this.ElectricCarNames = setCarNmaes(ElectricCarNames, "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/nameFilesUsed/ElectricCarNames.txt");
         this.MotorcycleNames = setCarNmaes(MotorcycleNames, "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/nameFilesUsed/MotorcycleName.txt");
         this.MonsterTruckNames = setCarNmaes(MonsterTruckNames, "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/nameFilesUsed/MonsterTruckName.txt");
+        this.HybridCarNames = setCarNmaes(HybridCarNames, "nameFilesUsed/HybridCarNames.txt");
+        this.MopedNames = setCarNmaes(MopedNames, "nameFilesUsed/MonsterTruckName.txt");
+        this.CunstructionNames = setCarNmaes(CunstructionNames, "nameFilesUsed/CunstructionCarNames.txt");
         this.staffnames =  setCarNmaes(staffnames, "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/nameFilesUsed/workerNames.csv");
         this.vehicleList = dayOneVehicle();
         this.staffList = dayOneStaff();
@@ -266,6 +272,35 @@ public class FNCD {
         //CarNames.remove(index);
         return newCar;
     }
+    public Hybrid createHybrid(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(MonsterTruckNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
+        Hybrid newCar = new Hybrid(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    }
+    public Moped createMoped(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(MonsterTruckNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
+        Moped newCar = new Moped(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    }
+    public Cunstruction createCunstruction(){
+        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+        int index = random.nextInt(MonsterTruckNames.size());
+        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
+        Cunstruction newCar = new Cunstruction(splitstr[2], splitstr[0], splitstr[1]);
+        //CarNames.remove(index);
+        return newCar;
+    }
+
+
     // create Monster Truck 
     // create Starting Staff
     public List<Staff> dayOneStaff(){
@@ -281,13 +316,16 @@ public class FNCD {
     // create Starting Vehicles
     public List<Vehicle> dayOneVehicle(){
         List<Vehicle> listtemp = new ArrayList<>();
-        for(int i = 0; i < 4; i++){
+        for(int i = 0; i < 6; i++){
             listtemp.add(createCar());
             listtemp.add(createPerformanceCar());
             listtemp.add(createPickupCar());
             listtemp.add(createElectricCar());
             listtemp.add(createMotorcycle());
             listtemp.add(createMonsterTruck());
+            listtemp.add(createHybrid());
+            listtemp.add(createMoped());
+            listtemp.add(createCunstruction());
         }
         return listtemp;
     }

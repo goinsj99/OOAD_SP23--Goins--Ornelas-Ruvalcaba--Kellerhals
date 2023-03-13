@@ -17,6 +17,9 @@ public class Opening{
     private int electricCarCount;
     private int motorcycleCount;
     private int monsterTruck;
+    private int hybridCarCount;
+    private int mopeCount;
+    private int cunsCount;
     private List<Staff> interList = new ArrayList<>();
 
     Opening(FNCD fncd){
@@ -30,13 +33,19 @@ public class Opening{
         this.performanceCarCount = fourCars("Performance Car", fncd);
         fncd.LoggerReport("       * PickUp Cars ");
         this.pickupCarCount = fourCars("Pickup Car", fncd);
-        // new vehicles 
         fncd.LoggerReport("       * Electric Cars ");
         this.electricCarCount = this.pickupCarCount = fourCars("Electric Car", fncd);
         fncd.LoggerReport("       * Motorcycle ");
         this.motorcycleCount = this.pickupCarCount = fourCars("Motorcycle", fncd);
         fncd.LoggerReport("       * Monster Truck ");
         this.monsterTruck = this.pickupCarCount = fourCars("Monster Truck", fncd);
+        // new vehicles 
+        fncd.LoggerReport("       * Hybrid Cars ");
+        this.hybridCarCount = this.pickupCarCount = fourCars("Hybrid", fncd);
+        fncd.LoggerReport("       * Moped Cars ");
+        this.mopeCount = this.pickupCarCount = fourCars("Moped", fncd);
+        fncd.LoggerReport("       * Cunstruction Cars ");
+        this.cunsCount = this.pickupCarCount = fourCars("Cunstruction", fncd);
     }
     // check intern
     public int threeInterns(List<Staff> curentStaff, FNCD fncd){
@@ -90,10 +99,10 @@ public class Opening{
         
     }
     public List<Vehicle> AddVehicle(FNCD fncd){
-        // now what every dosnt have 4 go until their is four each or buget reached
+        // now what every dosnt have 6 go until their is four each or buget reached
         boolean flag = false;
-        while((this.carCount < 4 || this.performanceCarCount < 4 || this.pickupCarCount < 4 || this.electricCarCount < 4 || this.motorcycleCount < 4 || this.motorcycleCount < 4) || flag == true){
-            if(this.carCount < 4){
+        while((this.carCount < 6 || this.performanceCarCount < 6 || this.pickupCarCount < 6 || this.electricCarCount < 6 || this.motorcycleCount < 6 || this.motorcycleCount < 6) || flag == true){
+            if(this.carCount < 6){
                 Vehicle tempCar = fncd.createCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -106,7 +115,7 @@ public class Opening{
 
                 }
             }
-            if(this.performanceCarCount < 4){
+            if(this.performanceCarCount < 6){
                 Vehicle tempCar = fncd.createPerformanceCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -118,7 +127,7 @@ public class Opening{
                     this.performanceCarCount+=1;
                 }
             }
-            if(this.pickupCarCount < 4){
+            if(this.pickupCarCount < 6){
                 Vehicle tempCar = fncd.createPickupCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -130,7 +139,7 @@ public class Opening{
                     this.pickupCarCount+=1;
                 }
             }
-            if(this.electricCarCount < 4){
+            if(this.electricCarCount < 6){
                 Vehicle tempCar = fncd.createElectricCar();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -142,7 +151,7 @@ public class Opening{
                     this.pickupCarCount+=1;
                 }
             }
-            if(this.motorcycleCount < 4){
+            if(this.motorcycleCount < 6){
                 Vehicle tempCar = fncd.createMotorcycle();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -154,7 +163,7 @@ public class Opening{
                     this.pickupCarCount+=1;
                 }
             }
-            if(this.monsterTruck < 4){
+            if(this.monsterTruck < 6){
                 Vehicle tempCar = fncd.createMonsterTruck();
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
@@ -163,6 +172,42 @@ public class Opening{
                     fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
                     fncd.addVehicle(tempCar);
                     fncd.LoggerReport("      * Adding Monster Truck "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.hybridCarCount < 6){
+                Vehicle tempCar = fncd.createHybrid();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Hybrid Car "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.mopeCount < 6){
+                Vehicle tempCar = fncd.createMoped();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Moped Car "+ tempCar.getName());
+                    this.pickupCarCount+=1;
+                }
+            }
+            if(this.cunsCount < 6){
+                Vehicle tempCar = fncd.createCunstruction();
+                if(fncd.getOpBudget() - tempCar.getCost() < 0){
+                    flag = true;
+                    break;
+                }else{
+                    fncd.setOpBudget(fncd.getOpBudget() - tempCar.getCost());
+                    fncd.addVehicle(tempCar);
+                    fncd.LoggerReport("      * Adding Cunstruction Car "+ tempCar.getName());
                     this.pickupCarCount+=1;
                 }
             }
