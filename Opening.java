@@ -77,9 +77,10 @@ public class Opening{
     }
     public List<Staff> internHire(List<Staff> curentStaff, FNCD fncd){
         Staff tempstaffie;
+        Factory_Pattern fp = new Factory_Pattern();
         if(this.internCount < 3){
             while(this.internCount < 3){
-                tempstaffie = fncd.createInternStaff();
+                tempstaffie = fp.createNewStaff(CreatType.INTERN, fncd);
                 curentStaff.add(tempstaffie);
                 fncd.LoggerReport("      * Intern Hired "+ tempstaffie.getName());
                 this.internCount+=1;
@@ -90,20 +91,24 @@ public class Opening{
     // check Car
     public int fourCars(String carType, FNCD fncd){
         int count = 0;
+        String gg = "";
         for(Vehicle s: fncd.getVehicleList()){
             if(s.getType() == carType){
-                count++;
+                count++;   
+                gg+=s.getName()+", ";
             }   
         }
+        fncd.LoggerReport("          - "+gg);
         return count;
         
     }
     public List<Vehicle> AddVehicle(FNCD fncd){
+        Factory_Pattern fp = new Factory_Pattern();
         // now what every dosnt have 6 go until their is four each or buget reached
         boolean flag = false;
         while((this.carCount < 6 || this.performanceCarCount < 6 || this.pickupCarCount < 6 || this.electricCarCount < 6 || this.motorcycleCount < 6 || this.motorcycleCount < 6) || flag == true){
             if(this.carCount < 6){
-                Vehicle tempCar = fncd.createCar();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.CAR, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -116,7 +121,7 @@ public class Opening{
                 }
             }
             if(this.performanceCarCount < 6){
-                Vehicle tempCar = fncd.createPerformanceCar();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.PERFORMANCE, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -128,7 +133,7 @@ public class Opening{
                 }
             }
             if(this.pickupCarCount < 6){
-                Vehicle tempCar = fncd.createPickupCar();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.PICKUP, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -140,7 +145,7 @@ public class Opening{
                 }
             }
             if(this.electricCarCount < 6){
-                Vehicle tempCar = fncd.createElectricCar();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.ELECTRIC, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -152,7 +157,7 @@ public class Opening{
                 }
             }
             if(this.motorcycleCount < 6){
-                Vehicle tempCar = fncd.createMotorcycle();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.MOTORCYCLE, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -164,7 +169,7 @@ public class Opening{
                 }
             }
             if(this.monsterTruck < 6){
-                Vehicle tempCar = fncd.createMonsterTruck();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.MONSTERTRUCK, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -176,7 +181,7 @@ public class Opening{
                 }
             }
             if(this.hybridCarCount < 6){
-                Vehicle tempCar = fncd.createHybrid();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.HYBRID, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -188,7 +193,7 @@ public class Opening{
                 }
             }
             if(this.mopeCount < 6){
-                Vehicle tempCar = fncd.createMoped();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.MOPED, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;
@@ -200,7 +205,7 @@ public class Opening{
                 }
             }
             if(this.cunsCount < 6){
-                Vehicle tempCar = fncd.createCunstruction();
+                Vehicle tempCar = fp.createNewVehicle(CreatType.CUNSTRUCTION, fncd);
                 if(fncd.getOpBudget() - tempCar.getCost() < 0){
                     flag = true;
                     break;

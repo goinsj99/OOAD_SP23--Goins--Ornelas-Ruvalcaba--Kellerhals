@@ -171,161 +171,34 @@ public class FNCD {
     public int generateID(){
         return this.currIDCount++;
     }
-    // create a SalesPerson
-    public SalesPerson createSalesPersonStaff(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.staffnames.size());
-        String name = this.staffnames.get(index);
-        this.staffnames.remove(index);
-
-        SalesPerson newStaff = new SalesPerson(name, 100.0, generateID(), 100.88, 0.0, "Sales Person", 200.5);
-        return newStaff;
-    }
-    // create a intern
-    public Intern createInternStaff(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.staffnames.size());
-        String name = this.staffnames.get(index);
-        this.staffnames.remove(index);
-
-        Intern newStaff = new Intern(name, 100.0, generateID(), 100.88, 0.0, "Intern", 300.5);
-        return newStaff;
-    }
-    // create a Machanic
-    public Mechanic createMecanicStaff(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.staffnames.size());
-        String name = this.staffnames.get(index);
-        this.staffnames.remove(index);
-
-        Mechanic newStaff = new Mechanic(name, 100.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
-        return newStaff;
-    }
-    // creat a Driver
-    public Driver createDriverStaff(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.staffnames.size());
-        String name = this.staffnames.get(index);
-        this.staffnames.remove(index);
-
-        Driver newStaff = new Driver(name, 100.0, generateID(), 100.88, 0.0, "Mechanic", 500.5);
-        return newStaff;
-    }
-    // create a Car
-    public Car createCar(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(CarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.CarNames.get(index).split("\\s+"); // make, model, vim
-        Car newCar = new Car(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    // create a Performance Car
-    public Performance_Car createPerformanceCar(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.PerformanceCarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.PerformanceCarNames.get(index).split("\\s+"); // make, model, vim
-        Performance_Car newCar = new Performance_Car(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    // create Pickup car
-    public Pickup_Car createPickupCar(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(this.PickupCarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.PickupCarNames.get(index).split("\\s+"); // make, model, vim
-        //System.out.printf(splitstr[0], splitstr[1], splitstr[2]);
-        Pickup_Car newCar = new Pickup_Car(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    // new cars 
-    // create Electric Car 
-    public Electric_Car createElectricCar(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(ElectricCarNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.ElectricCarNames.get(index).split("\\s+"); // make, model, vim
-        Electric_Car newCar = new Electric_Car(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    // create Motorcycles
-    public Motorcycle createMotorcycle(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(MotorcycleNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.MotorcycleNames.get(index).split("\\s+"); // make, model, vim
-        Motorcycle newCar = new Motorcycle(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    } 
-    public Monster_Truck createMonsterTruck(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(MonsterTruckNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
-        Monster_Truck newCar = new Monster_Truck(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    public Hybrid createHybrid(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(MonsterTruckNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
-        Hybrid newCar = new Hybrid(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    public Moped createMoped(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(MonsterTruckNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
-        Moped newCar = new Moped(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-    public Cunstruction createCunstruction(){
-        Random random = new Random();// https://www.baeldung.com/java-random-list-element#:~:text=Picking%20a%20Random%20Item%2FItems,that%20exceeds%20your%20List%27s%20size |AND| https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
-        int index = random.nextInt(MonsterTruckNames.size());
-        // split list. Should be in order (car, performance, pickup) used https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        String[] splitstr = this.MonsterTruckNames.get(index).split("\\s+"); // make, model, vim
-        Cunstruction newCar = new Cunstruction(splitstr[2], splitstr[0], splitstr[1]);
-        //CarNames.remove(index);
-        return newCar;
-    }
-
 
     // create Monster Truck 
     // create Starting Staff
     public List<Staff> dayOneStaff(){
         List<Staff> listTemp = new ArrayList();
+        Factory_Pattern fp = new Factory_Pattern();
         for(int i = 0; i < 3; i++){
-            listTemp.add(createSalesPersonStaff());
-            listTemp.add(createMecanicStaff());
-            listTemp.add(createInternStaff());
-            listTemp.add(createDriverStaff());
+            listTemp.add(fp.createNewStaff(CreatType.SALES, this));
+            listTemp.add(fp.createNewStaff(CreatType.MACHANIC, this));
+            listTemp.add(fp.createNewStaff(CreatType.INTERN, this));
+            listTemp.add(fp.createNewStaff(CreatType.DRIVER, this));
         }
         return listTemp;
     }
     // create Starting Vehicles
     public List<Vehicle> dayOneVehicle(){
         List<Vehicle> listtemp = new ArrayList<>();
+        Factory_Pattern fp = new Factory_Pattern();
         for(int i = 0; i < 6; i++){
-            listtemp.add(createCar());
-            listtemp.add(createPerformanceCar());
-            listtemp.add(createPickupCar());
-            listtemp.add(createElectricCar());
-            listtemp.add(createMotorcycle());
-            listtemp.add(createMonsterTruck());
-            listtemp.add(createHybrid());
-            listtemp.add(createMoped());
-            listtemp.add(createCunstruction());
+            listtemp.add(fp.createNewVehicle(CreatType.CAR, this));
+            listtemp.add(fp.createNewVehicle(CreatType.PERFORMANCE, this));
+            listtemp.add(fp.createNewVehicle(CreatType.PICKUP, this));
+            listtemp.add(fp.createNewVehicle(CreatType.ELECTRIC, this));
+            listtemp.add(fp.createNewVehicle(CreatType.MOTORCYCLE, this));
+            listtemp.add(fp.createNewVehicle(CreatType.MONSTERTRUCK, this));
+            listtemp.add(fp.createNewVehicle(CreatType.HYBRID, this));
+            listtemp.add(fp.createNewVehicle(CreatType.MOPED, this));
+            listtemp.add(fp.createNewVehicle(CreatType.CUNSTRUCTION, this));
         }
         return listtemp;
     }

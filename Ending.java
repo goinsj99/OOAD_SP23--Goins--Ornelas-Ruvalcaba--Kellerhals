@@ -12,7 +12,7 @@ public class Ending{
     private Double tempPay;
     private List<Staff> tempReport;
     List<Staff> quitList = new ArrayList<>();
-    
+    Factory_Pattern fp = new Factory_Pattern();
 
     Ending(){
         this.tempPay = 0.0;
@@ -83,14 +83,14 @@ public class Ending{
         for(Staff staff: coppyStaff){
             if(staff instanceof Intern){
                 if(mecCount < 3){
-                    Mechanic newmec = fncd.createMecanicStaff();
+                    Mechanic newmec = (Mechanic) fp.createNewStaff(CreatType.MACHANIC, fncd);
                     newmec.setName(staff.getName());
                     staffList.add(newmec);
                     staffList.remove(staff);
                     mecCount++;
                 }
                 if(salesCout < 3){
-                    SalesPerson newsale = fncd.createSalesPersonStaff();
+                    SalesPerson newsale = (SalesPerson) fp.createNewStaff(CreatType.SALES, fncd);
                     newsale.setName(staff.getName());
                     staffList.add(newsale);
                     staffList.remove(staff);
