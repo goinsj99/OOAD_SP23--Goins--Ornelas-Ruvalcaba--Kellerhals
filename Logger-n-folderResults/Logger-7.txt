@@ -1,5 +1,5 @@
-Type: opening_complete, Message: Opening is complete for day 7, Data: 785689.4960424998
-Type: opening_complete, Message: Opening is complete for day 7, Data: 785689.4960424998
-Type: washing_complete, Message: Washing is complete for day 7, Data: 4
-Type: repair_complete, Message: Repair is complete for day 7, Data: 14
-Type: selling_complete, Message: Selling is complete for day 7, Data: 3
+Type: opening_complete, Message: Opening is complete for day 7, Data: 556323.7689685519
+Type: opening_complete, Message: Opening is complete for day 7, Data: 556323.7689685519
+Type: washing_complete, Message: Washing is complete for day 7, Data: 3
+Type: repair_complete, Message: Repair is complete for day 7, Data: 17
+Type: selling_complete, Message: Selling is complete for day 7, Data: 0
