@@ -5,6 +5,12 @@ public class RemoteControl {
         slot = command;
     }
     public void executeCommand(){
-        slot.execute();
+        Integer test = 0;
+        if(test == 0) {
+            slot.execute();
+        }
+        else{
+            System.out.println("******* 1. Choose FNCD ********");
+        }
     }
 }
