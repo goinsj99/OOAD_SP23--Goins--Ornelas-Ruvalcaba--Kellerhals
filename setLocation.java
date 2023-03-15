@@ -11,6 +11,8 @@ public class setLocation implements Command{
 
     @Override
     public void execute() {
+        double buget = 500000;
+        FNCD fncd = new FNCD(buget);
         System.out.println("******* Welcome to the FNCD Simulator ********");
         System.out.println("******* Please select from the following menu by entering the associated number ********");
         System.out.println("******* 1. Choose FNCD ********");
@@ -32,6 +34,33 @@ public class setLocation implements Command{
                 System.out.println("test");
                 break;
             case 1:
+                System.out.println("Choose FNCD");
+                break;
+            case 2:
+                getStaffName test = new getStaffName();
+                String tempName;
+                System.out.println("Salesperson name is " + test.getTheName(fncd));
+                break;
+            case 3:
+                getTime time2 = new getTime();
+
+                System.out.println("The time is: " + time2.seeTime());
+                break;
+            case 4:
+                System.out.println("Your new sales rep is ");
+                break;
+            case 5:
+                askInventory see2 = new askInventory();
+                System.out.println("******* FNCD Current Inventory ****** ");
+                for(Vehicle t : see2.getInv(fncd)){
+                    System.out.print(t);
+                }
+
+                break;
+            case 6:
+                System.out.println("Choose FNCD");
+                break;
+            case 7:
                 System.out.println("Choose FNCD");
                 break;
             default:
