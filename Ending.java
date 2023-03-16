@@ -21,7 +21,8 @@ public class Ending{
     }
     public void payStaff(FNCD fncd){
         List<Staff> staffList = fncd.getStaffList();
-        List<Staff> coppyStaff = List.copyOf(staffList);
+        //List<Staff> coppyStaff = List.copyOf(staffList);
+        List<Staff> coppyStaff = new ArrayList<>(staffList);
         Double quitChance = 0.1;
         double staffTotalEarning = 0;
         int mecCount = 3;

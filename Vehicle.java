@@ -346,7 +346,9 @@ class Electric_Car extends Vehicle{
         int min = 60;
         int max = 400;
         Random random = new Random();
-        double randomValue = random.nextDouble(max - min) + min;
+        //double randomValue = random.nextDouble(max - min) + min;
+        double randomValue = random.nextDouble() * (max - min) + min;
+
         return randomValue;
     }
     // get range
