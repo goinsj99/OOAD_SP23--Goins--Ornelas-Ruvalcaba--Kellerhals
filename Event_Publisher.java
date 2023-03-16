@@ -84,6 +84,9 @@ interface Event_Manager {
 }
 // set up observer/su to update each event added
 
+
+// Eager Singleton
+
 class EagerTrackerSingleton {
     private static final EagerTrackerSingleton tracker = new EagerTrackerSingleton();
 
@@ -94,6 +97,8 @@ class EagerTrackerSingleton {
     }
 }
 
+// Lazy Singleton that's thread safe
+
 class LazyLoggerSingleton {
     private static LazyLoggerSingleton logger;
 
@@ -101,7 +106,11 @@ class LazyLoggerSingleton {
 
     public static LazyLoggerSingleton getInstance() {
         if (logger == null) {
-            logger = new LazyLoggerSingleton();
+            synchronized (LazyLoggerSingleton.class) {
+                if (logger == null) {
+                    logger = new LazyLoggerSingleton();
+                }
+            }
         }
         return logger;
     }
