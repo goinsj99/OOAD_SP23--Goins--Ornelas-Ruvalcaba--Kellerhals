@@ -20,15 +20,23 @@ public class main {
         List<Integer> weekDays = Arrays.asList(0,1,2,3,4,5);
         List<Integer> weekEnds = Arrays.asList(2,3,4,5,6,7,8);
 
+        // create instances of logger and tracker singletons
+        EagerTrackerSingleton trackerSingleton = EagerTrackerSingleton.getInstance();
+        LazyLoggerSingleton loggerSingleton = LazyLoggerSingleton.getInstance();
+
+
         // now open all 30 days 
         for(int i = 0; i < 30; i++){
             // create instances
             Event_Publisher publisher = new Event_Publisher();
             Logger logger = new Logger(i+1);
             Tracker tracker = new Tracker();
+            trackerSingleton.registerSub(tracker);
+            loggerSingleton.registerSub(logger);
+
             // start observers of logger and tracker
-            publisher.registerSub(logger);
-            publisher.registerSub(tracker);
+            // publisher.registerSub(logger);
+            // publisher.registerSub(tracker);
             fncd.LoggerReport("----------------------------------------------");
             fncd.LoggerReport("***** FNCD Day "+fncd.getDay()+" "+(i+1)+ "****\n");
 

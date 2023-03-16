@@ -87,34 +87,34 @@ interface Event_Manager {
 
 // Eager Singleton
 
-class EagerTrackerSingleton {
-    private static final EagerTrackerSingleton tracker = new EagerTrackerSingleton();
+// class EagerTrackerSingleton {
+//     private static final EagerTrackerSingleton tracker = new EagerTrackerSingleton();
 
-    private EagerTrackerSingleton(){}
+//     private EagerTrackerSingleton(){}
 
-    public static EagerTrackerSingleton getInstance() {
-        return tracker;
-    }
-}
+//     public static EagerTrackerSingleton getInstance() {
+//         return tracker;
+//     }
+// }
 
-// Lazy Singleton that's thread safe
+// // Lazy Singleton that's thread safe
 
-class LazyLoggerSingleton {
-    private static LazyLoggerSingleton logger;
+// class LazyLoggerSingleton {
+//     private static LazyLoggerSingleton logger;
 
-    private LazyLoggerSingleton(){}
+//     private LazyLoggerSingleton(){}
 
-    public static LazyLoggerSingleton getInstance() {
-        if (logger == null) {
-            synchronized (LazyLoggerSingleton.class) {
-                if (logger == null) {
-                    logger = new LazyLoggerSingleton();
-                }
-            }
-        }
-        return logger;
-    }
-}
+//     public static LazyLoggerSingleton getInstance() {
+//         if (logger == null) {
+//             synchronized (LazyLoggerSingleton.class) {
+//                 if (logger == null) {
+//                     logger = new LazyLoggerSingleton();
+//                 }
+//             }
+//         }
+//         return logger;
+//     }
+// }
 interface Fncd_Observer {
     void update(Fncd_Event event);
 }
@@ -124,9 +124,9 @@ class Logger implements Fncd_Observer {
     private final String fileName;
     // constrictor will create the new file 
     public Logger(int day) {
-        this.day = day;
         // /Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/Logger-n-folderResults
         // this.fileName = "Logger-" + day + ".txt"; // using day as the file name
+        this.day = day;
         this.fileName = "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/Logger-n-folderResults/Logger-" + day + ".txt";
         try {
             FileWriter writer = new FileWriter(this.fileName, false);
@@ -136,6 +136,13 @@ class Logger implements Fncd_Observer {
             e.printStackTrace();
         }
     }
+
+    // public void setDay(FNCD fncd) {
+    //     this.day = fncd.dayNum;
+    // }
+    // public int getDay() {
+    //     return this.day;
+    // }
     // be able to write to the file with update given
     public void update(Fncd_Event event) {
         String logMessage = "Type: " + event.getType() + ", Message: " + event.getMessage() + ", Data: " + event.getData();

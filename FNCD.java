@@ -17,6 +17,7 @@ public class FNCD {
     private List<String> weekDays = Arrays.asList("Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday", "Sunday");
     private String currDay;
     private int dayIndex;
+    public int dayNum = 1;
     public Double opBudget;
     public int currIDCount;
     private double staffTotal;
@@ -43,6 +44,7 @@ public class FNCD {
     //https://www.baeldung.com/java-delete-file-contents 
     public FNCD(Double opBudget){
         // start on monday 
+        this.dayNum++;
         this.currDay = weekDays.get(0);
         this.dayIndex = 0;
         this.opBudget = opBudget;
