@@ -1,1 +1,1 @@
-Type: opening_complete, Message: Opening is complete for day 22, Data: 977223.1056473929
+Type: opening_complete, Message: Opening is complete for day 22, Data: 723800.0776775775

@@ -8,6 +8,25 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;  
 
+
+import java.awt.Color;
+
+
+// import org.jfree.chart.ChartFactory;
+// import org.jfree.chart.ChartFrame;
+// import org.jfree.chart.JFreeChart;
+// import org.jfree.chart.axis.AxisLocation;
+// import org.jfree.chart.axis.DateAxis;
+// import org.jfree.chart.axis.NumberAxis;
+// import org.jfree.chart.plot.DatasetRenderingOrder;
+// import org.jfree.chart.plot.PlotOrientation;
+// import org.jfree.chart.plot.XYPlot;
+// import org.jfree.data.time.Day;
+// import org.jfree.data.time.TimeSeries;
+// import org.jfree.data.time.TimeSeriesCollection;
+
+
+
 public class main {
     public static void main(String[] args) {
         // verables 
@@ -250,6 +269,9 @@ public class main {
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             northFNCD.nextDay();
             southFNCD.nextDay();
-        }    
+
+            
+        }   
+
     }
 }

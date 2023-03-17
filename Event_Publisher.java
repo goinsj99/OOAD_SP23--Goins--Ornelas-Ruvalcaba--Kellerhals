@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;  
 
+
 // sorced used to creat observer patteren 
 // https://docs.oracle.com/javase/7/docs/api/java/util/Observable.html
 // event is used to create an instance of what should be published by a certain event
@@ -206,5 +207,7 @@ class Tracker implements Fncd_Observer {
         System.out.printf("***FNCD South*** Total money earned by the FNCD: $%.2f\n", southFncdMoneyEarned);
     }
 }
+
+
 
 
