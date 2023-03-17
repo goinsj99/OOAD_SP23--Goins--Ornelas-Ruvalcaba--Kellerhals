@@ -127,7 +127,7 @@ class Logger implements Fncd_Observer {
         // /Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/Logger-n-folderResults
         // this.fileName = "Logger-" + day + ".txt"; // using day as the file name
         this.day = day;
-        this.fileName = "/Users/adrianornelasr/Desktop/OOAD/OOAD_SP23--Goins--Ornelas-Ruvalcaba/Logger-n-folderResults/Logger-" + day + ".txt";
+        this.fileName = "Logger-n-folderResults/Logger-" + day + ".txt";
         try {
             FileWriter writer = new FileWriter(this.fileName, false);
             writer.write("");
