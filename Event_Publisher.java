@@ -159,31 +159,51 @@ class Logger implements Fncd_Observer {
 
 // tracker will keep track of how much money is earned by staff and fncd
 class Tracker implements Fncd_Observer {
-    private double staffMoneyEarned;
-    private double fncdMoneyEarned;
+    private double southStaffMoneyEarned;
+    private double southFncdMoneyEarned;
+    private double northStaffMoneyEarned;
+    private double northFncdMoneyEarned;
 
     public Tracker() {
-        this.staffMoneyEarned = 0;
-        this.fncdMoneyEarned = 0;
+        this.southStaffMoneyEarned = 0;
+        this.southFncdMoneyEarned = 0;
+        this.northStaffMoneyEarned = 0;
+        this.northFncdMoneyEarned = 0;
     }
     // update looks for the type to add to and increments the amount 
     public void update(Fncd_Event event) {
+        String northKeyword = "north";
+        String southKeyword = "south";
         if (event.getType().equals("staff_money_earned")) {
-            // make data into double to increment
-            double tempStaff = (double) event.getData();
-            this.staffMoneyEarned += tempStaff;
-        } else if (event.getType().equals("fncd_money_earned")) {
-            // make data into double to increment
-            double tempFncd = (double) event.getData();
-            this.fncdMoneyEarned += tempFncd;
+            if (event.getMessage().toLowerCase().indexOf(northKeyword.toLowerCase()) != -1) {
+                double tempStaff = (double) event.getData();
+                this.northStaffMoneyEarned += tempStaff;
+            } else if (event.getMessage().toLowerCase().indexOf(southKeyword.toLowerCase()) != -1) {
+                double tempStaff = (double) event.getData();
+                this.southStaffMoneyEarned += tempStaff;
+            } 
         }
+        if (event.getType().equals("fncd_money_earned")) {
+            if (event.getMessage().toLowerCase().indexOf(northKeyword.toLowerCase()) != -1) {
+                // make data into double to increment
+                double tempFncd = (double) event.getData();
+                this.northFncdMoneyEarned += tempFncd;
+            } else if (event.getMessage().toLowerCase().indexOf(southKeyword.toLowerCase()) != -1) {
+                double tempFncd = (double) event.getData();
+                this.southFncdMoneyEarned += tempFncd;
+            } 
+
+        }
+
     }
     // print in terminal at the end 
     // https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Format-double-Java-printf-example#:~:text=It%20is%20a%20common%20requirement,double%20to%20two%20decimal%20places.
     public void printSummary(int day) {
         System.out.println("Tracker: Day " + day);
-        System.out.printf("Total money earned by all Staff: $%.2f\n", staffMoneyEarned);
-        System.out.printf("Total money earned by the FNCD: $%.2f\n", fncdMoneyEarned);
+        System.out.printf("***FNCD North*** Total money earned by all Staff: $%.2f\n", northStaffMoneyEarned);
+        System.out.printf("***FNCD North*** Total money earned by the FNCD: $%.2f\n", northFncdMoneyEarned);
+        System.out.printf("***FNCD South*** Total money earned by all Staff: $%.2f\n", southStaffMoneyEarned);
+        System.out.printf("***FNCD South*** Total money earned by the FNCD: $%.2f\n", southFncdMoneyEarned);
     }
 }
 

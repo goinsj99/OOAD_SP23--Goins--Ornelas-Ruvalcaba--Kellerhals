@@ -52,7 +52,7 @@ public class main {
             // publish event to notify observers that opening is complete
             Fncd_Event northOpeningEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), northFNCD.getOpBudget());
             publisher.publishEvent(northOpeningEvent.getType(), northOpeningEvent.getMessage(), northOpeningEvent.getData());
-
+            logger.update(northOpeningEvent);
             southFNCD.LoggerReport("FNCD South Opening... (current budget ) " + southFNCD.getOpBudget()+")");
 
             Opening southOpen = new Opening(southFNCD);
