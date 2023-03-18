@@ -19,7 +19,7 @@ public  class RacingEvent{
     }
 
     // can only race on wendsday and sunday
-    public void racingDay(FNCD fncd){
+    public Boolean racingDay(FNCD fncd){
         List<Vehicle> VehicleList = fncd.getVehicleList();
         List<Staff> sList = fncd.getStaffList();
         int index = 0;
@@ -70,10 +70,14 @@ public  class RacingEvent{
                     break;
                 }
             }
+            fncd.LoggerReport("");
+            return true;
         }else{
             fncd.LoggerReport("  - You will not be racing today!");
+            fncd.LoggerReport("");
+            return false;
         }
-        fncd.LoggerReport("");
+
     } 
     public List<Staff> racingStaff(FNCD fncd){
         Random random1 = new Random();
