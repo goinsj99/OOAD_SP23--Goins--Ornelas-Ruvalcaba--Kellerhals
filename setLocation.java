@@ -45,12 +45,14 @@ public class setLocation implements Command{
         askInventory tee = new askInventory();
         tee.getInv(fncd);
     }public void execute6(FNCD fncd) {
+        System.out.println("If you would like to select a car from inventory please enter the number next to the vehicle");
+        Scanner myObj2 = new Scanner(System.in);
+        Integer carSelect2 = Integer.parseInt(myObj2.nextLine());
         askInventory tee2 = new askInventory();
-        Integer wCar;
-        wCar = tee2.getInv(fncd);
 //        if car choice in range
-        if(wCar > 0 && wCar <= fncd.getVehicleList().size()){
-            Vehicle t4 = fncd.getVehicleList().get(wCar);
+        if(carSelect2 > 0 && carSelect2 <= fncd.getVehicleList().size()){
+            Vehicle t4 = fncd.getVehicleList().get(carSelect2);
+            System.out.println("      * "+t4.getName() + ", " + t4.getCost() + ", "+ t4.getSalesPrice() + ","+ t4.getCondition()+ "," + t4.getCleanliness() );
             ask4All me = new ask4All();
             me.getInv2(t4);
         }

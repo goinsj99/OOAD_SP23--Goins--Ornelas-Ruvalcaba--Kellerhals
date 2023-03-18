@@ -269,8 +269,7 @@ public class main {
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             northFNCD.nextDay();
             southFNCD.nextDay();
-
-
+            
         }
         System.out.println("******* Welcome to the FNCD Simulator ********");
         System.out.println("******* Please select from the following menu by entering the associated number ********");
@@ -282,14 +281,18 @@ public class main {
         System.out.println("******* 6. Details on selected item ********");
         System.out.println("******* 7. Buy selected item ********");
         System.out.println("******* 8. End ********");
-        RemoteControl remote = new RemoteControl();
-        Command command = new setLocation();
-        remote.setCommand(command);
         Scanner myObj = new Scanner(System.in);
         Integer menuSelect = Integer.parseInt(myObj.nextLine());
         System.out.println("You Entered: " + menuSelect);
-        while(menuSelect < 7 ){
 
+        while(menuSelect < 6 ){
+
+        RemoteControl remote = new RemoteControl();
+        Command command = new setLocation();
+        remote.setCommand(command);
+//        Scanner myObj = new Scanner(System.in);
+//        Integer menuSelect = Integer.parseInt(myObj.nextLine());
+//        System.out.println("You Entered: " + menuSelect);
 
 
             switch (menuSelect) {
@@ -315,9 +318,7 @@ public class main {
 //                askInventory see2 = new askInventory();
                     System.out.println("******* FNCD Current Inventory ****** ");
                     remote.execute5(southFNCD);
-//                System.out.println("If you would like to select a car from inventory please enter the number next to the vehicle");
-//                Scanner myObj2 = new Scanner(System.in);
-//                Integer carSelect = Integer.parseInt(myObj2.nextLine());
+
                     break;
 
                 case 6:
@@ -332,6 +333,10 @@ public class main {
                 default:
                     System.out.println("Menu selection not valid, enter '"+ 7 +"' to end day 31");
             }
+
+            menuSelect = Integer.parseInt(myObj.nextLine());
+            System.out.println("You Entered: " + menuSelect);
+
         }
 
 
