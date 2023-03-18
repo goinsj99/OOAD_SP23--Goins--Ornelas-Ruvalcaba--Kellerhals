@@ -55,7 +55,8 @@ public class setLocation implements Command{
         System.out.println("Current time: "+time);
     }
     public void execute4(FNCD fncd) {
-
+        anotherRep yes = new anotherRep();
+        yes.Tryy(fncd);
     }
     public void execute5(FNCD fncd) {
 //        askInventory tee = new askInventory();

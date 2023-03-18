@@ -315,7 +315,7 @@ public class main {
                     else{
                         System.out.println("Invalid selection");
                     }
-                    remote.execute(southFNCD);
+//                    remote.execute(southFNCD);
                     break;
                 case 2:
                     if(whatStore == false) {
@@ -340,7 +340,7 @@ public class main {
                     else{
                         remote.execute4(northFNCD);
                     }
-                    System.out.println("Your new sales rep is ");
+//                    System.out.println("Your new sales rep is ");
                     break;
 
                 case 5:
