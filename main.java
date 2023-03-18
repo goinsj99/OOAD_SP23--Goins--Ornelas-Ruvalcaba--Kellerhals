@@ -272,6 +272,68 @@ public class main {
 
 
         }
+        while(menuSelect < 7 ){
+            System.out.println("******* Welcome to the FNCD Simulator ********");
+            System.out.println("******* Please select from the following menu by entering the associated number ********");
+            System.out.println("******* 1. Choose FNCD ********");
+            System.out.println("******* 2. Ask for salespersons name ********");
+            System.out.println("******* 3. Ask what time it is ********");
+            System.out.println("******* 4. Request a different sales representative ********");
+            System.out.println("******* 5. View current inventory ********");
+            System.out.println("******* 6. Details on selected item ********");
+            System.out.println("******* 7. Buy selected item ********");
+            System.out.println("******* 8. End ********");
+            RemoteControl remote = new RemoteControl();
+            Command command = new setLocation();
+
+            remote.setCommand(command);
+            Scanner myObj = new Scanner(System.in);
+            Integer menuSelect = Integer.parseInt(myObj.nextLine());
+            System.out.println("You Entered: " + menuSelect);
+
+
+            switch (menuSelect) {
+                case 0:
+                    System.out.println("test");
+                    break;
+                case 1:
+                    System.out.println("Choose FNCD");
+//                remote.executeCommand(fncd);
+                    break;
+                case 2:
+                    remote.execute2(fncd);
+                    break;
+                case 3:
+                    remote.execute3();
+                    break;
+                case 4:
+                    remote.execute4(fncd);
+                    System.out.println("Your new sales rep is ");
+                    break;
+
+                case 5:
+//                askInventory see2 = new askInventory();
+                    System.out.println("******* FNCD Current Inventory ****** ");
+                    remote.execute5(fncd);
+//                System.out.println("If you would like to select a car from inventory please enter the number next to the vehicle");
+//                Scanner myObj2 = new Scanner(System.in);
+//                Integer carSelect = Integer.parseInt(myObj2.nextLine());
+                    break;
+
+                case 6:
+                    remote.execute6(fncd);
+//                System.out.println("Choose FNCD");
+                    break;
+
+                case 7:
+                    remote.execute7();
+                    System.out.println("Goodbye");
+                    break;
+                default:
+                    System.out.println("Menu selection not valid, enter '"+ 7 +"' to end day 31");
+            }
+        }
+
 
     }
 }
