@@ -7,21 +7,18 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 public class setLocation implements Command{
-//    FNCD fncd;
 
     Staff staff;
     double buget;
     private Vehicle tempV;
+    askInventory tee;
+    ask4All tee2;
+
     public setLocation (){
-//        this.staff = test.createNewStaff(Create.(CreateSalesPerson.),fncd);
-//        this.buget = 500000;
-//        this.fncd = new FNCD(buget);
+        this.tee = new askInventory();
+        this.tee2 = new ask4All();
+
     }
-//    public void seeTime{
-//        //Getting the current time value
-//        LocalTime time = LocalTime.now();
-//        System.out.println("Current time: "+time);
-//    }
 
     @Override
     public void execute() {
@@ -34,7 +31,7 @@ public class setLocation implements Command{
 //        System.out.println("Salesperson name is " + test.getTheName());
     }
 //    Time command
-    public void execute3() {
+    public void execute3(FNCD fncd) {
         LocalTime time = LocalTime.now();
         System.out.println("Current time: "+time);
     }
@@ -42,26 +39,14 @@ public class setLocation implements Command{
 
     }
     public void execute5(FNCD fncd) {
-        askInventory tee = new askInventory();
-        tee.getInv(fncd);
+//        askInventory tee = new askInventory();
+        tempV = tee.getInv(fncd);
     }public void execute6(FNCD fncd) {
-        System.out.println("If you would like to select a car from inventory please enter the number next to the vehicle");
-        Scanner myObj2 = new Scanner(System.in);
-        Integer carSelect2 = Integer.parseInt(myObj2.nextLine());
-        askInventory tee2 = new askInventory();
-//        if car choice in range
-        if(carSelect2 > 0 && carSelect2 <= fncd.getVehicleList().size()){
-            Vehicle t4 = fncd.getVehicleList().get(carSelect2);
-            System.out.println("      * "+t4.getName() + ", " + t4.getCost() + ", "+ t4.getSalesPrice() + ","+ t4.getCondition()+ "," + t4.getCleanliness() );
-            ask4All me = new ask4All();
-            me.getInv2(t4);
-        }
-        else{
-            System.out.println("******* No Vehicle Selected, Please view inventory again *****");
-        }
-
-    }public void execute7() {
-
+        tempV = tee.getInv(fncd);
+        tee2.getInv2(tempV);
+    }public void execute7(FNCD fncd) {
+        Vehicle test =  tee.getInv(fncd);
+        System.out.println(test.getName());
     }
     public void executeSet() {
 

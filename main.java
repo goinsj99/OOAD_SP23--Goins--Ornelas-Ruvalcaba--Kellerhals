@@ -284,8 +284,8 @@ public class main {
         Scanner myObj = new Scanner(System.in);
         Integer menuSelect = Integer.parseInt(myObj.nextLine());
         System.out.println("You Entered: " + menuSelect);
-
-        while(menuSelect < 6 ){
+        Boolean whatStore = false;
+        while(menuSelect < 7 ){
 
         RemoteControl remote = new RemoteControl();
         Command command = new setLocation();
@@ -297,7 +297,7 @@ public class main {
 
             switch (menuSelect) {
                 case 0:
-                    System.out.println("test");
+                    System.out.println("Menu selection not valid, enter '"+ 8 +"' to end day 31");
                     break;
                 case 1:
                     System.out.println("Choose FNCD");
@@ -307,7 +307,7 @@ public class main {
                     remote.execute2(southFNCD);
                     break;
                 case 3:
-                    remote.execute3();
+                    remote.execute3(southFNCD);
                     break;
                 case 4:
                     remote.execute4(southFNCD);
@@ -327,11 +327,13 @@ public class main {
                     break;
 
                 case 7:
-                    remote.execute7();
+
+                case 8:
+                    remote.execute6(southFNCD);
                     System.out.println("Goodbye");
                     break;
                 default:
-                    System.out.println("Menu selection not valid, enter '"+ 7 +"' to end day 31");
+                    System.out.println("Menu selection not valid, enter '"+ 8 +"' to end day 31");
             }
 
             menuSelect = Integer.parseInt(myObj.nextLine());
