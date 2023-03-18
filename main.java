@@ -273,7 +273,7 @@ public class main {
         }
         System.out.println("******* Welcome to the FNCD Simulator ********");
         System.out.println("******* Please select from the following menu by entering the associated number ********");
-        System.out.println("******* 1. Choose FNCD ********");
+        System.out.println("******* 1. Choose FNCD (Enter '1' for north FNCD Enter '2' for the South FNCD)********");
         System.out.println("******* 2. Ask for salespersons name ********");
         System.out.println("******* 3. Ask what time it is ********");
         System.out.println("******* 4. Request a different sales representative ********");
@@ -284,13 +284,14 @@ public class main {
         Scanner myObj = new Scanner(System.in);
         Integer menuSelect = Integer.parseInt(myObj.nextLine());
         System.out.println("You Entered: " + menuSelect);
+
         Boolean whatStore = false;
         while(menuSelect < 7 ){
 
         RemoteControl remote = new RemoteControl();
         Command command = new setLocation();
         remote.setCommand(command);
-//        Scanner myObj = new Scanner(System.in);
+        Scanner myObj3 = new Scanner(System.in);
 //        Integer menuSelect = Integer.parseInt(myObj.nextLine());
 //        System.out.println("You Entered: " + menuSelect);
 
@@ -301,35 +302,79 @@ public class main {
                     break;
                 case 1:
                     System.out.println("Choose FNCD");
-//                remote.executeCommand(fncd);
+                    System.out.println("***** Enter '1' for north FNCD Enter '2' for the South FNCD ******");
+                    Integer fnSelect = Integer.parseInt(myObj3.nextLine());
+                    if(fnSelect == 1){
+                        whatStore = true;
+                        System.out.println("***** North FNCD Selected ******");
+
+                    }
+                    else if(fnSelect == 2){
+                        System.out.println("***** South FNCD Selected ******");
+                    }
+                    else{
+                        System.out.println("Invalid selection");
+                    }
+                    remote.execute(southFNCD);
                     break;
                 case 2:
-                    remote.execute2(southFNCD);
+                    if(whatStore == false) {
+                        remote.execute2(southFNCD);
+                    }
+                    else{
+                        remote.execute2(northFNCD);
+                    }
                     break;
                 case 3:
-                    remote.execute3(southFNCD);
+                    if(whatStore == false) {
+                        remote.execute3(southFNCD);
+                    }
+                    else{
+                        remote.execute3(northFNCD);
+                    }
                     break;
                 case 4:
-                    remote.execute4(southFNCD);
+                    if(whatStore == false) {
+                        remote.execute4(southFNCD);
+                    }
+                    else{
+                        remote.execute4(northFNCD);
+                    }
                     System.out.println("Your new sales rep is ");
                     break;
 
                 case 5:
 //                askInventory see2 = new askInventory();
                     System.out.println("******* FNCD Current Inventory ****** ");
-                    remote.execute5(southFNCD);
+                    if(whatStore == false) {
+                        remote.execute5(southFNCD);
+                    }
+                    else{
+                        remote.execute5(northFNCD);
+                    }
 
                     break;
 
                 case 6:
-                    remote.execute6(southFNCD);
+                    if(whatStore == false) {
+                        remote.execute6(southFNCD);
+                    }
+                    else{
+                        remote.execute6(northFNCD);
+                    }
 //                System.out.println("Choose FNCD");
                     break;
 
                 case 7:
+                    if(whatStore == false) {
+                        remote.execute7(southFNCD);
+                    }
+                    else{
+                        remote.execute7(northFNCD);
+                    }
+                    break;
 
                 case 8:
-                    remote.execute6(southFNCD);
                     System.out.println("Goodbye");
                     break;
                 default:

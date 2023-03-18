@@ -4,14 +4,9 @@ public class RemoteControl {
     public void setCommand(Command command){
         slot = command;
     }
-    public void executeCommand(FNCD fncd){
-        Integer test = 0;
-        if(test == 0) {
-            slot.execute();
-        }
-        else{
-            System.out.println("******* 1. e ********");
-        }
+    public void execute(FNCD fncd){
+
+            slot.execute(fncd);
     }
     public void execute2(FNCD fncd){
         slot.execute2(fncd);

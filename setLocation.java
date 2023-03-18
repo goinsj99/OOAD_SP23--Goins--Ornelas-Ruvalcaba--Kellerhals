@@ -13,15 +13,34 @@ public class setLocation implements Command{
     private Vehicle tempV;
     askInventory tee;
     ask4All tee2;
+    String staffN;
+    String carN;
 
     public setLocation (){
         this.tee = new askInventory();
         this.tee2 = new ask4All();
+//        this.tempV = tempV;
+//        this.carN = carN;
+//        this.staffN = staffN;
 
     }
 
     @Override
-    public void execute() {
+    public void execute(FNCD fncd) {
+        Scanner myObj3 = new Scanner(System.in);
+
+
+        System.out.println("***** Enter '1' for north FNCD Enter '2' for the South FNCD ******");
+        Integer fnSelect = Integer.parseInt(myObj3.nextLine());
+        if(fnSelect == 1){
+
+        }
+        else if(fnSelect == 2){
+
+        }
+        else{
+            System.out.println("Invalid selection");
+        }
 
     }
     public void execute2(FNCD fncd) {

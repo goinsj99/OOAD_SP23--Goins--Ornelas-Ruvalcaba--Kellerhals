@@ -2,6 +2,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
+import java.time.LocalTime;
+import java.util.Optional;
+
 // used user guide to implement unit test
 // https://junit.org/junit5/docs/current/user-guide/
 public class FncdTest {
@@ -120,6 +123,25 @@ public class FncdTest {
         String postion = "Mechanic";
         assertEquals(postion, me.getPosition());
     }
-
+    @Test
+    public void testStaffBonus() {
+        Staff thr = new Staff("Jimmy", 140.0, 69, 1000.0, 69.0, "Mechanic", 1.0);
+        Double bonus = 1.0;
+        assertEquals(bonus, thr.getBonus());
+    }
+    @Test
+    public void testUniiquID(){
+        FNCD fncdTest = new FNCD(50000.0);
+        Opening openTest = new Opening(fncdTest);
+        Staff thr = new Staff("Jimmy", 140.0, 69, 1000.0, 69.0, "Mechanic", 1.0);
+        Integer count = 1;
+        openTest.internHire(fncdTest.getStaffList(), fncdTest);
+        for(Staff s: fncdTest.getStaffList()){
+            if(thr.getStaffID() == s.getStaffID()){
+                count ++;
+            }
+        }
+        assertEquals(Optional.of(1), count);
+    }
 
 }

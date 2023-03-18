@@ -1,6 +1,6 @@
 public interface Command {
 
-    public void execute();
+    public void execute(FNCD fncd);
     public void execute2(FNCD fncd);
     public void execute3(FNCD fncd);
     public void execute4(FNCD fncd);

@@ -1,14 +1,1 @@
-Type: opening_complete, Message: Opening is complete for day 15, Data: 444773.3275004282
-Type: opening_complete, Message: Opening is complete for day 15, Data: 650603.3782440998
-Type: opening_complete, Message: FNCD North Opening is complete for day 15, Data: 444773.3275004282
-Type: opening_complete, Message: FNCD South Opening is complete for day 15, Data: 650603.3782440998
-Type: FNCD North washing_complete, Message: Washing is complete for day 15, Data: 4
-Type: FNCD South washing_complete, Message: Washing is complete for day 15, Data: 0
-Type: repair_complete, Message: FNCD North Repair is complete for day 15, Data: 15
-Type: repair_complete, Message: FNCD South Repair is complete for day 15, Data: 11
-Type: selling_complete, Message: FNCD North Selling is complete for day 15, Data: 2
-Type: selling_complete, Message: FNCD South Selling is complete for day 15, Data: 0
-Type: staff_money_earned, Message: FNCD North Total money staff earned , Data: 42630.5
-Type: staff_money_earned, Message:  FNCD South Total money staff earned , Data: 51140.0
-Type: fncd_money_earned, Message:  NORTH Total money fncd earned , Data: 1261719.0837294366
-Type: fncd_money_earned, Message:  SOUTH Total money fncd earned , Data: 1151053.5100396504
+Type: opening_complete, Message: Opening is complete for day 15, Data: 971830.0890498578
