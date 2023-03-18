@@ -31,8 +31,11 @@ public class main {
     public static void main(String[] args) {
         // verables
         double buget = 500000;
-        int washcount = 0;
-        int repairCount = 0;
+        int northWashCount = 0;
+        int southWashCount = 0;
+
+        int northRepairCount = 0;
+        int southRepairCount = 0;
         FNCD northFNCD = new FNCD(buget);
         FNCD southFNCD = new FNCD(buget);
         Random random = new Random();
@@ -81,7 +84,7 @@ public class main {
             // publish event to notify observers that opening is complete
             Fncd_Event southOpeningEvent = new Fncd_Event("opening_complete", "Opening is complete for day " + (i+1), southFNCD.getOpBudget());
             publisher.publishEvent(southOpeningEvent.getType(), southOpeningEvent.getMessage(), southOpeningEvent.getData());
-
+            logger.update(southOpeningEvent);
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // run racing
             RacingEvent northRace = new RacingEvent(northFNCD);
@@ -100,17 +103,17 @@ public class main {
                     if( staff.getCleanType() == "Chemical"){
                         Cleans northWash = new ChemClean(northFNCD, (Intern) staff);
                         northWash.behave(northFNCD, (Intern) staff);
-                        washcount += northWash.getWashCount();
+                        northWashCount += northWash.getWashCount();
                     }
                     else if( staff.getCleanType() == "Elbow"){
                         Cleans northWash = new ElbowClean(northFNCD, (Intern) staff);
                         northWash.behave(northFNCD, (Intern) staff);
-                        washcount += northWash.getWashCount();
+                        northWashCount += northWash.getWashCount();
                     }
                     else if( staff.getCleanType() == "Detailed"){
                         Cleans northWash = new DetailClean(northFNCD, (Intern) staff);
                         northWash.behave(northFNCD, (Intern) staff);
-                        washcount += northWash.getWashCount();
+                        northWashCount += northWash.getWashCount();
                     }
                 }
             }
@@ -123,17 +126,17 @@ public class main {
                     if( staff.getCleanType() == "Chemical"){
                         Cleans southWash = new ChemClean(southFNCD, (Intern) staff);
                         southWash.behave(southFNCD, (Intern) staff);
-                        washcount += southWash.getWashCount();
+                        southWashCount += southWash.getWashCount();
                     }
                     else if( staff.getCleanType() == "Elbow"){
                         Cleans southWash = new ElbowClean(southFNCD, (Intern) staff);
                         southWash.behave(southFNCD, (Intern) staff);
-                        washcount += southWash.getWashCount();
+                        southWashCount += southWash.getWashCount();
                     }
                     else if( staff.getCleanType() == "Detailed"){
                         Cleans southWash = new DetailClean(southFNCD, (Intern) staff);
                         southWash.behave(southFNCD, (Intern) staff);
-                        washcount += southWash.getWashCount();
+                        southWashCount += southWash.getWashCount();
                     }
                 }
             }
@@ -141,18 +144,21 @@ public class main {
             // publish event to notify observers that opening is complete
             Fncd_Event northRacingEvent = new Fncd_Event("opening_complete", "FNCD North Opening is complete for day " + (i+1), northFNCD.getOpBudget());
             publisher.publishEvent(northRacingEvent.getType(), northRacingEvent.getMessage(), northRacingEvent.getData());
+            logger.update(northRacingEvent);
 
             Fncd_Event southRacingEvent = new Fncd_Event("opening_complete", "FNCD South Opening is complete for day " + (i+1), southFNCD.getOpBudget());
             publisher.publishEvent(southRacingEvent.getType(), southRacingEvent.getMessage(), southRacingEvent.getData());
-
+            logger.update(southRacingEvent);
             // publish event to notify observers that washing is complete
-            Fncd_Event northWashingEvent = new Fncd_Event("FNCD North washing_complete", "Washing is complete for day " + (i+1), washcount);
-            washcount = 0;
+            Fncd_Event northWashingEvent = new Fncd_Event("FNCD North washing_complete", "Washing is complete for day " + (i+1), northWashCount);
+            northWashCount = 0;
             publisher.publishEvent(northWashingEvent.getType(), northWashingEvent.getMessage(), northWashingEvent.getData());
+            logger.update(northWashingEvent);
 
-            Fncd_Event southWashingEvent = new Fncd_Event("FNCD South washing_complete", "Washing is complete for day " + (i+1), washcount);
-            washcount = 0;
+            Fncd_Event southWashingEvent = new Fncd_Event("FNCD South washing_complete", "Washing is complete for day " + (i+1), southWashCount);
+            southWashCount = 0;
             publisher.publishEvent(southWashingEvent.getType(), southWashingEvent.getMessage(), southWashingEvent.getData());
+            logger.update(southWashingEvent);
 
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //run repair
@@ -161,7 +167,7 @@ public class main {
             for(Staff mec: northFNCD.getStaffList()){
                 if(mec instanceof Mechanic){
                     northRepair.repairVehicle(northFNCD.getVehicleList(), mec, northFNCD);
-                    repairCount += northRepair.getRepairCount();
+                    northRepairCount += northRepair.getRepairCount();
                 }
             }
 
@@ -170,18 +176,19 @@ public class main {
             for(Staff mec: southFNCD.getStaffList()){
                 if(mec instanceof Mechanic){
                     southRepair.repairVehicle(southFNCD.getVehicleList(), mec, southFNCD);
-                    repairCount += southRepair.getRepairCount();
+                    southRepairCount += southRepair.getRepairCount();
                 }
             }
 
             // publish event to notify observers that repair is complete
-            Fncd_Event northRepairEvent = new Fncd_Event("repair_complete", "FNCD North Repair is complete for day " + (i+1), repairCount);
-            repairCount = 0;
+            Fncd_Event northRepairEvent = new Fncd_Event("repair_complete", "FNCD North Repair is complete for day " + (i+1), northRepairCount);
+            northRepairCount = 0;
             publisher.publishEvent(northRepairEvent.getType(), northRepairEvent.getMessage(), northRepairEvent.getData());
-
-            Fncd_Event southRepairEvent = new Fncd_Event("repair_complete", "FNCD South Repair is complete for day " + (i+1), repairCount);
-            repairCount = 0;
+            logger.update(northRepairEvent);
+            Fncd_Event southRepairEvent = new Fncd_Event("repair_complete", "FNCD South Repair is complete for day " + (i+1), southRepairCount);
+            southRepairCount = 0;
             publisher.publishEvent(southRepairEvent.getType(), southRepairEvent.getMessage(), southRepairEvent.getData());
+            logger.update(southRepairEvent);
 
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //run Selling
@@ -221,9 +228,10 @@ public class main {
             // publish event to notify observers that selling is complete
             Fncd_Event northSellingEvent = new Fncd_Event("selling_complete", "FNCD North Selling is complete for day " + (i+1), northMop.getSellCount());
             publisher.publishEvent(northSellingEvent.getType(), northSellingEvent.getMessage(), northSellingEvent.getData());
-
+            logger.update(northSellingEvent);
             Fncd_Event southSellingEvent = new Fncd_Event("selling_complete", "FNCD South Selling is complete for day " + (i+1), southMop.getSellCount());
             publisher.publishEvent(southSellingEvent.getType(), southSellingEvent.getMessage(), southSellingEvent.getData());
+            logger.update(southSellingEvent);
 
             //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ending
@@ -238,16 +246,19 @@ public class main {
             // tracker.update(fncd.getStaffTotalEarn());
             Fncd_Event northStaffEarnedEvent = new Fncd_Event("staff_money_earned", "FNCD North Total money staff earned ",northFNCD.getStaffTotalEarn());
             tracker.update(northStaffEarnedEvent);
-
+            logger.update(northStaffEarnedEvent);
             Fncd_Event southStaffEarnedEvent = new Fncd_Event("staff_money_earned", " FNCD South Total money staff earned ",southFNCD.getStaffTotalEarn());
             tracker.update(southStaffEarnedEvent);
+            logger.update(southStaffEarnedEvent);
 
             Fncd_Event northEarnedEvent = new Fncd_Event("fncd_money_earned", " NORTH Total money fncd earned ",northFNCD.getFncdEarning());
             tracker.update(northEarnedEvent);
+            logger.update(northEarnedEvent);
 
 
             Fncd_Event southEarnedEvent = new Fncd_Event("fncd_money_earned", " SOUTH Total money fncd earned ",southFNCD.getFncdEarning());
             tracker.update(southEarnedEvent);
+            logger.update(southEarnedEvent);
 
 
             northFNCD.LoggerReport("\nFNCD North Checking Staff... \n");
